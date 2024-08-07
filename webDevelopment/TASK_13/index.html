@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task_13</title>
+    <style>
+        table,td {
+            text-align: center;
+            border-spacing: 0;
+        }
+
+        .topBottom {
+            background-color: grey;
+            width: 50px;
+            height: 100px;
+        }
+
+        .menuPanel {
+            background-color: aqua;
+            height: 500px;
+            width: 150px;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .red {
+            background-color: red;
+            width: 300px;
+        }
+
+        .orange {
+            background-color: orange;
+        }
+
+
+    </style>
+</head>
+<body>
+    <table style="width: 50%;">
+        <tr class="topBottom">
+            <td colspan="3">Gray</td>
+        </tr>
+        <tr>
+            <td rowspan="2" class="menuPanel">MenuPanel</td>
+            <td colspan="2" class="blue">Blue</td>
+            <tr>
+                <td class="red">Red</td>
+                <td class="orange">Orange</td>
+            </tr>
+        </tr>
+        <tr class="topBottom">
+            <td colspan="3">Footer</td>
+        </tr>
+
+    </table>
+</body>
+</html>
