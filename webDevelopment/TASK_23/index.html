@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task_23</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 600px;
+        }
+        .innerContainer{
+            width: 300px;
+            height: 300px;
+            position: relative;
+        }
+
+        .middleInnerContainer {     
+            width: 110px;
+            height: 110px;
+            position: absolute;
+            top: 80px;
+            left: 90px;
+        }
+
+        .topContainer{
+            display: flex;
+        }
+
+        .bottomContainer {
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="topContainer">
+            <div class="innerContainer" style="background-color: #FFCED6;">
+                <div class="middleInnerContainer" style="background-color: #2A702C;"></div>
+            </div>
+            <div class="innerContainer" style="background-color: #FD83ED;">
+                <div class="middleInnerContainer" style="background-color: #9CFF9F;"></div>
+            </div>
+        </div>
+
+        <div class="bottomContainer" style="background-color: #FD1F44;"> 
+            <div class="innerContainer">
+                <div class="middleInnerContainer" style="background-color: #8AE6FF;"></div>
+            </div>
+            <div class="innerContainer" style="background-color: #F0F96C;">
+                <div class="middleInnerContainer" style="background-color: #302E78;"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
