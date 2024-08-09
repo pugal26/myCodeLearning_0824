@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task_26</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: blue;
+            width: auto;
+            height: 100px;
+            position: relative;
+        }
+        .headerContent {
+            display: flex;
+            position: absolute;
+            top: 25px;
+        }
+
+        .headerContentOne {
+            background-color: #FFCED6;
+            width: 70px;
+            height: 40px;
+            position: absolute;
+            left: 20px;
+        }
+
+        .headerContentTwo {
+            background-color: yellow;
+            width: 70px;
+            height: 40px;
+            position: absolute;
+            left: 700px;
+        }
+
+        .headerContentThree {
+            background-color: brown;
+            width: 70px;
+            height: 40px;
+            position: absolute;
+            left: 1000px;
+        }
+
+        .headerContentFour {
+            background-color: darkgreen;
+            width: 70px;
+            height: 40px;
+            position: absolute;
+            left: 1300px;
+        }
+
+        .middleContainer {
+            background-color: yellow;
+            width: auto;
+            height: 300px;
+        }
+
+        .footer {
+            display: flex;
+            flex-direction: row;
+            height: 200px;
+            width: 1600px;
+        }
+
+        .boxOne {
+            width: 400px;
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .boxTwo {
+            width: 400px;
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 50px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .boxThree {
+            width: 400px;
+            height: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .boxFour{
+            width: 400px;
+            height: 250px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="headerContent">
+            <div class="headerContentOne"></div>
+            <div class="headerContentTwo"></div>
+            <div class="headerContentThree"></div>
+            <div class="headerContentFour"></div>
+            </div>
+        </div>
+        <div class="middleContainer"></div>
+        <div class="footer">
+            <div class="boxOne" style="background-color: orange;">        
+                <div style="background-color: #FFCED6; height: 40px; width: 80px;"></div>
+                <div style="background-color: yellow; height: 40px; width: 80px;"></div>
+                <div style="background-color: darkgreen; height: 40px; width: 80px;"></div>
+            </div>
+            <div class="boxTwo" style="background-color: palegreen;">
+                <div style="background-color: cornflowerblue; height: 40px; width: 80px;"></div>
+                <div style="background-color: yellowgreen; height: 40px; width: 80px;"></div>
+            </div>
+            <div class="boxThree" style="background-color: darkgreen;">
+                <div style="background-color: black; height: 40px; width: 80px;">1</div>
+            </div>
+            <div class="boxFour" style="background-color: blue;"></div>
+        </div>
+    </div>
+</body>
+</html>
