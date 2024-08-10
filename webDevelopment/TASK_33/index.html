@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task_33</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            margin-top: 150px;     
+            margin-left: 350px;
+            width: 1170px;  
+            height: 900px;
+        }
+
+        .header {    
+            background-color: #DAA137;
+            padding: 30px;
+            color: white;
+            text-align: center;
+        }
+
+        .navigator {
+            height: 60px;
+            background-color: lightgray;
+            margin: 0px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .navContent {
+            margin: 10px;
+            padding: 5px;
+            background-color: white;
+            border: 2px solid black;
+            width: 180px;
+            text-align: center;
+            color: #DAA137;
+            font-size: x-large;
+        }
+
+        .innerContainer {
+            background-color: grey;
+            height: 500px;
+            display: flex;
+            
+        }
+
+        .innerContent {
+            margin: 10px;
+            background-color: white;
+            width: 350px;
+            position: relative;
+        }
+
+        .innerContent, img {
+            margin-top: 20px;
+            margin-right: 0;
+        }
+
+        .content {
+            margin-top: 30px;
+            margin-left: 35px;
+            padding-right: 25px;
+            text-align: justify;
+        }
+           
+        button {
+            width: 250px;
+            height: 35px;
+            margin-left: 20px;
+            position: absolute;
+            left: 30px;
+            bottom: 10px;
+            justify-content: center;
+        }
+
+        .footer {
+            background-color: #DAA137;
+            height: 60px;
+        }
+
+        .footerContent {
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Power Grid: Store or Homepage</h1>
+        </div>
+
+        <div class="navigator">
+            <div class="navContent">Home</div>
+            <div class="navContent">About</div>
+            <div class="navContent">Blog</div>
+            <div class="navContent">Carees</div>
+            <div class="navContent">About Us</div>
+        </div>
+
+        <div class="innerContainer">
+            <div class="innerContent" style="margin-left: 50px;">
+                <img src="./Assets/img_1.png" alt="image" style="width: 300px; margin-left: 25px;">
+                <h4 class="content">This is awesome content that is on the page.</h4>
+                <button>Go Somewhere</button>
+            </div>
+            <div class="innerContent">
+                <img src="./Assets/img_2.png" alt="image" style="width: 300px; margin-left: 25px;">
+                <h4 class="content">This is more content than the previous
+                    box, but less than the next</h4>
+                <button>Click me</button>
+            </div>
+
+            <div class="innerContent">
+                <img src="./Assets/img_1.png" alt="image" style="width: 300px; margin-left: 25px;">
+                <h4 class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, ad minima. Voluptates mollitia sit vitae quia veniam impedit ipsam architect minima, blanditiis libero repudiandae, et nihil quae obcaecati  doloremque quidem?</h4>
+                <button>Do Something</button>
+            </div>
+        </div>
+
+        <div class="footer">
+            <h4 class="footerContent">copyRight &copy 2016</h4>
+        </div>
+    </div>
+</body>
+</html>
