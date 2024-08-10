@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task_32</title>
+    <style>
+        * {
+            margin-right: 0;
+            padding-right: 0;
+        }
+        .container {
+            margin-left: 120px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            display: flex;
+            justify-content: end;
+            align-items: end;
+            flex-direction: column;
+            height: 600px;
+        }
+        .header {
+            width: 1250px;
+            background-color: #4A4A4A;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .header h1 {
+            font-size: 50px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: #D5C5B0;
+        }
+
+        .nagivator {
+            display: flex;
+            width: 1250px;
+            height: 70px;
+            background-color: #DFDCDA;
+            
+        }
+        .navContent{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            border-style: solid;
+            border-width: 12px 12px; 
+            width: 250px;
+            padding-top: 15px;
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 0;
+            font-size: 20px;
+        }
+
+        .content {
+            display: flex;
+            width: 1250px;
+            height: 220px;
+            border-style: solid;
+            border-width: 0 0 10px 0;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 20px;
+        }
+
+        .contentBoxOne {
+            width: 1550px;
+            background-color: #DFDCDA;
+            padding-left: 10px;
+            padding-right: 20px;
+        }
+
+        .contentBoxTwo {
+            padding-left: 10px;
+        }
+
+        .footer {
+            background-color: #DFDCDA;
+            width: 1245px;
+            height: 60px;
+        }
+        .footer, h5 {
+            font-size: large;   
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding-left: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header"><h1>Site Wide Header</h1></div>
+        <div class="nagivator">
+            <p class="navContent" style="border-right: none;">Home</p>
+            <p class="navContent" style="border-right: none;">About</p>
+            <p class="navContent" style="border-right: none;">Blog</p>
+            <p class="navContent" style="border-right: none;">Carees</p>
+            <p class="navContent" >About Us</p>
+        </div>
+        <div class="content">
+            <div class="contentBoxOne">
+                <h3>This is the header of the artical</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis optio eos ullam accusamus exercitationem culpa ipsa rem ratione porro qui quae, deserunt, aspernatur, explicabo iste magni officia iusto similique voluptate quidem fuga soluta? Numquam maiores ipsa at cum eos corporis</p>
+            </div>
+            <div class="contentBoxTwo">
+                <h3>Aside Heading</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet sunt.</p>
+            </div>
+        </div>
+        <div class="footer">
+            <h5>copyRight &copy 2017 <span style="color: blue; text-decoration: underline;">My Site</span></h5>
+        </div>
+    </div>
+</body>
+</html>
