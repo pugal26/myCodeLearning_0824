@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task_34</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            background-color: #EAE9E9;
+            width: 1000px;
+            height: 600px;
+            margin-left: 150px;
+            margin-top: 50px;
+            float: right;
+        }
+
+        .header {
+            background-color: #3D3C3C;
+            margin-left: 30px;
+            margin-right: 30px;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .innerContainer {
+            display: flex;
+            margin-left: 30px;
+            margin-right: 30px;
+            height: 450px;
+        }
+
+        .navigator {
+            width: 200px;
+            text-align: center;
+            background-color: lightgrey;
+        }
+
+        .navList {
+            padding: 10px;
+            text-decoration: underline;
+            border-style: solid;
+            border-width: 0 0 1px 0;
+            border-color: #AAA9A9;
+        }
+
+        .contentOne {
+            padding-top: 20px;
+            padding-left: 10px;
+            padding-right: 10px;
+            width: 650px;
+            background-color: #BFBFBF;
+        }
+
+        .contentTwo {
+            padding-top: 20px;
+            padding-left: 10px;
+            padding-right: 20px;
+            width: 250px;
+            background-color: white;
+        }
+
+        .footer {
+            height: 80px;
+            background-color: #3D3C3C;          
+        }
+
+        .footerList {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .footerNav {
+            background-color: #D9D9D9;
+            margin-top: 10px;
+            padding: 10px;
+            width: 160px;
+            text-align: center;
+        }
+
+        .footerContent {
+            text-align: center;
+            padding-top: 5px;
+            color: white;
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Site wide Header</h1>
+        </div>
+
+        <div class="innerContainer">
+            <div class="navigator">
+                <p class="navList">Home</p>
+                <p class="navList">About</p>
+                <p class="navList">Blog</p>
+                <p class="navList">Careees</p>
+                <p class="navList">About Us</p>
+            </div>
+
+            <div class="contentOne">
+                <h3>This is the heading of the artical</h3><br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, omnis illum. Suscipit dolorum hic itaque accusantium Veritatis reiciendis dolor cum repellendus tempora, doloribus quaerat nostrum et aliquid odit sit perferendis?</p>
+            </div>
+
+            <div class="contentTwo">
+                <h3>Aside Heading</h3><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, praesentium!</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footerList">
+                <h4 class="footerNav" style="margin-left: 15px;">Home</h4>
+                <h4 class="footerNav">About</h4>
+                <h4 class="footerNav">Blog</h4>
+                <h4 class="footerNav">Careees</h4>
+                <h4 class="footerNav" style="margin-right: 15px;">About Us</h4>
+            </div>
+            <div><h4 class="footerContent">Copyright &copy 2017 <span style="text-decoration: underline; color: gray;">My Site</span></h4></div>
+        </div>
+    </div>
+</body>
+</html>
