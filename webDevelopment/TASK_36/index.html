@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task_36</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            margin-left: 150px;
+            margin-right: 150px;
+            margin-top: 20px;
+            position: relative;
+            font-size: small;
+        }
+
+        .heading {
+            position: absolute;
+            top: 20px;
+            left: 720px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .banner {
+            margin-top: 20px;
+            width: auto;
+            height: 500px;
+            background-image: url(./Assets/img_1.jpg);
+            background-size: cover;
+            position: relative;
+        }
+
+        .bannerContent {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            position: absolute;
+            top: 60px;
+            left: 310px;
+            width: 360px;
+            font-size: larger;
+        }
+
+        .bannerButton {
+            padding: 20px 40px;
+            margin-top: 80px;
+            background-color: aqua;
+            border: none;
+            border-radius: 50px;
+            color: white;
+            font-size: large;
+        }
+
+        .bookTourNow {
+            position: absolute;
+            top: 95px;
+            left: 1020px;
+            background-color: orange;
+            padding: 0 20px 10px 20px;
+            border: 15px solid white;
+            width: 200px;
+            position: relative;
+        }
+
+        .inputList {
+            margin-bottom: 20px;
+            width: 200px;
+        }
+
+        .findToursbutton {
+            background-color: gray;
+            border: none;
+            position: absolute;
+            left: 70px;
+            padding: 10px;
+            color: white;
+            font-size: large;
+        }
+
+        .innerContainer {
+            display: flex;
+            margin-top: 75px;
+        }
+
+        .innerContent {
+            margin-left: 250px;
+            text-align: justify;
+            width: 650px;
+        }
+
+        .innerContainerImage {
+            margin-left: 200px;
+            margin-top: 20px;
+        }
+
+        .footerheading {
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: x-large;
+            margin-bottom: 40px;
+        }
+
+        .footerImg {
+            width: 200px;
+            height: 150px;
+        }
+
+        table {
+            margin-top: 0;
+            margin-left: 220px;
+        }
+
+        td,tr {
+            margin-top: 0;
+            margin-left: 200px;
+            padding: 25px 35px;
+        }
+
+        .footerButton {
+            padding: 20px 40px;
+            background-color: aqua;
+            border: none;
+            border-radius: 50px;
+            color: white;
+            font-size: larger;
+            font-weight: bolder;
+            margin-top: 0;
+        }
+
+        .footerbtnOuter {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <p class="navList">HOME</p>
+            <p class="navList">TOUR</p>
+            <p class="navList" style="padding-right: 180px;">DESTINATION</p>
+            <p class="navList">PAGES</p>
+            <p class="navList">BLOG</p>
+            <p class="navList">CONTACT</p>
+        </div>
+        <div class="heading"><h2>TREVELLO.</h2></div>
+        
+        <div class="banner">
+            <div class="bannerContent">
+                <h2>MAKE YOUR TOUR AMAZING <br>WITH US</h2>
+                <div style="background-color: blue; width: 550px">
+                    <P style="font-family: 'Times New Roman', Times, serif; font-size: smaller; text-align: justify; color: white;">On into not, sleeping have objects on from it project and but by we indication a he own the office as bed in the hat ideas rippedup</P>
+                </div>
+                <button class="bannerButton">Destination</button>
+            </div>
+            <div class="bookTourNow">
+                <h2 style="color: white; text-align: center; margin-bottom: 30px;">Book Tour Now</h2>
+                <input type="text" placeholder="Search Keywords" class="inputList"><br>
+                <input type="text" placeholder="Destination" class="inputList"><br>
+                <input type="text" placeholder="Tour Type" class="inputList"><br>
+                <input type="text" placeholder="15/11/20215" class="inputList"><br>
+                <input type="text" placeholder="Number of Persons" class="inputList"><br>
+                <button class="findToursbutton">Find Tours</button>
+            </div>
+        </div>
+
+        <div class="innerContainer">
+            <div class="innerContent">
+                <h2 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: xx-large;">MAKE YOUR TOUR MEMORABLE AND SAFE WITH US</h2>
+                <p style="font-size: x-large;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque omnis quod officia molestiae voluptate autem nemo eveniet veniam maiores at!</p>
+            </div>
+            <div class="innerContainerImage">
+                <img src="./Assets/img_2.jpg" alt="thumbnail" style="width: 200px; height: 200px">
+            </div>
+        </div>
+
+        <div class="footer">
+            <h3 class="footerheading">THE BEST OF <br> FEATURED TOURS</h3>
+            <div>
+                <table>
+                    <tr>
+                        <td><img src="./Assets/img_4.png" alt="images" class="footerImg"></td>
+                        <td><img src="./Assets/img_3.png" alt="images" class="footerImg"></td>
+                        <td><img src="./Assets/img_4.png" alt="images" class="footerImg"></td>
+                        <td><img src="./Assets/img_3.png" alt="images" class="footerImg"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./Assets/img_4.png" alt="images" class="footerImg"></td>
+                        <td><img src="./Assets/img_3.png" alt="images" class="footerImg"></td>
+                        <td><img src="./Assets/img_4.png" alt="images" class="footerImg"></td>
+                        <td><img src="./Assets/img_3.png" alt="images" class="footerImg"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="footerbtnOuter"><button class="footerButton">See all tours</button></div>
+        </div>
+    </div>
+</body>
+</html>
