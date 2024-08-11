@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task_37</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;       
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            text-align: center;
+            padding: 14px 32px;
+            text-decoration: none;
+        }
+
+        .name {
+            margin: 0;
+            padding: 0;
+            margin-left: 240px;
+            font-size: xx-large;
+        }
+
+        .navList {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+
+        .bannerContainer {
+            width: auto;
+            height: 500px;
+            background-image: url(./Assets/banner.png);
+            background-size: cover;
+            position: relative;  
+        }
+
+        .bannerContent {
+            position: absolute;
+            color: white;
+            text-align: center;
+            top: 65px;
+            left: 320px;
+        }
+
+        .bannerButtons {
+            margin-top: 60px;
+            color: white;
+            background-color: transparent;
+            border-style: solid;
+            border-width: 0 0 1px 1px;
+            border-color: white;
+            width: 180px;
+            height: 35px;
+            font-size: medium;
+            border-radius: 5px;
+            box-shadow: 0.1px 0.1px white;
+        }
+
+        .bodyOneContent {
+            display: flex;
+            margin-left: 100px;
+            margin-top: 100px;
+        }
+
+        .ContentOne {
+            margin-top: 100px;
+            margin-left: 120px;
+            width: 490px;
+            height: 200px;    
+        }
+
+        .viewMoreBtn {
+            margin-top: 20px;
+            background-color: gray;
+            color: white;
+            width: 100px;
+            height: 30px;
+            border: none;
+        }
+
+        .tableOneHeader{
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .tableHeading {
+            display: flex;
+            justify-content: center;
+            width: 200px;
+            padding: 20px;
+            border-style: solid;
+            border-width: 0 0 2px 0;
+            margin-left: 640px;
+        }
+
+        .tableHeadList {
+            border: 3px solid black;
+            background-color: gray;
+            color: white;
+            padding: 10px;
+        }
+
+        .portfolioImg {
+            padding: 40px;
+        }
+
+        .serviceContent {
+            width: 320px;
+            margin-top: 20px;
+        }
+
+        .serviceContainer {
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: 300px;
+
+        }
+
+        .footer {
+            margin-top: 50px;
+            text-align: center;
+            margin-bottom: 100px;
+        }
+
+        .footerBtn {
+            margin-top: 10px;
+            background-color: gray;
+            color: white;
+            width: 100px;
+            height: 30px;
+            border: none;
+        }
+
+        .emailInput {
+            width: 150px;
+            height: 30px;
+            border-style: solid;
+            border-width: 3px 3px 0 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <ul>
+                <li><a href=""><h2 class="name">MAYABI</h2></a></li>
+                <li><a href="" class="navList" style="margin-left: 120px;">HOME</a></li>
+                <li><a href="" class="navList">ABOUT US</a></li>
+                <li><a href="" class="navList">PORTFOLIO</a></li>
+                <li><a href="" class="navList">BLOG</a></li>
+                <li><a href="" class="navList">SHOP</a></li>
+                <li><a href="" class="navList">CONTACT US</a></li>
+            </ul>
+        </div>
+
+        <div class="bannerContainer">
+            <div class="bannerContent">
+                <h1 style="font-size: 50px;">MAYABI <br> PORTFOLIO MULIT PURPOSE THEME</h1>
+                <p style="margin-top: 90px; font-size: larger;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur velit, officia placeat quaerat totam em <br> ratione nihil reprehenderit distinctio nemo</p>
+                <div class="bannerFooter">
+                    <button class="bannerButtons">Download</button>
+                    <button class="bannerButtons">Load More</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="bodyOneContent">
+            <div class="contentOneImg"> 
+                <img src="./Assets/img_2.jpg" alt="img_2" width="340px" height="320px">
+                <img src="./Assets/img_1.png" alt="img_1" width="340px" height="320px" style="float: left;">
+            </div>
+            <div class="ContentOne">
+                <p style="font-size: x-large; color: grey;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore natus quisquam illo saepe, soluta quasi ipsa modi nobis? Magni, enim?</p>
+                <button class="viewMoreBtn">View More</button>
+            </div>
+        </div>
+
+        <div class="tableOneHeader">
+            <h2 class="tableHeading">PORTFOLIO</h2>
+            <P style="padding: 25px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, iure! <br> Lorem ipsum dolor sit amet consectetur adipis</P>
+            <ul style="margin-left: 490px;">
+                <li class="tableHeadList">all</li>
+                <li class="tableHeadList">Design</li>
+                <li class="tableHeadList">Development</li>
+                <li class="tableHeadList">Development</li>
+                <li class="tableHeadList">Development</li>
+                <li class="tableHeadList">Development</li>
+            </ul>
+
+            <div style="margin-left: 200px;">
+                <table class="tableOne">
+                    <tr>
+                        <td class="portfolioImg"><img src="./Assets/img_2.jpg" alt="image" width="200px" height="150px"></td>
+                        <td class="portfolioImg"><img src="./Assets/img_2.jpg" alt="image" width="200px" height="150px"></td>
+                        <td class="portfolioImg"><img src="./Assets/img_2.jpg" alt="image" width="200px" height="150px"></td>
+                        <td class="portfolioImg"><img src="./Assets/img_2.jpg" alt="image" width="200px" height="150px"></td>
+                    </tr>
+                    <tr>
+                        <td class="portfolioImg"><img src="./Assets/img_2.jpg" alt="image" width="200px" height="150px"></td>
+                        <td class="portfolioImg"><img src="./Assets/img_2.jpg" alt="image" width="200px" height="150px"></td>
+                        <td class="portfolioImg"><img src="./Assets/img_2.jpg" alt="image" width="200px" height="150px"></td>
+                        <td class="portfolioImg"><img src="./Assets/img_2.jpg" alt="image" width="200px" height="150px"></td>
+                    </tr>
+                </table>
+            </div>
+            <button class="viewMoreBtn" style="margin-top: 0; height: 35px;">View All</button>        
+        </div>
+
+        <div class="tableOneHeader">
+            <h2 class="tableHeading">SERVICE</h2>
+            <P style="padding: 25px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, iure! <br> Lorem ipsum dolor sit amet consectetur adipis</P>
+            <div class="serviceContainer">
+                <div class="serviceContent">
+                   <img src="./Assets/img_4.png" alt="img" width="200px" height="150px"> 
+                   <h3 style="padding: 15px;">Auroville</h3>
+                   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde iure quasi nemo harum exercitationem, sed odit  nobis corporis consequatur delectus.</p>
+                </div>
+                <div class="serviceContent">
+                    <img src="./Assets/img_2.jpg" alt="img" width="200px" height="150px"> 
+                    <h3 style="padding: 15px;">Beach</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde iure quasi nemo harum exercitationem, sed odit  nobis corporis consequatur delectus.</p>
+                 </div>
+                 <div class="serviceContent">
+                    <img src="./Assets/img_1.png" alt="img" width="200px" height="150px"> 
+                    <h3 style="padding: 15px;">Gandhi</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde iure quasi nemo harum exercitationem, sed odit  nobis corporis consequatur delectus.</p>
+                 </div>
+                 <div class="serviceContent">
+                    <img src="./Assets/img_4.png" alt="img" width="200px" height="150px" style="margin-top: 40px;">  
+                    <p style="padding-top: 30px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde iure quasi nemo harum exercitationem, sed odit  nobis corporis consequatur delectus.</p>
+                 </div>
+                 <div class="serviceContent">
+                    <img src="./Assets/img_2.jpg" alt="img" width="200px" height="150px" style="margin-top: 40px;">  
+                    <p style="padding-top: 30px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde iure quasi nemo harum exercitationem, sed odit  nobis corporis consequatur delectus.</p>
+                 </div>
+                 <div class="serviceContent">
+                    <img src="./Assets/img_1.png" alt="img" width="200px" height="150px" style="margin-top: 40px;"> 
+                    <p style="padding-top: 30px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde iure quasi nemo harum exercitationem, sed odit  nobis corporis consequatur delectus.</p>
+                 </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <h3 style="padding: 10px;">Subscribe Newsletter</h3>
+            <h4 style="padding: 10px;">Enter Your email and we'll send you details about new courses and events</h4>
+            <input type="email" placeholder="Email" class="emailInput">
+            <button class="footerBtn">Sign up Now</button>
+        </div>
+    </div>
+</body>
+</html>
