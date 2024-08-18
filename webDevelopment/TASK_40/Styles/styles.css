@@ -366,17 +366,17 @@
 }
 
 .hover-underline:after {
-    transition: transform .5s;
-}
-
-.hover-underline:hover:after {
     content: '';
-    display: block;
-    position: relative;
+    display: none;
+    position: absolute;
     width: 18px;
     border: 2px solid;
     margin-top: 10px;
-    transform: scale(1.05);
+}
+
+.hover-underline:hover:after {
+    display: block;
+    width: 18px;
 }
 
 .projectBox {
