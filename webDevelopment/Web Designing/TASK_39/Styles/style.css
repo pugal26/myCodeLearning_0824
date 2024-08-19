@@ -344,7 +344,6 @@ body {
 }
 
 .workImage:hover {
-    -ms-transform: scale(0.1);
     transform: scale(1.1);
     position: absolute;
     content: "";
