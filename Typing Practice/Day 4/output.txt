@@ -1,0 +1,25 @@
+a;a a;a ;l; ;l; ;k; ;k; ;j; ;j; ;h; ;h; ;g; ;g; ;f; ;f; ;d; ;d; ;s; ;s; ;a; ;a;
+a;a a;a ;l; ;l; ;k; ;k; ;j; ;j; ;h; ;h; ;g; ;g; ;f; ;f; ;d; ;d; ;s; ;s; ;a; ;a;
+a;a a;a ;l; ;l; ;k; ;k; ;j; ;j; ;h; ;h; ;g; ;g; ;f; ;f; ;d; ;d; ;s; ;s; ;a; ;a;
+a;a a;a ;l; ;l; ;k; ;k; ;j; ;j; ;h; ;h; ;g; ;g; ;f; ;f; ;d; ;d; ;s; ;s; ;a; ;a;
+a;a a;a ;l; ;l; ;k; ;k; ;j; ;j; ;h; ;h; ;g; ;g; ;f; ;f; ;d; ;d; ;s; ;s; ;a; ;a;
+a;a a;a ;l; ;l; ;k; ;k; ;j; ;j; ;h; ;h; ;g; ;g; ;f; ;f; ;d; ;d; ;s; ;s; ;a; ;a;
+a;a a;a ;l; ;l; ;k; ;k; ;j; ;j; ;h; ;h; ;g; ;g; ;f; ;f; ;d; ;d; ;s; ;s; ;a; ;a;
+a;a a;a ;l; ;l; ;k; ;k; ;j; ;j; ;h; ;h; ;g; ;g; ;f; ;f; ;d; ;d; ;s; ;s; ;a; ;a;
+a;a a;a ;l; ;l; ;k; ;k; ;j; ;j; ;h; ;h; ;g; ;g; ;f; ;f; ;d; ;d; ;s; ;s; ;a; ;a;
+a;a a;a ;l; ;l; ;k; ;k; ;j; ;j; ;h; ;h; ;g; ;g; ;f; ;f; ;d; ;d; ;s; ;s; ;a; ;a;
+a;a a;a ;l; ;l; ;k; ;k; ;j; ;j; ;h; ;h; ;g; ;g; ;f; ;f; ;d; ;d; ;s; ;s; ;a; ;a;
+a;a a;a ;l; ;l; ;k; ;k; ;j; ;j; ;h; ;h; ;g; ;g; ;f; ;f; ;d; ;d; ;s; ;s; ;a; ;a;
+a;a a;a ;l; ;l; ;k; ;k; ;j; ;j; ;h; ;h; ;g; ;g; ;f; ;f; ;d; ;d; ;s; ;s; ;a; ;a;
+a;a a;a ;l; ;l; ;k; ;k; ;j; ;j; ;h; ;h; ;g; ;g; ;f; ;f; ;d; ;d; ;s; ;s; ;a; ;a;
+a;a a;a ;l; ;l; ;k; ;k; ;j; ;j; ;h; ;h; ;g; ;g; ;f; ;f; ;d; ;d; ;s; ;s; ;a; ;a;
+a;a a;a ;l; ;l; ;k; ;k; ;j; ;j; ;h; ;h; ;g; ;g; ;f; ;f; ;d; ;d; ;s; ;s; ;a; ;a;
+a;a a;a ;l; ;l; ;k; ;k; ;j; ;j; ;h; ;h; ;g; ;g; ;f; ;f; ;d; ;d; ;s; ;s; ;a; ;a;
+a;a a;a ;l; ;l; ;k; ;k; ;j; ;j; ;h; ;h; ;g; ;g; ;f; ;f; ;d; ;d; ;s; ;s; ;a; ;a; 
+a;a a;a ;l; ;l; ;k; ;k; ;j; ;j; ;h; ;h; ;g; ;g; ;f; ;f; ;d; ;d; ;s; ;s; ;a; ;a;
+a;a a;a ;l; ;l; ;k; ;k; ;j; ;j; ;h; ;h; ;g; ;g; ;f; ;f; ;d; ;d; ;s; ;s; ;a; ;a;
+sas sas sds sds sfs sfs sgs sgs shs shs sjs sjs sks sks sls sls
+sas sas sds sds sfs sfs sgs sgs shs shs sjs sjs sks sks sls sls
+sas sas sds sds sfs sfs sgs sgs shs shs sjs sjs sks sks sls sls
+sas sas sds sds sfs sfs sgs sgs shs shs sjs sjs sks sks sls sls 
+sas sas sds sds sfs sfs sgs sgs shs shs sjs sjs sks sks sls sls
