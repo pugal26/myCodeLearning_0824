@@ -24,11 +24,6 @@
 }
 
 @font-face {
-    font-family: PlayfairDisplay-BoldItalic;
-    src: url(../Assets/fonts/Playfair_Display/static/PlayfairDisplay-BoldItalic.ttf);
-}
-
-@font-face {
     font-family: Poppins-Light;
     src: url(../Assets/fonts/Poppins/Poppins-Light.ttf);
 }
@@ -43,6 +38,10 @@
     src: url(../Assets/fonts/Lora/static/Lora-MediumItalic.ttf);
 }
 
+@font-face {
+    font-family: OpenSans-Italic;
+    src: url(../Assets/fonts/Open_Sans/static/OpenSans-Italic.ttf);
+}
 
 body {
     font-family: Poppins-Medium;
@@ -361,7 +360,7 @@ body {
     transition: transform .8s ease;
 }
 
-.service_img:hover {
+.imageDiv:hover .service_img{
     transform: scale(1.1);
 }
 
@@ -489,9 +488,9 @@ body {
     justify-content: center;
     align-items: center;
     width: auto;
-    height: 150px;
+    height: 175px;
     background-color: #FFB00D;
-    column-gap: 30px;
+    column-gap: 85px;
 }
 
 .progressPara {
@@ -504,11 +503,82 @@ body {
 }
 
 .progressBtn {
-    height: 60px;
-    width: 160px;
+    height: 65px;
+    width: 225px;
     border-radius: 50px;
     background-color: #232323;
     color: white;
     font-family: Poppins-Regular;
     font-size: 17.5px;
+    border: none;
+}
+
+.progressBtn:hover {
+    background-color: white;
+    color: black;
+}
+
+.clientContainer {
+    text-align: center;
+    padding: 100px 0;
+    background-color: #EFEFEF;
+    height: 530px;
+    width: auto;
+}
+
+.clientTitle {
+    font-family: Poppins-SemiBold;
+    font-size: 32px;
+}
+
+.ClientemptyLine {
+    width: 60px;
+    border-bottom: 3px solid #FFB00D;
+    height: 30px;
+    margin-left: 50%;
+}
+
+.clientBox {
+    display: flex;
+    column-gap: 90px;
+    justify-content: center;
+    margin-top: 90px;
+}
+
+.clientCard {
+    background-color: white;
+    width: 350px;
+    height: 380px;
+    position: relative;
+}
+
+.quote {
+    width: 60px;
+    position: absolute;
+    right: 30px;
+    bottom: 25px;
+}
+
+.photo-div {
+    position: absolute;
+    top: -50px;
+    left: 130px;
+}
+
+.clientName {
+    font-family: Poppins-SemiBold;
+    padding-bottom: 10px;
+    padding-top: 80px;
+}
+
+.location {
+    font-family: OpenSans-Italic;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.517);
+}
+
+.clientPara {
+    font-family: OpenSans-Regular;
+    padding: 25px 30px;
+    line-height: 26px;
 }
