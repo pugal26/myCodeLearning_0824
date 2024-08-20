@@ -43,6 +43,11 @@
     src: url(../Assets/fonts/Open_Sans/static/OpenSans-Italic.ttf);
 }
 
+@font-face {
+    font-family: OpenSans-Light;
+    src: url(../Assets/fonts/Open_Sans/static/OpenSans-Light.ttf);
+}
+
 body {
     font-family: Poppins-Medium;
 }
@@ -540,7 +545,7 @@ body {
 
 .clientBox {
     display: flex;
-    column-gap: 90px;
+    column-gap: 70px;
     justify-content: center;
     margin-top: 90px;
 }
@@ -581,4 +586,214 @@ body {
     font-family: OpenSans-Regular;
     padding: 25px 30px;
     line-height: 26px;
+    font-size: 16px;
+}
+
+.newsContainer {
+    display: flex;
+    height: 610px;
+}
+
+.latestNews {
+    width: 720px;
+    background-image: url(../Assets/Images/news_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.newsPara {
+    font-family: OpenSans-Regular;
+    font-size: 16px;
+    line-height: 28px;
+    color: rgb(188, 188, 188);
+    margin-left: 170px;
+    padding-right: 50px;
+}
+
+.newsheader {
+    display: flex;
+    color: white;
+    margin-left: 170px;
+    padding-top: 95px;
+    margin-bottom: 30px;
+}
+
+.newsTitle {
+    font-family: Poppins-SemiBold;
+    font-size: 32px;
+}
+
+.newsBtn {
+    margin: 45px 0;
+    width: 220px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #FFB00D;
+    border: none;
+    font-family: Poppins-Regular;
+    font-size: 17.5px;
+    margin-left: 170px;
+}
+
+.newsContainer button:hover {
+    color: white;
+    background-color: #ffae0de0;
+}
+
+.background-style {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.664);
+    backdrop-filter: blur(1px);
+}
+
+.newsList {
+    width: 1050px;
+    margin: 100px 0;
+}
+
+.news-Box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 40px;
+    padding: 25px 230px 25px 80px ;
+}
+
+.news-descp {
+    font-family: OpenSans-Regular;
+    font-size: 15px;
+    line-height: 26px;
+    padding-top: 10px;
+}
+
+.news-date {
+    font-family: OpenSans-Regular;
+    font-size: 14px;
+    line-height: 26px;
+    color: #FFB00D;
+}
+
+.NewsemptyBorder {
+    width: 600px;
+    border-bottom: 1.5px solid;
+    border-color: rgb(220, 220, 220);
+    margin-left: 80px;
+}
+
+.contactBackground {
+    background-image: url(../Assets/Images/contact_bg.jpg);
+    height: 475px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.contact-bg-style {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 174, 13, 0.781);
+}
+
+.contactContent {
+    display: flex;
+    padding-top: 100px;
+}
+
+.contactHead {
+    font-family: Poppins-SemiBold;
+    font-size: 30px;
+    color: white;
+    padding-left: 175px;
+    width: 1900px;
+    line-height: 36px;
+    padding-right: 40px;
+}
+
+.inner-style {
+    font-family: Poppins-Regular;
+    font-size: 30px;
+}
+
+.contactPara {
+    font-family: OpenSans-Light;
+    font-size: 22px;
+    color: white;
+    border-left: 2px solid rgba(255, 255, 255);
+    padding-left: 40px;
+    padding-right: 210px;
+    line-height: 30px;
+}
+
+.from-container {
+    position: absolute;
+    top: 320px;
+    left: 175px;
+    background-color: white;
+    width: 1125px;
+    height: 500px;
+    padding: 65px;
+}
+
+.form-logo {
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+.from {
+    display: flex;
+}
+
+.form-Heading {
+    display: flex;
+}
+
+.material-symbols-outlined {
+    border: 1.5px solid;
+    padding: 8px;
+    border-radius: 50%;
+    color: #FFB00D;
+}
+
+.icons-list {
+    display: flex;
+    padding: 20px;
+}
+
+.icons-descp {
+    padding-left: 15px;
+
+}
+
+.form-innerStyle {
+    font-family: OpenSans-Light;
+    font-size: 15px;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+.formBtn {
+    width: 200px;
+    height: 45px;
+    border-radius: 50px;
+    background-color: #FFB00D;
+    border: none;
+    font-family: Poppins-Regular;
+    font-size: 17.5px;
+
+}
+
+.form-boxTwo input {
+    width: 250px;
+    height: 35px;
+    padding-left: 15px;
+    margin: 10px 15px;
+    border: 1px solid rgba(124, 124, 124, 0.521);
+}
+
+.form-boxTwo textarea {
+    margin: 10px 15px;
+    border: 1px solid rgba(124, 124, 124, 0.521);
 }
