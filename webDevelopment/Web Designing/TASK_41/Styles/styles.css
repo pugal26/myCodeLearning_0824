@@ -950,18 +950,54 @@ body {
 
 .footer-icons {
     padding: 30px 0;
+    display: flex;
+    column-gap: 10px;
 }
 
-.footer-icons:hover {
+.fa-facebook-f {
+    padding: 15px 18px;
+}
+
+.fa-linkedin-in {
+    padding: 12px 15px;
+}
+
+.fa-twitter {
+    padding: 12px 15px;
+}
+
+.fa-google-plus-g {
+    padding: 13px 14px;
+}
+
+.icons {
+    border: 1px solid rgb(138, 138, 138);
+    border-radius: 50%;
+}
+
+.icons i {
+    color: rgb(138, 138, 138);   
+}
+
+.icons:hover {
+    border-color: #FFB00D;
+}
+
+.fa-facebook-f:hover {
     color: #FFB00D;
 }
 
-.fa-brands fa-facebook-f:hover {
+.fa-linkedin-in:hover {
     color: #FFB00D;
-    cursor: pointer;
 }
 
-#icons:hover {
+
+.fa-google-plus-g:hover {
+    color: #FFB00D;
+}
+
+
+.fa-twitter:hover {
     color: #FFB00D;
 }
 
