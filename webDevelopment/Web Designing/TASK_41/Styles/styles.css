@@ -601,6 +601,13 @@ body {
     background-size: 100% 100%;
 }
 
+.background-style {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.664);
+    backdrop-filter: blur(1px);
+}
+
 .newsPara {
     font-family: OpenSans-Regular;
     font-size: 16px;
@@ -638,13 +645,6 @@ body {
 .newsContainer button:hover {
     color: white;
     background-color: #ffae0de0;
-}
-
-.background-style {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.664);
-    backdrop-filter: blur(1px);
 }
 
 .newsList {
@@ -732,14 +732,15 @@ body {
     top: 320px;
     left: 175px;
     background-color: white;
-    width: 1125px;
-    height: 500px;
+    width: 1075px;
+    height: 480px;
     padding: 65px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .form-logo {
     margin-left: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .from {
@@ -750,28 +751,22 @@ body {
     display: flex;
 }
 
-.material-symbols-outlined {
-    border: 1.5px solid;
-    padding: 8px;
-    border-radius: 50%;
-    color: #FFB00D;
-}
-
 .icons-list {
     display: flex;
-    padding: 20px;
+    padding: 15px;
 }
 
 .icons-descp {
     padding-left: 15px;
-
+    font-size: 20px;
 }
 
 .form-innerStyle {
-    font-family: OpenSans-Light;
-    font-size: 15px;
+    font-family: OpenSans-Regular;
+    font-size: 16px;
     padding-left: 15px;
     padding-top: 10px;
+    color: #3B3B3B;
 }
 
 .formBtn {
@@ -780,20 +775,214 @@ body {
     border-radius: 50px;
     background-color: #FFB00D;
     border: none;
-    font-family: Poppins-Regular;
-    font-size: 17.5px;
+    margin-left: 45px;
+    margin-top: 8px;
+    font-family: OpenSans-Regular;
+    font-size: 16px;
+}
 
+.from-container button:hover {
+    color: white;
+    background-color: #ffae0dd5;
 }
 
 .form-boxTwo input {
-    width: 250px;
-    height: 35px;
-    padding-left: 15px;
-    margin: 10px 15px;
+    width: 290px;
+    height: 50px;
+    padding-left: 20px;
+    margin: 8px -20px 10px 45px;
     border: 1px solid rgba(124, 124, 124, 0.521);
 }
 
+.form-boxTwo input, placeholder {
+    font-family: OpenSans-Regular;
+    font-size: 16px;
+}
+
 .form-boxTwo textarea {
-    margin: 10px 15px;
+    margin: 10px 45px;
     border: 1px solid rgba(124, 124, 124, 0.521);
+    padding-left: 20px;
+    padding-top: 15px;
+}
+
+.form-boxTwo textarea, placeholder {
+    font-family: OpenSans-Regular;
+    font-size: 16px;
+}
+
+.formTitle {
+    font-family: Poppins-SemiBold;
+    font-size: 32px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-left: 45px;
+}
+
+.form-background {
+    width: auto;
+    height: 560px;
+    background-color: rgb(255, 255, 255);
+}
+
+.footer-Conatiner {
+    width: auto;
+    height: 460px;
+    background-image: url(../Assets/Images/footer_bg2.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.background-style-footer {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(32, 32, 32, 0.897);   
+}
+
+.footer-box {
+    display: flex;
+    margin-left: 175px;
+    margin-right: 175px;
+    padding-top: 75px;
+    border-bottom: 0.5px solid rgba(95, 95, 95, 0.74);
+    height: 310px;
+}
+
+.footer-para {
+    font-family: OpenSans-Regular;
+    font-size: 16px;
+    line-height: 28px;
+    color: rgb(138, 138, 138);
+    padding: 20px 20px 20px 0;
+}
+
+.footer-read {
+    color: #FFB00D;
+    cursor: pointer;
+}
+
+.links {
+    display: inline;
+    font-family: OpenSans-Regular;
+    font-size: 16px;
+    color: rgb(138, 138, 138);
+}
+
+.links li {
+    padding: 8px 25px 8px 0;
+    line-height: 26px;
+}
+
+.links li:hover {
+    color: #FFB00D;
+}
+
+
+
+.footer-Content-One {
+    width: 320px;
+}
+
+.footer-Content-links {
+    width: 150px;
+    padding-left: 40px;
+}
+
+.link-title {
+    padding: 5px 0 25px 0;
+    font-size: 22px;
+}
+
+.footer-Content-service {
+    width: 260px;
+    padding-left: 50px;
+}
+
+.service-title {
+    padding: 5px 0 25px 0;
+    font-size: 22px;
+}
+
+.services {
+    display: inline;
+    font-family: OpenSans-Regular;
+    font-size: 16px;
+    color: rgb(138, 138, 138);
+}
+
+.services li {
+    padding: 13px 0;
+}
+
+.services li:hover {
+    color: #FFB00D;
+}
+
+.news-title {
+    padding: 5px 0 25px 0;
+    font-size: 22px;
+}
+
+.news-para {
+    font-family: OpenSans-Regular;
+    font-size: 16px;
+    color: rgb(119, 119, 119);
+    padding: 15px 0;
+}
+
+.footer-input {
+    width: 270px;
+    height: 45px;
+    background-color: transparent;
+    border: 0.5px solid rgb(119, 119, 119);
+    border-radius: 3px 0 0 3px;
+    padding-left: 20px;
+}
+
+.telegram {
+    width: 30px;
+    height: 30px;
+    border-radius: 0 5px 5px 0;
+    padding: 10px;
+    background-color: #FFB00D;    
+}
+
+.footer-icons {
+    padding: 30px 0;
+}
+
+.footer-icons:hover {
+    color: #FFB00D;
+}
+
+.fa-brands fa-facebook-f:hover {
+    color: #FFB00D;
+    cursor: pointer;
+}
+
+#icons:hover {
+    color: #FFB00D;
+}
+
+.footer-input, placeholder {
+    font-family: Poppins-Regular;
+    font-size: 15px;
+    color: rgb(119, 119, 119);
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding-left: 175px;
+    padding-right: 175px;
+    padding-top: 30px;
+    font-family: OpenSans-Regular;
+    font-size: 16px;
+    color: rgb(138, 138, 138);
+}
+
+.copyright-style:hover {
+    color: #FFB00D;
 }
