@@ -8,6 +8,11 @@
     src: url(../Assets/fonts/Poppins/Poppins-SemiBold.ttf);
 }
 
+@font-face {
+    font-family: Poppins-Bold;
+    src: url(../Assets/fonts/Poppins/Poppins-Bold.ttf);
+}
+
 body {
     font-family: sans-serif;
 }
@@ -144,6 +149,7 @@ body {
     background-color: #2154CF;
     font-family: Poppins-SemiBold;
     font-size: 16px;
+    letter-spacing: 1px;
 }
 
 .learn_btn {
@@ -153,6 +159,7 @@ body {
     border-radius: 5px;
     font-family: Poppins-SemiBold;
     font-size: 16px;
+    letter-spacing: 1px;
 }
 
 .fa-arrow-right {
@@ -224,4 +231,434 @@ body {
 .card_footer {
     color: rgb(102, 102, 102);
     font-family: Poppins-SemiBold;
+}
+
+.plan_footer {
+    background-color: #2154CF;
+    color: white;
+    font-size: 36px;
+    font-family: Poppins-SemiBold;
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: 55px;
+    padding: 50px 175px;    
+}
+
+.plan_btn {
+    margin-left: 75px;
+    padding: 18px 50px;
+    border: none;
+    border-radius: 5px;
+    font-family: Poppins-SemiBold;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.plan_btn:hover {
+    background-color: black;
+    transition: .5s;
+    color: white;
+}
+
+.project_container {
+    width: auto;
+    height: 860px;
+    padding: 105px 0 70px 0;
+}
+
+.project_head {
+    font-family: Poppins-SemiBold;
+    font-size: 35px;
+    text-align: center;
+    padding-bottom: 30px;
+    height: 60px;
+}
+
+.project_list_div {
+    margin-bottom: 60px;
+}
+
+.project_list {
+    display: flex;
+    justify-content: center;
+}
+
+.list {
+    padding: 0 10px;
+    color: rgb(102, 102, 102);
+}
+
+.all {
+    color: #2154CF;
+    padding: 0 10px;
+}
+
+.list:hover {
+    color: #2154CF;
+}
+
+.project_felx_container {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 30px;
+    width: 1120px;
+    margin-left: 200px;
+}
+
+.project_card {
+    width: 350px;
+    height: 310px;
+    position: relative;
+}
+
+.project_image {
+    width: 350px;
+    height: 310px;
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.850);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project_card:hover .overlay {
+    height: 100%;
+}
+
+.overlay_head {
+    color: white;
+    font-family: Poppins-SemiBold;
+    font-size: 20px;
+}
+
+.overlay_subhead {
+    font-family: sans-serif;
+    font-size: 16px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.about_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 40px;
+    background-color: #F4F7FC;
+}
+
+.about_image {
+    width: 750px;
+}
+
+.about_head {
+    font-family: Poppins-Bold;
+    font-size: 28px;
+}
+
+.about_descp {
+    font-size: 24px;
+    line-height: 28px;
+    padding: 30px 250px 30px 0;
+}
+
+.about_para {
+    color:  rgb(102, 102, 102);
+    line-height: 30px;
+    padding-right: 170px;
+}
+
+.about_btn {
+    margin-top: 30px;
+    padding: 18px 50px;
+    border: none;
+    border-radius: 5px;
+    font-family: Poppins-SemiBold;
+    font-size: 16px;
+    background-color: #2154CF;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.about_btn:hover {
+    background-color: black;
+    transition: .5s;
+    color: white;
+}
+
+.services_container {
+    width: auto;
+    height: 1140px;
+    padding-top: 105px;
+    padding-bottom: 75px;
+}
+
+.service_head {
+    width: auto;
+    height: 62px;
+    text-align: center;
+    font-family: Poppins-Bold;
+    font-size: 35px;
+}
+
+.service_flex_container {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 30px;
+    margin-left: 200px;
+}
+
+.service_card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 355px;
+    
+}
+
+.service_card_head {
+    font-family: Poppins-SemiBold;
+    font-size: 20px;
+    padding: 30px;
+}
+
+.service_card_head:hover {
+    color: #2154CF;
+}
+
+.service_card_para {
+    color:  rgb(102, 102, 102);
+    line-height: 30px;
+    padding: 0 30px 30px 30px;
+}
+
+.service_card_footer {
+    color: rgb(102, 102, 102);
+    font-family: Poppins-SemiBold;
+    padding: 0 30px 30px 30px;
+}
+
+.service_card_footer:hover {
+    color: #2154CF;
+}
+
+.imageDiv {
+    position: relative;
+    overflow: hidden;
+}
+
+.imageDiv::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    transition: .2s ease-in;
+}
+
+.imageDiv:hover::after {
+    background-color: rgba(33, 85, 207, 0.87);
+}
+
+.service_image {
+    width: 100%;
+    position: relative;
+    transition: transform .5s ease;
+}
+
+.imageDiv:hover .service_image {
+    transform: scale(1.05);
+}
+
+.fa-link {
+    font-size: 30px;
+}
+
+.overlay_style {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    display: none;
+}
+
+.imageDiv:hover .overlay_style {
+    display: block;
+    z-index: 1;
+}
+
+.count_background {
+    background-image: url(../Assets/Images/bg-counter.jpg);
+    height: 425px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: white;
+}
+
+.count_container {
+    display: flex;
+    justify-content: center;
+    column-gap: 180px;
+    padding: 120px 0;
+}
+
+#profile {
+    font-size: 85px;
+    
+}
+
+.count {
+    font-family: Poppins-SemiBold;
+    font-size: 40px;
+    padding: 15px 0;
+}
+
+.contact_content {
+    text-align: center;
+}
+
+.contact_container {
+    width: auto;
+    height: 750px;
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact_box {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 550px;
+    height: 450px;
+    padding: 70px 40px;
+    margin-top: 25px;
+    margin-left: 105px;
+    border-bottom: 5px solid #2154CF;
+}
+
+.contact_footer_btn {
+    margin-top: 30px;
+    padding: 18px 50px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #2154CF;
+    font-family: Poppins-SemiBold;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.contact_footer_btn:hover {
+    background-color: black;
+    transition: .5s;
+    color: white;
+}
+
+.contact_head {
+    font-family: Poppins-Bold;
+    font-size: 35px;
+    line-height: 48px;
+    color: rgb(51, 51, 51)
+}
+
+.contact_para {
+    color:  rgb(102, 102, 102);
+    line-height: 30px;
+    padding: 20px 0;
+}
+
+.contact_list {
+    display: flex;
+    color:  rgb(102, 102, 102);
+}
+
+.thumbs_list {
+    padding-left: 125px;
+}
+
+.contact_list li{
+    padding: 15px 0;
+}
+
+.client_container {
+    width: auto;
+    height: 560px;
+    padding: 110px 0 95px 0 ;
+    background-color: #F4F7FC;
+}
+
+.client_title {
+    font-family: Poppins-Bold;
+    font-size: 35px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.client_box {
+    width: 290px;
+    height: 260px;
+    text-align: center;
+    padding: 50px 37px;
+    border: 1px solid rgb(226, 226, 226);
+}
+
+.client_box:hover {
+    border: 1px solid #2154CF;
+}
+
+#client_box_start {
+    margin-left: 175px;
+}
+
+#client_box_end {
+    border-right: none;
+}
+
+.client_name {
+    font-family: Poppins-SemiBold;
+    font-size: 16px;
+    color: rgb(102, 100, 68);
+    padding-top: 15px;
+}
+
+.client_position {
+    color: rgb(102, 100, 68);
+    padding-top: 10px;
+}
+
+.client_descp {
+    color: rgb(102, 100, 68);
+    line-height: 26px;
+    padding: 25px 0;
+}
+
+.client_flex_conatiner {
+    display: flex;
+}
+
+.dot_icons {
+    text-align: center;
+    color: rgb(124, 124, 124);
+    margin-top: 260px;
+}
+
+#circle {
+    padding: 0 3px;
+    
 }
