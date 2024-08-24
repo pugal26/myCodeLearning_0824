@@ -4,6 +4,11 @@
 }
 
 @font-face {
+    font-family: Poppins-Medium;
+    src: url(../Assets/fonts/Poppins/Poppins-Medium.ttf);
+}
+
+@font-face {
     font-family: Poppins-SemiBold;
     src: url(../Assets/fonts/Poppins/Poppins-SemiBold.ttf);
 }
@@ -11,6 +16,11 @@
 @font-face {
     font-family: Poppins-Bold;
     src: url(../Assets/fonts/Poppins/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: Poppins-BoldItalic;
+    src: url(../Assets/fonts/Poppins/Poppins-BoldItalic.ttf);
 }
 
 body {
@@ -96,6 +106,7 @@ body {
 
 .nav_list li:hover {
     color: white;
+    cursor: pointer;
 }
 
 .nav_btn {
@@ -121,6 +132,7 @@ body {
     color: white;
     border: 2px solid #2154CF;
     transition: .5s;
+    cursor: pointer;
 }
 
 .head {
@@ -170,12 +182,14 @@ body {
     background-color: black;
     transition: .5s;
     color: white;
+    cursor: pointer;
 }
 
 .learn_btn:hover {
     background-color: #2154CF;
     transition: .5s;
     color: white;
+    cursor: pointer;
 }
 
 .dot_icons {
@@ -233,6 +247,11 @@ body {
     font-family: Poppins-SemiBold;
 }
 
+.card_footer:hover {
+    color: #2154CF;
+    cursor: pointer;
+}
+
 .plan_footer {
     background-color: #2154CF;
     color: white;
@@ -259,6 +278,7 @@ body {
     background-color: black;
     transition: .5s;
     color: white;
+    cursor: pointer;
 }
 
 .project_container {
@@ -296,6 +316,7 @@ body {
 
 .list:hover {
     color: #2154CF;
+    cursor: pointer;
 }
 
 .project_felx_container {
@@ -338,15 +359,20 @@ body {
 }
 
 .overlay_head {
-    color: white;
+    color: rgb(224, 224, 224);
     font-family: Poppins-SemiBold;
     font-size: 20px;
+}
+
+.overlay_head:hover {
+    color: white;
+    cursor: pointer;
 }
 
 .overlay_subhead {
     font-family: sans-serif;
     font-size: 16px;
-    color: white;
+    color: rgb(224, 224, 224);
     display: flex;
     justify-content: center;
     padding-top: 10px;
@@ -397,6 +423,7 @@ body {
     background-color: black;
     transition: .5s;
     color: white;
+    cursor: pointer;
 }
 
 .services_container {
@@ -436,6 +463,7 @@ body {
 
 .service_card_head:hover {
     color: #2154CF;
+    cursor: pointer;
 }
 
 .service_card_para {
@@ -452,6 +480,7 @@ body {
 
 .service_card_footer:hover {
     color: #2154CF;
+    cursor: pointer;
 }
 
 .imageDiv {
@@ -471,8 +500,9 @@ body {
     transition: .2s ease-in;
 }
 
-.imageDiv:hover::after {
+.service_card:hover .imageDiv::after {
     background-color: rgba(33, 85, 207, 0.87);
+    cursor: pointer;
 }
 
 .service_image {
@@ -481,7 +511,7 @@ body {
     transition: transform .5s ease;
 }
 
-.imageDiv:hover .service_image {
+.service_card:hover .service_image {
     transform: scale(1.05);
 }
 
@@ -496,9 +526,10 @@ body {
     display: none;
 }
 
-.imageDiv:hover .overlay_style {
+.service_card:hover .overlay_style {
     display: block;
     z-index: 1;
+    cursor: pointer;
 }
 
 .count_background {
@@ -520,8 +551,7 @@ body {
 }
 
 #profile {
-    font-size: 85px;
-    
+    font-size: 85px;  
 }
 
 .count {
@@ -568,6 +598,11 @@ body {
     background-color: black;
     transition: .5s;
     color: white;
+    cursor: pointer;
+}
+
+.image_container {
+    margin-left: 150px;
 }
 
 .contact_head {
@@ -652,13 +687,361 @@ body {
     display: flex;
 }
 
-.dot_icons {
+.client_dot_icons {
     text-align: center;
     color: rgb(124, 124, 124);
-    margin-top: 260px;
+    margin-top: 40px;
 }
 
 #circle {
-    padding: 0 3px;
+    padding: 0 3px;   
+}
+
+.expert_container {
+    width: auto;
+    height: 460px;
+    padding: 105px 0 70px 0;
+}
+
+.expert_flex_container {
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+}
+
+.expert_head {
+    font-family: Poppins-Bold;
+    font-size: 35px;
+    text-align: center;
+    padding-bottom: 30px;
+    height: 75px;
+}
+
+.expert_card {
+    width: 245px;
+    height: 290px;
+    position: relative;
+}
+
+.expert_card {
+    position: relative;
+    overflow: hidden;
+}
+
+.expert_card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    transition: .2s ease-in;
+}
+
+.expert_card:hover::after {
+    background-color: rgba(0, 0, 0, 0.500);
+}
+
+.expert_image {
+    width: 100%;
+    position: relative;
+    transition: transform .5s ease;
+}
+
+.expert_card:hover .expert_image {
+    transform: scale(1.05);
+}
+
+.expert_overlay {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .3s ease;
+}
+
+.expert_card:hover .expert_overlay {
+    height: 100%;
+}
+
+.overal_content {
+    position: absolute;
+    bottom: 10%;
+    z-index: 1;
+}
+
+.expert_name {
+    font-family: Poppins-Bold;
+    font-size: 20px;
+    color: white;
+    padding-left: 15px;
+}
+
+.expert_desg {
+    font-family: sans-serif;
+    font-size: 16px;
+    color: white;
+    padding: 20px 0 20px 15px;
+}
+
+.expert_icons {
+    border-left: 1px solid rgba(151, 151, 151, 0.568);
+    color: white;
+    padding-left: 5px;
+}
+
+.expert_icons i {
+    padding-left: 10px;    
+}
+
+.fa-facebook-f:hover, .fa-twitter:hover, .fa-linkedin-in:hover, .fa-instagram:hover {
+    color: rgb(158, 158, 158);
+    cursor: pointer;
+}
+
+.news_container {
+    background-color: #F4F7FC;
+    width: auto;
+    height: 640px;
+    padding: 110px 0 80px 0;
+}
+
+.news_flex_container {
+    display: flex;
+    justify-content: center;
+
+column-gap: 40px;}
+
+.news_card {
+    width: 290px;
+    height: 420px;
+    padding: 25px;
+    background-color: white;
+}
+
+.news_imageDiv {
+    width: 285px;
+    height: 165px;
+}
+
+.news_image {
+    width: 100%;
+}
+
+.news_date {
+    font-family: Poppins-SemiBold;
+    font-size: 14px;
+    color: rgb(102, 100, 68);
+    padding: 20px 0;
+}
+
+.news_title {
+    font-family: Poppins-SemiBold;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.news_title:hover {
+    color: #2154CF;
+    cursor: pointer;
+}
+
+.news_para {
+    color: rgb(102, 100, 68);
+    padding: 20px 0;
+    line-height: 28px;
+    width: 285px;
+}
+
+.news_btn {
+    width: 95px;
+    border-bottom: 3px solid rgb(102, 100, 68);
+    color: rgb(102, 100, 68);
+    font-family: Poppins-BoldItalic;
+    font-size: 16px;
+    padding-bottom: 5px;
+}
+
+.news_btn:hover {
+    color: #2154CF;
+    cursor: pointer;
+}
+
+.news_imageDiv {
+    overflow: hidden;
+}
+
+.news_image {
+    width: 100%;
+    position: relative;
+    transition: transform .5s ease;
+}
+
+.news_card:hover .news_image{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.logo_container {
+    width: auto;
+    height: 102px;
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 150px;
+}
+
+.footer_container {
+    width: auto;
+    height: 330px;
+    padding: 90px 0 10px 0;
+    background-color: rgb(34,34,34);
+    color: white;
+    display: flex;
+}
+
+.footer_about {
+    width: 255px;
+    margin-left: 175px;
+    padding: 0 15px;
+}
+
+.about_footer_title {
+    font-family: Poppins-SemiBold;
+    font-size: 22px;
+    padding-bottom: 10px;
+}
+
+.about_footer_para {
+    line-height: 26px;
+    padding: 25px 0;
+    color: rgb(200, 200, 200);
+}
+
+.about_footer_input {
+    width: 185px;
+    height: 43px;
+    background-color: #333333;
+    border: 1px solid rgb(89, 89, 89);
+    padding-left: 10px;
+}
+
+.about_footer_btn {
+    margin-left: -4px;
+    padding: 15px 20px;
+    background-color: #2154CF;
+    border: none;
+    cursor: pointer;
+}
+
+.footer_about_icons_container {
+    padding-top: 30px;
+}
+
+#facebook {
+    color: rgb(148, 148, 148);
+}
+
+#twitter, #google, #insta {
+    padding-left: 15px;
+    color: rgb(148, 148, 148);
+} 
+
+#facebook:hover, #twitter:hover, #google:hover, #insta:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.footer_links {
+    width: 270px;
+    padding: 0 15px;
+}
+
+.link_footer_title {
+    font-family: Poppins-SemiBold;
+    font-size: 22px;
+    padding-bottom: 25px;
+}
+
+.link_footer_points {
+    padding: 16px 0;
+    color: rgb(200, 200, 200);
+}
+
+.link_footer_points:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.fa-caret-right {
+    padding-right: 10px;
+    color: #949494;
+}
+
+.footer_post {
+    width: 270px;
+    padding: 0 15px;
+}
+
+.post_footer_title {
+    font-family: Poppins-SemiBold;
+    font-size: 22px;
     
+}
+
+.post_footer_para {
+    font-family: Poppins-Medium;
+    font-size: 16px;
+    color: rgb(200, 200, 200);
+    padding: 40px 0 10px 0;
+    line-height: 20px;
+}
+
+.post_footer_para:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.post_footer_date {
+    color: rgb(200, 200, 200);
+}
+
+.footer_contact {
+    width: 270px;
+    padding: 0 15px;
+}
+
+.contact_footer_title {
+    font-family: Poppins-SemiBold;
+    font-size: 22px;
+    padding-bottom: 30px;
+}
+
+.contact_footer_descrp {
+    padding: 10px 0;
+    color: rgb(200, 200, 200);
+}
+
+.copyright_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    height: 27px;
+    padding: 25px 175px;
+    background-color: rgb(34,34,34);
+    color: rgb(200, 200, 200);
+    border-top: 1px solid rgba(89, 89, 89, 0.659);
+
+}
+
+.contat_footer_btn:hover {
+    color: white;
+    cursor: pointer;
 }
