@@ -8,10 +8,33 @@
     src: url(../Assets/Font/Mulish/static/Mulish-Light.ttf);
 }
 
+@font-face {
+    font-family: Mulish-Black;
+    src: url(../Assets/Font/Mulish/static/Mulish-Black.ttf);
+}
+
+@font-face {
+    font-family: Mulish-Bold;
+    src: url(../Assets/Font/Mulish/static/Mulish-Bold.ttf);
+}
+
+@font-face {
+    font-family: Mulish-Medium;
+    src: url(../Assets/Font/Mulish/static/Mulish-Medium.ttf);
+}
+
+
+
+
+body {
+    font-family: Mulish-Regular;
+}
+
+
 .nav_container {
     width: 1519px;
     height: 40px;
-    padding: 25px 190px;
+    padding: 25px 210px;
     background-color: #2B2C2C;
     display: flex;
     align-items: center;
@@ -31,6 +54,7 @@
     color: rgb(125, 135, 146);
     padding-left: 50px;
     font-family: Mulish-Regular;
+    font-size: 15px;
 }
 
 .nav_list li:hover {
@@ -51,4 +75,559 @@
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.banner_content {
+    position: absolute;
+    top: 41%;
+    left: 34%;
+    text-align: center;
+}
+
+.hello {
+    color: white;
+    font-family: Mulish-Regular;
+    font-size: 20px;
+}
+
+.banner_title {
+    color: #E0A80D;
+    font-family: Mulish-Black;
+    font-size: 55px;
+    padding: 25px 0;
+}
+
+.banner_para {
+    color: white;
+    font-family: Mulish-Regular;
+    font-size: 15px;
+}
+
+.banner_btn {
+    color: white;
+    font-family: Mulish-Regular;
+    font-size: 17px;
+    background-color: transparent;
+    border: 3px solid #E0A80D;
+    border-radius: 50px;
+    padding: 10px 30px;
+    margin-top: 30px;
+}
+
+.about_container {
+    background-color: #2D2E2E;
+    width: auto;
+    height: 336px;
+    padding: 130px 0;
+    display: flex;
+}
+
+.about_image {
+    padding: 0 50px 0 210px;
+    width: 300px;
+    height: 340px;
+}
+
+.about_head {
+    color: #E0A80D;
+    font-family: Mulish-Black;
+    font-size: 30px;
+}
+
+.about_para_top {
+    color: rgb(186, 200, 211);
+    font-family: Mulish-Regular;
+    font-size: 15px;
+    line-height: 28px;
+    width: 760px;
+    padding-top: 30px;
+}
+
+.about_para_bottom {
+    color: rgb(186, 200, 211);
+    font-family: Mulish-Regular;
+    font-size: 15px;
+    line-height: 28px;
+    width: 760px;
+    padding-top: 30px;
+}
+
+.download_btn {
+    color: white;
+    font-family: Mulish-Regular;
+    font-size: 14px;
+    background-color: #E0A80D;
+    border: 3px solid #E0A80D;
+    border-radius: 50px;
+    padding: 10px 30px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.portfolio_btn {
+    color: white;
+    font-family: Mulish-Regular;
+    font-size: 14px;
+    background-color: transparent;
+    border: 3px solid #E0A80D;
+    border-radius: 50px;
+    padding: 10px 50px;
+    margin-top: 30px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.service_container {
+    width: auto;
+    height: 660px;
+    padding-bottom: 90px;
+    background-color: #2D2E2E;
+}
+
+.service_head {
+    color: #E0A80D;
+    font-family: Mulish-Black;
+    font-size: 30px;
+    margin-bottom: 90px;
+    text-align: center;
+}
+
+.service_flex_container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 195px;
+}
+
+.service_card {
+    width: 270px;
+    height: 172px;
+    padding: 40px;
+    background-color: #212222;
+    margin: 0 15px 30px 15px;
+}
+
+#service_icon {
+    color: #E0A80D;
+    font-size: 30px;
+}
+
+.card_title {
+    font-family: Mulish-Bold;
+    font-size: 18px;
+    color: white;
+    padding: 20px 0;
+}
+
+.card_descp {
+    color: rgb(186, 200, 211);
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.count_container {
+    width: auto;
+    height: 120px;
+    padding: 130px 0;
+    background-image: url(../Assets/Images/some-facts-bg.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.count_div {
+    padding: 0 50px;
+    width: 210px;
+}
+
+#count_icon {
+    color: #E0A80D;
+    font-size: 30px;
+}
+
+.count {
+    font-family: Mulish-Black;
+    font-size: 30px;
+    color: #E0A80D;
+    padding: 20px 0;
+}
+
+.count_title {
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.portfolio_container {
+    width: auto;
+    height: 930px;
+    padding: 130px 0 95px 0;
+    background-color: #2D2E2E;
+}
+
+.portfolio_title {
+    color: #E0A80D;
+    font-family: Mulish-Black;
+    font-size: 30px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.portfolio_list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(186, 200, 211);
+}
+
+.portfolio_list li {
+    margin-right: 10px;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.all_btn {
+    background-color: #E0A80D;
+    border-radius: 50px;
+    color: white;  
+}
+
+.portfolio_inner_style:hover {
+    background-color: #E0A80D;
+    border-radius: 50px;
+    color: white;  
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.portfolio_flex_container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 195px;
+}
+
+.portfolio_card {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    margin: 15px 15px;
+}
+
+.imgae_div {
+    width: 350px;
+    height: 350px;
+}
+
+.portfolio_image {
+    width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+    background-color: #e0a80df3;
+    width: 100%;
+    padding-top: 130px;
+    color: white;
+    transition: 0.8s ;
+    display: none;
+}
+
+.overlay_title {
+    padding-bottom: 10px;
+    font-family: Mulish-Medium;
+    font-size: 18px;
+}
+
+.overlay_subtitle {
+    font-family: Mulish-Light;
+    font-size: 14px;
+}
+
+.fa-eye {
+    padding-top: 18px;
+    font-size: 20px;
+}
+
+.portfolio_card:hover .overlay {
+    display: block;
+}
+
+.testimonials_container {
+    width: auto;
+    height: 420px;
+    padding: 130px 0 170px 0;
+    background-image: url(../Assets/Images/testimonials-bg.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+.testimonials_title {
+    color: #E0A80D;
+    font-family: Mulish-Black;
+    font-size: 30px;
+    margin-bottom: 35px;
+}
+
+.testimonials_para {
+    color: white;
+    padding: 20px 420px 0 420px;
+    line-height: 26px;
+}
+
+.fa-angle-left {
+    color: rgb(138, 138, 138);
+}
+
+.fa-angle-right {
+    color: rgb(138, 138, 138);
+    padding-left: 900px;
+}
+
+.fa-angle-right:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.fa-angle-left:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.testimonials_imageDiv {
+    width: 86px;
+    height: 86px;
+    border: 3px solid #E0A80D;
+    padding: 5px; 
+    border-radius: 50px;   
+    margin: 10px 710px;   
+}
+
+.testimonials_image {
+    width: 100%;
+    border-radius: 50px;
+}
+
+.testimonials_name {
+    font-family: Mulish-Medium;
+    font-size: 20px;
+    color: white;
+    padding: 10px 0;
+}
+
+.testimonials_descp {
+    font-family: Mulish-Light;
+    font-size: 14px;
+    color: #E0A80D;
+    padding-bottom: 50px;
+}
+
+.testimonials_footer {
+    display: flex;
+    column-gap: 5px;
+    justify-content: center;
+}
+
+.testimonials_footer_border {
+    width: 40px;
+    border: 2px solid rgb(163, 163, 163);
+    border-radius: 50px; 
+    cursor: pointer;
+}
+
+.blog_container {
+    width: auto;
+    height: 540px;
+    padding: 130px 0;
+    background-color: #2D2E2E;
+}
+
+.blog_head {
+    color: #E0A80D;
+    font-family: Mulish-Black;
+    font-size: 30px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.blog_flex_container {
+    display: flex;
+    column-gap: 30px;
+    padding-left: 210px;
+}
+
+.blog_card {
+    width: 350px;
+    height: 440px;
+}
+
+.blog_imageDiv {
+    width: 350px;
+    height: 235px;
+    position: relative;
+}
+
+.blog_image {
+    width: 100%;
+}
+
+.blog_btn {
+    background-color: #E0A80D;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn_div {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+}
+
+.blog_content {
+    background-color: #212222;
+    border-radius: 0 0 10px 10px;
+    padding: 25px;
+}
+
+.blog_title {
+    font-family: Mulish-Medium;
+    font-size: 20px;
+    color: white;
+    padding: 20px 0 10px 0;
+    cursor: pointer;
+}
+
+.blog_date {
+    font-family: Mulish-Light;
+    font-size: 14px;
+    color: #E0A80D;
+}
+
+.blog_para {
+    font-size: 14px;
+    color: rgb(186, 200, 211);
+    line-height: 26px;
+    padding: 20px 0;
+}
+
+.contact_container {
+    width: auto;
+    height: 418px;
+    padding-bottom: 130px;
+    background-color: #2D2E2E;
+}
+
+.contact_head {
+    color: #E0A80D;
+    font-family: Mulish-Black;
+    font-size: 30px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.contact_flex_box {
+    display: flex;
+    padding-left: 210px;
+}
+
+.contact_inputs {
+    width: 800px;
+}
+
+.contact_name {
+   width: 300px;
+   padding: 20px;
+   border: none;
+   border-radius: 10px;
+   background-color: rgb(252,242,242);
+   font-family: Mulish-Regular;
+}
+
+.contact_email {
+    width: 300px;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(252,242,242);
+    margin-left: 30px;
+    font-family: Mulish-Regular;
+}
+
+.contact_sub {
+    width: 665px;
+    padding: 25px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(252,242,242);
+    margin-top: 10px;
+    font-family: Mulish-Regular;
+}
+
+#message {
+    width: 665px;
+    padding: 25px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(252,242,242);
+    margin-top: 10px;
+    font-family: Mulish-Regular;
+}
+
+.contact_btn {
+    width: 718px;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color:#E0A80D;
+    font-family: Mulish-Regular;
+    font-size: 18px;
+    color: white;
+}
+
+#contact_icons {
+    color: #E0A80D;
+}
+
+.address {
+    color: white;
+    padding: 15px 0 30px 0;
+    line-height: 22px;
+}
+
+.phone {
+    color: white;
+    padding: 15px 0 30px 0;
+    line-height: 22px;
+}
+
+.mail_id {
+    color: white;
+    padding: 15px 0 30px 0;
+    line-height: 22px;
+}
+
+.footer_container {
+    width: auto;
+    height: 60px;
+    background-color: #242527;
+    padding: 40px 0;
+    text-align: center;
+    color: white;
+}
+
+#footer_icons {
+    color: #E0A80D;
+    padding-left: 10px;
+    padding-bottom: 15px;
 }
