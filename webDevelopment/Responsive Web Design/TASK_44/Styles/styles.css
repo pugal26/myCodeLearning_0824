@@ -1,267 +1,328 @@
-body {
-    margin: 0;
-    padding: 0;
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-around;
-    margin-left: 150px;
-    margin-right: 150px;
-    margin-top: 20px;
-    position: relative;
-    font-size: small;
-}
-
-.heading {
-    position: absolute;
-    top: 20px;
-    left: 690px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.banner {
-    margin-top: 20px;
-    width: auto;
-    height: 500px;
-    background-image: url(../Assets/Images/img_1.jpg);
-    background-size: cover;
-    position: relative;
-}
-
-.bannerContent {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    position: absolute;
-    top: 60px;
-    left: 310px;
-    width: 360px;
-    font-size: larger;
-}
-
-.bannerButton {
-    padding: 20px 40px;
-    margin-top: 80px;
-    background-color: aqua;
-    border: none;
-    border-radius: 50px;
-    color: white;
-    font-size: large;
-}
-
-.bookTourNow {
-    position: absolute;
-    top: 95px;
-    left: 1020px;
-    background-color: orange;
-    padding: 0 20px 10px 20px;
-    border: 15px solid white;
-    width: 200px;
-    position: relative;
-}
-
-.inputList {
-    margin-bottom: 20px;
-    width: 200px;
-}
-
-.findToursbutton {
-    background-color: gray;
-    border: none;
-    position: absolute;
-    left: 70px;
-    padding: 10px;
-    color: white;
-    font-size: large;
-}
-
-.innerContainer {
-    display: flex;
-    margin-top: 75px;
-}
-
-.innerContent {
-    margin-left: 250px;
-    text-align: justify;
-    width: 650px;
-}
-
-.innerContainerImage {
-    margin-left: 200px;
-    margin-top: 20px;
-}
-
-.footerheading {
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: x-large;
-    margin-bottom: 40px;
-}
-
-.footerImg {
-    width: 200px;
-    height: 150px;
-}
-
-table {
-    margin-top: 0;
-    margin-left: 220px;
-}
-
-td,tr {
-    margin-top: 0;
-    margin-left: 200px;
-    padding: 25px 35px;
-}
-
-.footerButton {
-    padding: 20px 40px;
-    background-color: aqua;
-    border: none;
-    border-radius: 50px;
-    color: white;
-    font-size: larger;
-    font-weight: bolder;
-    margin-top: 0;
-}
-
-.footerbtnOuter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-@media only screen and (max-width: 1024px) {
-    body {
-        margin: 0;
-        padding: 0;
-    }
-    
-    .navbar {
-        display: flex;
-        justify-content: space-around;
-        margin-left: 150px;
-        margin-right: 150px;
-        margin-top: 20px;
-        position: relative;
-        font-size: small;
-    }
+@media only screen and (max-width: 375px) {
     
     .heading {
-        position: absolute;
-        top: 20px;
-        left: 690px;
+        display: flex;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 20px;
+        padding: 20px;
+        align-items: center;
+    }
+
+    .fa-bars {
+        border: 1px solid;
+        padding: 10px;
     }
     
+    .title {
+        padding-left: 100px;
+        
+    }
+
+    .navbar {
+        display: none;
+    }
+
     .banner {
-        margin-top: 20px;
-        width: auto;
-        height: 500px;
+        width: 100%;
+        height: 650px;
         background-image: url(../Assets/Images/img_1.jpg);
         background-size: cover;
-        position: relative;
+        background-position: center;
     }
-    
+
     .bannerContent {
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        position: absolute;
-        top: 60px;
-        left: 310px;
-        width: 360px;
-        font-size: larger;
+        text-align: center;
+        padding: 50px;
+        width: auto;
     }
-    
+
+    .banner_title {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 25px;
+        padding-bottom: 20px;
+    }
+
+    .banner_para {
+        background-color: blue;
+        color: white;
+        font-size: 15px;
+        margin-bottom: 20px;
+        text-align: justify;
+    }
+
     .bannerButton {
-        padding: 20px 40px;
-        margin-top: 80px;
         background-color: aqua;
         border: none;
         border-radius: 50px;
+        padding: 15px 30px;
         color: white;
-        font-size: large;
+        font-size: 15px;
     }
-    
+
     .bookTourNow {
-        position: absolute;
-        top: 95px;
-        left: 720px;
+        border: 10px solid white;
+        width: 180px;
         background-color: orange;
-        padding: 0 20px 10px 20px;
-        border: 15px solid white;
-        width: 200px;
+        padding: 10px 20px;
+        text-align: center;
+        margin: 0 75px;
         position: relative;
     }
-    
-    .inputList {
-        margin-bottom: 20px;
-        width: 200px;
-    }
-    
-    .findToursbutton {
-        background-color: gray;
-        border: none;
-        position: absolute;
-        left: 70px;
-        padding: 10px;
+
+    .book_title {
         color: white;
-        font-size: large;
+        font-size: 20px;
+        font-weight: bold;
+        padding-bottom: 20px;
+        padding-top: 20px;
     }
-    
+
+    .inputList {
+        margin-bottom: 10px;
+        width: 180px;
+        height: 20px;
+    }
+
+    .inputList, placeholder {
+        font-size: 8px;
+    }
+
+    .findToursbutton {
+        color: white;
+        background-color: grey;
+        border: none;
+        padding: 10px;
+        position: absolute;
+        bottom: -25px;
+        left: 70px;
+    }
+
     .innerContainer {
-        display: flex;
-        margin-top: 75px;
+        width: auto;
+        height: 380px;
+        margin: 20px 30px;
     }
-    
-    .innerContent {
-        margin-left: 250px;
+
+    .inner_title {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 25px;
+        width: 300px;  
+    }
+
+    .inner_para {
+        padding: 20px 0;
         text-align: justify;
-        width: 650px;
     }
-    
-    .innerContainerImage {
-        margin-left: 200px;
-        margin-top: 20px;
+
+    .innerImage {
+        width: 250px;
+        height: 100%;
+        padding: 10px 35px;
     }
-    
+
+    .footer {
+        width: auto;
+        height: auto;
+    }
+
     .footerheading {
         text-align: center;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: x-large;
-        margin-bottom: 40px;
+        font-size: 25px;
     }
-    
+
+    .img_container {
+        margin: 15px 0 0 8px;
+    }
+
     .footerImg {
-        width: 200px;
-        height: 150px;
+        padding: 10px 35px;
     }
-    
-    table {
-        margin-top: 0;
-        margin-left: 220px;
+
+    .Image {
+        width: 100%;
+        height: 220px
     }
-    
-    td,tr {
-        margin-top: 0;
-        margin-left: 200px;
-        padding: 25px 35px;
+
+    .footerbtnOuter {
+        text-align: center;
+        margin: 20px 0;
+        margin-bottom: 50px;
     }
-    
+
     .footerButton {
-        padding: 20px 40px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         background-color: aqua;
         border: none;
         border-radius: 50px;
+        padding: 15px 30px;
         color: white;
-        font-size: larger;
-        font-weight: bolder;
-        margin-top: 0;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+    
+    .heading {
+        display: flex;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 20px;
+        padding: 20px;
+        align-items: center;
+        width: auto;
+    }
+
+    .fa-bars {
+        border: 1px solid;
+        padding: 10px;
     }
     
-    .footerbtnOuter {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .title {
+        padding-left: 120px;
+        
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .banner {
+        width: 1auto00%;
+        height: 650px;
+        background-image: url(../Assets/Images/img_1.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .bannerContent {
+        text-align: center;
+        padding: 20px;
+        width: auto;
+    }
+
+    .banner_title {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 25px;
+        padding-bottom: 20px;
+    }
+
+    .banner_para {
+        background-color: blue;
+        color: white;
+        font-size: 15px;
         margin-bottom: 20px;
+        text-align: justify;
+    }
+
+    .bannerButton {
+        background-color: aqua;
+        border: none;
+        border-radius: 50px;
+        padding: 15px 30px;
+        color: white;
+        font-size: 18px;
+    }
+
+    .bookTourNow {
+        border: 10px solid white;
+        width: 220px;
+        background-color: orange;
+        padding: 10px 20px;
+        text-align: center;
+      
+        position: relative;
+    }
+
+    .book_title {
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+
+    .inputList {
+        margin-bottom: 12px;
+        width: 200px;
+        height: 25px;
+    }
+
+    .inputList, placeholder {
+        font-size: 10px;
+    }
+
+    .findToursbutton {
+        color: white;
+        background-color: grey;
+        border: none;
+        padding: 10px;
+        position: absolute;
+        bottom: -25px;
+        left: 90px;
+    }
+
+    .innerContainer {
+        width: auto;
+        height: 420px;
+        margin: 30px 40px;
+    }
+
+    .inner_title {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 28px;
+        width: 300px;  
+    }
+
+    .inner_para {
+        padding: 20px 0;
+        text-align: justify;
+        font-size: 20px;
+    }
+
+    .innerImage {
+        width: 320px;
+        height: 150%;
+        padding: 10px 20px;
+    }
+
+    .footer {
+        width: auto;
+        height: 2100px;
+    }
+
+    .footerheading {
+        padding-top: 40px;
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 25px;
+    }
+
+    .img_container {
+        margin: 30px 0 0 8px;
+    }
+
+    .footerImg {
+        padding: 10px 35px;
+    }
+
+    .Image {
+        width: 100%;
+        height: 220px
+    }
+
+    .footerbtnOuter {
+        text-align: center;
+        margin: 20px 0;
+        margin-bottom: 50px;
+    }
+
+    .footerButton {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-color: aqua;
+        border: none;
+        border-radius: 50px;
+        padding: 15px 30px;
+        color: white;
+        font-size: 18px;
     }
 }
