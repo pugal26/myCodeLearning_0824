@@ -1,0 +1,3752 @@
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url(../Assets/Fonts/Montserrat/static/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url(../Assets/Fonts/Montserrat/static/Montserrat-Bold.ttf);
+}
+@font-face {
+    font-family: Montserrat-Light;
+    src: url(../Assets/Fonts/Montserrat/static/Montserrat-Light.ttf);
+}
+@font-face {
+    font-family: Montserrat-Medium;
+    src: url(../Assets/Fonts/Montserrat/static/Montserrat-Medium.ttf);
+}
+@font-face {
+    font-family: Montserrat-Thin;
+    src: url(../Assets/Fonts/Montserrat/static/Montserrat-Thin.ttf);
+}
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url(../Assets/Fonts/Montserrat/static/Montserrat-Bold.ttf);
+}
+
+body {
+    font-family: Montserrat-Regular;
+}
+
+@media only screen and (max-width: 374px) {
+    .navBar {
+        display: none;
+    }
+    
+    .nav_icon {
+        position: fixed;
+        background-color: rgb(244, 248, 250);
+        width: 100%;
+    }
+
+    .lnr-menu {
+        float: right;
+        padding: 20px;
+        font-size: 35px;
+    }
+
+    .bannerContent {
+        width: auto;
+        height: 784px;
+        background-image: url(../Assets/Images/banner.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .bannerHeading {
+        font-family: Montserrat-Bold;
+        font-size: 28px;
+        padding-top: 80%;
+        text-align: center;
+    }
+
+    .bannerPara {
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        padding: 34px 0;
+    }
+
+    .bannerBtn {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        column-gap: 100px;
+        padding: 0 20px;
+    }
+
+    .buynow_btn {
+        background-color: white;
+        font-family: Montserrat-Light;
+        border: none;
+        border-radius: 5px;
+        width: 120px;
+        height: 50px;
+        padding: 12px 32px;
+        font-size: 12px;
+        margin: 6px 12px;
+    }
+
+    .buynow_btn:hover {
+        background-color: #8D97AD;
+    }
+
+    .waysto_bnt {
+        font-family: Montserrat-Light;
+        border: 2px solid #FFFFFF;
+        border-radius: 5px;
+        width: 150px;
+        height: 50px;
+        padding: 12px 32px;
+        font-size: 12px;
+        margin: 6px 12px;
+        color: #FFFFFF;
+        background: transparent;
+    }
+
+    .waysto_bnt:hover {
+        background-color: white;
+        color: black;
+    }
+
+    .journal {
+        width: auto;
+        height: auto;
+        padding: 60px 32px;
+    }
+
+    .journalheading {
+        text-align: center;
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+
+    .journalDes {
+        color: #8D97AD;
+        font-family: Montserrat-Light;
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 24px;
+        line-height: 24px;
+    }
+
+    .journalContainer {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid #e4e4e4;
+        border-radius: 5px; 
+    }
+
+    .journalBox {
+        padding: 48px 32px;
+    }
+
+    .journal_para {
+        text-align: center;
+        color: #8D97AD;
+        font-family: Montserrat-Light;
+        margin-bottom: 16px;
+        line-height: 24px;
+    }
+
+    .journalReadMeTag {
+        text-align: center;
+        color: #1DC8CA;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #journal_arrow {
+        padding-left: 5px;
+    }
+
+    .journalReadMeTag:hover {
+        color: #137173;
+    }
+
+    .journal_image_Box {
+        width: 100%;
+        height: 160px;
+    }
+
+    .joural_image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .journalFooter {
+        padding: 60px 16px;
+        line-height: 24px;
+        color: #8D97AD;
+        font-family: Montserrat-Light;
+        text-indent: 15px;
+    }
+
+    .emailContainer {
+        background-image: url(../Assets/Images/footer\ -\ original.jpg);
+        background-position: center;
+        background-size: cover;
+        width: auto;
+        height: 180px;
+        padding: 90px 0;
+    }
+
+    .emailHeading {
+        text-align: center;
+        color: white;
+        font-size: 28px;
+        padding-bottom: 40px;
+    }
+
+    .emailGrp {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .emailInput {
+        width: 160px;
+        height: 50px;
+        padding: 0 10px;
+        text-align: center;
+        font-size: 18px;
+        font-family: Montserrat-Regular;
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    .emailBtn {
+        width: 180px;
+        height: 50px;
+        padding: 0 10px;
+        text-align: center;
+        font-size: 12px;
+        font-family: Montserrat-Regular;
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        background-color: #1DC8CA;
+        color: white;
+    }
+
+    .emailBtn:hover {
+        background-color: #137173;
+    }
+
+    .geographic {
+        width: auto;
+        height: auto;
+        padding: 90px 15px;
+    }
+
+    .geographicList_one {
+        padding: 32px;
+        background-image:linear-gradient(to bottom left, #1FCBC5, #29DAA1);
+        color: white;
+        border-radius: 5px;
+        text-align: center;
+        margin-bottom: 80px;
+    }
+
+    .geographicHead {
+        font-size: 17px;
+        padding-bottom: 24px;
+    }
+
+    .geographicContent {
+        line-height: 26px;
+    }
+
+    .geo_ReadMeTag {
+        padding-top: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .geo_ReadMeTag:hover {
+        color: grey;
+    }
+
+    #geo_arrow {
+        padding-left: 5px;
+    }
+
+    .geographicList_two {
+        padding: 32px;
+        background-image:linear-gradient(to bottom left, #2E6EE8, #1A8CF3);
+        color: white;
+        border-radius: 5px;
+        text-align: center;
+        margin-bottom: 80px;
+    }
+
+    .geographicList_three {
+        padding: 32px;
+        background-image:linear-gradient(to bottom left, #FF685F, #FF5376);
+        color: white;
+        border-radius: 5px;
+        text-align: center;
+        margin-bottom: 80px;
+    }
+
+    .geographicFooter {
+        padding: 0 15px;
+    }
+
+    .fa-quote-left {
+        color: #f0f0f0;
+        font-size: 50px;
+    }
+
+    .geographicFooterContent {
+        line-height: 24px;
+        color: #8D97AD;
+        font-family: Montserrat-Light;
+        font-size: 17px;
+        padding-bottom: 30px;
+    }
+
+    .travelContainer {
+        padding: 90px 15px 0 15px;
+        width: auto;
+        height: auto;
+    }
+
+    .travel_card_one {
+        padding: 16px 16px 48px 16px;
+    }
+
+    .travelTypeOneHead {
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 24px;
+    }
+
+    .travelTypeOneContent {
+        text-align: center;
+        line-height: 24px;
+        color: #8D97AD;
+        margin-bottom: 18px;
+        font-family: Montserrat-Light;
+    }
+
+    .travel_btn {
+        display: block;
+        text-align: center;
+    }
+
+    .travelTypeOneBtn {
+        background-color: #1DC8CA;
+        color: white;
+        margin: 6px 12px;
+        padding: 12px 32px;
+        height: 51px;
+        font-family: Montserrat-Light;
+        font-size: 12px;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .travelTypeOneBtn:hover {
+        background-color: #137173;
+    }
+
+    .travel_image_div {
+        width: 100%;
+        height: 170px;
+        border-radius: 5px;
+        box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.15);
+        margin-bottom: 32px;
+    }
+
+    .travel_image {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+    }
+
+    .travel_card_two {
+        padding: 16px 16px 48px 16px;
+    }
+
+    .travelTypeTwoHead {
+        text-align: center;
+        padding-bottom: 12px;
+    }
+
+    .travel_card_three {
+        padding: 16px 16px 48px 16px;
+    }
+
+    .travel_ReadMeTag {
+        padding-top: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #1DC8CA;
+    }
+
+    .travel_ReadMeTag:hover {
+        color: #137173;
+    }
+
+    
+    #travel_arrow {
+        padding-left: 5px;
+    }
+
+    .blogContainer {
+        padding: 45px 15px 90px 15px;
+        width: auto;
+        height: auto;
+    }
+
+    .blogtitle {
+        text-align: center;
+        margin-bottom: 24px;
+    }
+
+    .blogDes {
+        text-align: center;
+        line-height: 24px;
+        color: #8D97AD;
+        margin-bottom: 24px;
+        font-size: 17px;
+        font-family: Montserrat-Light;
+    }
+
+    .blogCard {
+       margin: 16px 16px 32px 16px;
+        border-radius: 5px;
+        box-shadow: 0 5px 10px 0 rgba(212, 212, 212, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.15);
+    }
+
+    .blog_image_div {
+        width: 100%;
+        height: 170px;
+         border-radius: 5px;
+    }
+
+    .blog_image {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px 5px 0 0;
+    }
+
+    .blog_box {
+        padding: 32px;
+    }
+
+    .blogCardName {
+        text-align: center;
+        margin-bottom: 16px;
+        font-size: 17px;
+    }
+
+    .blogCardContent {
+        text-align: center;
+        line-height: 24px;
+        color: #8D97AD;
+        margin-bottom: 16px;
+        font-size: 17px;
+        font-family: Montserrat-Light;
+    }
+
+    .blog_ReadMeTag {
+        padding-top: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #1DC8CA;
+    }
+
+    .blog_ReadMeTag:hover {
+        color: #137173;
+    }
+
+    #blog_arrow {
+        padding-left: 5px;
+    }
+
+    .footer {
+        width: auto;
+        height: auto;
+        padding: 60px 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(244, 248, 250);
+    }
+
+    .footerCard {
+        margin-bottom: 32px;
+        padding: 0 15px;
+    }
+
+    .footerHead {
+        font-family: Montserrat-Bold;
+        font-size: 20px;
+        text-align: center;
+        padding-bottom: 24px;
+    }
+
+    .footerContent {
+        text-align: center;
+        line-height: 24px;
+        color: #8D97AD;
+        font-size: 17px;
+        font-family: Montserrat-Light;
+        margin-bottom: 16px;
+    }
+
+    .footerHeadSub {
+        font-size: 20px;
+        text-align: center;
+        padding-bottom: 24px;
+    }
+
+    #footer_icons {
+        background-color: #52E5E5;
+        text-decoration: none;
+        color: white;
+        border-radius: 50%;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 14px 0;
+        
+    }
+
+    .footer_icon_div {
+        display: flex;
+        column-gap: 12px;
+        margin-bottom: 16px;
+    }
+
+    #footer_icons:hover {
+        background-color: #1DC8CA;
+    }
+}
+
+/* --------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------- */
+
+@media only screen and (min-width:375px) and (max-width: 424px) {
+    .navBar {
+        display: none;
+    }
+    
+    .nav_icon {
+        position: fixed;
+        background-color: rgb(244, 248, 250);
+        width: 100%;
+    }
+
+    .lnr-menu {
+        float: right;
+        padding: 20px;
+        font-size: 35px;
+    }
+
+    .bannerContent {
+        width: auto;
+        height: 784px;
+        background-image: url(../Assets/Images/banner.jpg);
+        background-position: center;
+        background-size: cover;
+        padding: 0 15px;
+    }
+
+    .bannerHeading {
+        font-family: Montserrat-Bold;
+        font-size: 29px;
+        padding-top: 80%;
+        text-align: center;
+    }
+
+    .bannerPara {
+        color: white;
+        font-size: 21px;
+        text-align: center;
+        padding: 34px 0;
+    }
+
+    .bannerBtn {
+        display: flex;
+        justify-content: center;
+    }
+
+    .buynow_btn {
+        background-color: white;
+        font-family: Montserrat-Light;
+        border: none;
+        border-radius: 5px;
+        width: 120px;
+        height: 50px;
+        padding: 12px 32px;
+        font-size: 12px;
+        margin: 6px 12px;
+    }
+
+    .buynow_btn:hover {
+        background-color: #8D97AD;
+    }
+
+    .waysto_bnt {
+        font-family: Montserrat-Light;
+        border: 2px solid #FFFFFF;
+        border-radius: 5px;
+        width: 150px;
+        height: 50px;
+        padding: 12px 32px;
+        font-size: 12px;
+        margin: 6px 12px;
+        color: #FFFFFF;
+        background: transparent;
+    }
+
+    .waysto_bnt:hover {
+        background-color: white;
+        color: black;
+    }
+
+    .journal {
+        width: auto;
+        height: auto;
+        padding: 60px 32px;
+    }
+
+    .journalheading {
+        text-align: center;
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+
+    .journalDes {
+        color: #8D97AD;
+        font-family: Montserrat-Light;
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 24px;
+        line-height: 26px;
+    }
+
+    .journalContainer {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid #e4e4e4;
+        border-radius: 5px; 
+    }
+
+    .journalBox {
+        padding: 48px 32px;
+    }
+
+    .journal_para {
+        text-align: center;
+        color: #8D97AD;
+        font-family: Montserrat-Light;
+        margin-bottom: 16px;
+        line-height: 24px;
+    }
+
+    .journalReadMeTag {
+        text-align: center;
+        color: #1DC8CA;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #journal_arrow {
+        padding-left: 5px;
+    }
+
+    .journalReadMeTag:hover {
+        color: #137173;
+    }
+
+    .journal_image_Box {
+        width: 100%;
+        height: 160px;
+    }
+
+    .joural_image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .journalFooter {
+        padding: 60px 16px;
+        line-height: 24px;
+        color: #8D97AD;
+        font-family: Montserrat-Light;
+        text-indent: 15px;
+    }
+
+    .emailContainer {
+        background-image: url(../Assets/Images/footer\ -\ original.jpg);
+        background-position: center;
+        background-size: cover;
+        width: auto;
+        height: 180px;
+        padding: 90px 0;
+    }
+
+    .emailHeading {
+        text-align: center;
+        color: white;
+        font-size: 28px;
+        padding-bottom: 40px;
+    }
+
+    .emailGrp {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .emailInput {
+        width: 200px;
+        height: 50px;
+        padding: 0 20px;
+        text-align: center;
+        font-size: 18px;
+        font-family: Montserrat-Regular;
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    .emailBtn {
+        width: 240px;
+        height: 50px;
+        padding: 0 20px;
+        text-align: center;
+        font-size: 12px;
+        font-family: Montserrat-Regular;
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        background-color: #1DC8CA;
+        color: white;
+    }
+
+    .emailBtn:hover {
+        background-color: #137173;
+    }
+
+    .geographic {
+        width: auto;
+        height: auto;
+        padding: 90px 15px;
+    }
+
+    .geographicList_one {
+        padding: 32px;
+        background-image:linear-gradient(to bottom left, #1FCBC5, #29DAA1);
+        color: white;
+        border-radius: 5px;
+        text-align: center;
+        margin-bottom: 80px;
+    }
+
+    .geographicHead {
+        font-size: 17px;
+        padding-bottom: 24px;
+    }
+
+    .geographicContent {
+        line-height: 26px;
+    }
+
+    .geo_ReadMeTag {
+        padding-top: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .geo_ReadMeTag:hover {
+        color: grey;
+    }
+
+    #geo_arrow {
+        padding-left: 5px;
+    }
+
+    .geographicList_two {
+        padding: 32px;
+        background-image:linear-gradient(to bottom left, #2E6EE8, #1A8CF3);
+        color: white;
+        border-radius: 5px;
+        text-align: center;
+        margin-bottom: 80px;
+    }
+
+    .geographicList_three {
+        padding: 32px;
+        background-image:linear-gradient(to bottom left, #FF685F, #FF5376);
+        color: white;
+        border-radius: 5px;
+        text-align: center;
+        margin-bottom: 80px;
+    }
+
+    .geographicFooter {
+        padding: 0 15px;
+    }
+
+    .fa-quote-left {
+        color: #f0f0f0;
+        font-size: 50px;
+    }
+
+    .geographicFooterContent {
+        line-height: 24px;
+        color: #8D97AD;
+        font-family: Montserrat-Light;
+        font-size: 17px;
+        padding-bottom: 30px;
+    }
+
+    .travelContainer {
+        padding: 90px 15px 0 15px;
+        width: auto;
+        height: auto;
+    }
+
+    .travel_card_one {
+        padding: 16px 16px 48px 16px;
+    }
+
+    .travelTypeOneHead {
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 24px;
+    }
+
+    .travelTypeOneContent {
+        text-align: center;
+        line-height: 24px;
+        color: #8D97AD;
+        margin-bottom: 18px;
+        font-family: Montserrat-Light;
+    }
+
+    .travel_btn {
+        display: block;
+        text-align: center;
+    }
+
+    .travelTypeOneBtn {
+        background-color: #1DC8CA;
+        color: white;
+        margin: 6px 12px;
+        padding: 12px 32px;
+        height: 51px;
+        font-family: Montserrat-Light;
+        font-size: 12px;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .travelTypeOneBtn:hover {
+        background-color: #137173;
+    }
+
+    .travel_image_div {
+        width: 100%;
+        height: 170px;
+        border-radius: 5px;
+        box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.15);
+        margin-bottom: 32px;
+    }
+
+    .travel_image {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+    }
+
+    .travel_card_two {
+        padding: 16px 16px 48px 16px;
+    }
+
+    .travelTypeTwoHead {
+        text-align: center;
+        padding-bottom: 12px;
+    }
+
+    .travel_card_three {
+        padding: 16px 16px 48px 16px;
+    }
+
+    .travel_ReadMeTag {
+        padding-top: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #1DC8CA;
+    }
+
+    .travel_ReadMeTag:hover {
+        color: #137173;
+    }
+
+    
+    #travel_arrow {
+        padding-left: 5px;
+    }
+
+    .blogContainer {
+        padding: 45px 15px 90px 15px;
+        width: auto;
+        height: auto;
+    }
+
+    .blogtitle {
+        text-align: center;
+        margin-bottom: 24px;
+    }
+
+    .blogDes {
+        text-align: center;
+        line-height: 24px;
+        color: #8D97AD;
+        margin-bottom: 24px;
+        font-size: 17px;
+        font-family: Montserrat-Light;
+    }
+
+    .blogCard {
+       margin: 16px 16px 32px 16px;
+        border-radius: 5px;
+        box-shadow: 0 5px 10px 0 rgba(212, 212, 212, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.15);
+    }
+
+    .blog_image_div {
+        width: 100%;
+        height: 170px;
+         border-radius: 5px;
+    }
+
+    .blog_image {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px 5px 0 0;
+    }
+
+    .blog_box {
+        padding: 32px;
+    }
+
+    .blogCardName {
+        text-align: center;
+        margin-bottom: 16px;
+        font-size: 17px;
+    }
+
+    .blogCardContent {
+        text-align: center;
+        line-height: 24px;
+        color: #8D97AD;
+        margin-bottom: 16px;
+        font-size: 17px;
+        font-family: Montserrat-Light;
+    }
+
+    .blog_ReadMeTag {
+        padding-top: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #1DC8CA;
+    }
+
+    .blog_ReadMeTag:hover {
+        color: #137173;
+    }
+
+    #blog_arrow {
+        padding-left: 5px;
+    }
+
+    .footer {
+        width: auto;
+        height: auto;
+        padding: 60px 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(244, 248, 250);
+    }
+
+    .footerCard {
+        margin-bottom: 32px;
+        padding: 0 15px;
+    }
+
+    .footerHead {
+        font-family: Montserrat-Bold;
+        font-size: 20px;
+        text-align: center;
+        padding-bottom: 24px;
+    }
+
+    .footerContent {
+        text-align: center;
+        line-height: 24px;
+        color: #8D97AD;
+        font-size: 17px;
+        font-family: Montserrat-Light;
+        margin-bottom: 16px;
+    }
+
+    .footerHeadSub {
+        font-size: 20px;
+        text-align: center;
+        padding-bottom: 24px;
+    }
+
+    #footer_icons {
+        background-color: #52E5E5;
+        text-decoration: none;
+        color: white;
+        border-radius: 50%;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 14px 0;
+        
+    }
+
+    .footer_icon_div {
+        display: flex;
+        column-gap: 12px;
+        margin-bottom: 16px;
+    }
+
+    #footer_icons:hover {
+        background-color: #1DC8CA;
+    }
+}
+
+/* --------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------- */
+
+@media only screen and (min-width:425px) and (max-width: 767px) {
+    .navBar {
+        display: none;
+    }
+    
+    .nav_icon {
+        position: fixed;
+        background-color: rgb(244, 248, 250);
+        width: 100%;
+    }
+
+    .lnr-menu {
+        float: right;
+        padding: 20px;
+        font-size: 35px;
+    }
+
+    .bannerContent {
+        width: auto;
+        height: 784px;
+        background-image: url(../Assets/Images/banner.jpg);
+        background-position: center;
+        background-size: cover;
+        padding: 0 15px;
+    }
+
+    .bannerHeading {
+        font-family: Montserrat-Bold;
+        font-size: 29px;
+        padding-top: 75%;
+        text-align: center;
+    }
+
+    .bannerPara {
+        color: white;
+        font-size: 21px;
+        text-align: center;
+        padding: 34px 0;
+    }
+
+    .bannerBtn {
+        display: flex;
+        justify-content: center;
+    }
+
+    .buynow_btn {
+        background-color: white;
+        font-family: Montserrat-Light;
+        border: none;
+        border-radius: 5px;
+        width: 120px;
+        height: 50px;
+        padding: 12px 32px;
+        font-size: 12px;
+        margin: 6px 12px;
+    }
+
+    .buynow_btn:hover {
+        background-color: #8D97AD;
+    }
+
+    .waysto_bnt {
+        font-family: Montserrat-Light;
+        border: 2px solid #FFFFFF;
+        border-radius: 5px;
+        width: 150px;
+        height: 50px;
+        padding: 12px 32px;
+        font-size: 12px;
+        margin: 6px 12px;
+        color: #FFFFFF;
+        background: transparent;
+    }
+
+    .waysto_bnt:hover {
+        background-color: white;
+        color: black;
+    }
+
+    .journal {
+        width: auto;
+        height: auto;
+        padding: 60px 32px;
+    }
+
+    .journalheading {
+        text-align: center;
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+
+    .journalDes {
+        color: #8D97AD;
+        font-family: Montserrat-Light;
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 24px;
+        line-height: 26px;
+    }
+
+    .journalContainer {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid #e4e4e4;
+        border-radius: 5px; 
+    }
+
+    .journalBox {
+        padding: 48px 32px;
+    }
+
+    .journal_para {
+        text-align: center;
+        color: #8D97AD;
+        font-family: Montserrat-Light;
+        margin-bottom: 16px;
+        line-height: 24px;
+    }
+
+    .journalReadMeTag {
+        text-align: center;
+        color: #1DC8CA;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #journal_arrow {
+        padding-left: 5px;
+    }
+
+    .journalReadMeTag:hover {
+        color: #137173;
+    }
+
+    .journal_image_Box {
+        width: 100%;
+        height: 240px;
+    }
+
+    .joural_image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .journalFooter {
+        padding: 60px 16px;
+        line-height: 24px;
+        color: #8D97AD;
+        font-family: Montserrat-Light;
+        text-indent: 15px;
+    }
+
+    .emailContainer {
+        background-image: url(../Assets/Images/footer\ -\ original.jpg);
+        background-position: center;
+        background-size: cover;
+        width: auto;
+        height: 180px;
+        padding: 90px 0;
+    }
+
+    .emailHeading {
+        text-align: center;
+        color: white;
+        font-size: 32px;
+        padding-bottom: 40px;
+    }
+
+    .emailGrp {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .emailInput {
+        width: 220px;
+        height: 50px;
+        padding: 0 20px;
+        text-align: center;
+        font-size: 18px;
+        font-family: Montserrat-Regular;
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    .emailBtn {
+        width: 260px;
+        height: 50px;
+        padding: 0 20px;
+        text-align: center;
+        font-size: 12px;
+        font-family: Montserrat-Regular;
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        background-color: #1DC8CA;
+        color: white;
+    }
+
+    .emailBtn:hover {
+        background-color: #137173;
+    }
+
+    .geographic {
+        width: auto;
+        height: auto;
+        padding: 90px 15px;
+    }
+
+    .geographicList_one {
+        padding: 32px;
+        background-image:linear-gradient(to bottom left, #1FCBC5, #29DAA1);
+        color: white;
+        border-radius: 5px;
+        text-align: center;
+        margin-bottom: 80px;
+    }
+
+    .geographicHead {
+        font-size: 17px;
+        padding-bottom: 24px;
+    }
+
+    .geographicContent {
+        line-height: 26px;
+    }
+
+    .geo_ReadMeTag {
+        padding-top: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .geo_ReadMeTag:hover {
+        color: grey;
+    }
+
+    #geo_arrow {
+        padding-left: 5px;
+    }
+
+    .geographicList_two {
+        padding: 32px;
+        background-image:linear-gradient(to bottom left, #2E6EE8, #1A8CF3);
+        color: white;
+        border-radius: 5px;
+        text-align: center;
+        margin-bottom: 80px;
+    }
+
+    .geographicList_three {
+        padding: 32px;
+        background-image:linear-gradient(to bottom left, #FF685F, #FF5376);
+        color: white;
+        border-radius: 5px;
+        text-align: center;
+        margin-bottom: 80px;
+    }
+
+    .geographicFooter {
+        padding: 0 15px;
+    }
+
+    .fa-quote-left {
+        color: #f0f0f0;
+        font-size: 50px;
+    }
+
+    .geographicFooterContent {
+        line-height: 24px;
+        color: #8D97AD;
+        font-family: Montserrat-Light;
+        font-size: 17px;
+        padding-bottom: 30px;
+    }
+
+    .travelContainer {
+        padding: 90px 15px 0 15px;
+        width: auto;
+        height: auto;
+    }
+
+    .travel_card_one {
+        padding: 16px 16px 48px 16px;
+    }
+
+    .travelTypeOneHead {
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 24px;
+    }
+
+    .travelTypeOneContent {
+        text-align: center;
+        line-height: 24px;
+        color: #8D97AD;
+        margin-bottom: 18px;
+        font-family: Montserrat-Light;
+    }
+
+    .travel_btn {
+        display: block;
+        text-align: center;
+    }
+
+    .travelTypeOneBtn {
+        background-color: #1DC8CA;
+        color: white;
+        margin: 6px 12px;
+        padding: 12px 32px;
+        height: 51px;
+        font-family: Montserrat-Light;
+        font-size: 12px;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .travelTypeOneBtn:hover {
+        background-color: #137173;
+    }
+
+    .travel_image_div {
+        width: 100%;
+        height: 240px;
+        border-radius: 5px;
+        box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.15);
+        margin-bottom: 32px;
+    }
+
+    .travel_image {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+    }
+
+    .travel_card_two {
+        padding: 16px 16px 48px 16px;
+    }
+
+    .travelTypeTwoHead {
+        text-align: center;
+        padding-bottom: 12px;
+    }
+
+    .travel_card_three {
+        padding: 16px 16px 48px 16px;
+    }
+
+    .travel_ReadMeTag {
+        padding-top: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #1DC8CA;
+    }
+
+    .travel_ReadMeTag:hover {
+        color: #137173;
+    }
+
+    
+    #travel_arrow {
+        padding-left: 5px;
+    }
+
+    .blogContainer {
+        padding: 45px 15px 90px 15px;
+        width: auto;
+        height: auto;
+    }
+
+    .blogtitle {
+        text-align: center;
+        margin-bottom: 24px;
+    }
+
+    .blogDes {
+        text-align: center;
+        line-height: 24px;
+        color: #8D97AD;
+        margin-bottom: 24px;
+        font-size: 17px;
+        font-family: Montserrat-Light;
+    }
+
+    .blogCard {
+       margin: 16px 16px 32px 16px;
+        border-radius: 5px;
+        box-shadow: 0 5px 10px 0 rgba(212, 212, 212, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.15);
+    }
+
+    .blog_image_div {
+        width: 100%;
+        height: 240px;
+         border-radius: 5px;
+    }
+
+    .blog_image {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px 5px 0 0;
+    }
+
+    .blog_box {
+        padding: 32px;
+    }
+
+    .blogCardName {
+        text-align: center;
+        margin-bottom: 16px;
+        font-size: 17px;
+    }
+
+    .blogCardContent {
+        text-align: center;
+        line-height: 24px;
+        color: #8D97AD;
+        margin-bottom: 16px;
+        font-size: 17px;
+        font-family: Montserrat-Light;
+    }
+
+    .blog_ReadMeTag {
+        padding-top: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #1DC8CA;
+    }
+
+    .blog_ReadMeTag:hover {
+        color: #137173;
+    }
+
+    #blog_arrow {
+        padding-left: 5px;
+    }
+
+    .footer {
+        width: auto;
+        height: auto;
+        padding: 60px 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(244, 248, 250);
+    }
+
+    .footerCard {
+        margin-bottom: 32px;
+        padding: 0 15px;
+    }
+
+    .footerHead {
+        font-family: Montserrat-Bold;
+        font-size: 20px;
+        text-align: center;
+        padding-bottom: 24px;
+    }
+
+    .footerContent {
+        text-align: center;
+        line-height: 24px;
+        color: #8D97AD;
+        font-size: 17px;
+        font-family: Montserrat-Light;
+        margin-bottom: 16px;
+    }
+
+    .footerHeadSub {
+        font-size: 20px;
+        text-align: center;
+        padding-bottom: 24px;
+    }
+
+    #footer_icons {
+        background-color: #52E5E5;
+        text-decoration: none;
+        color: white;
+        border-radius: 50%;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 14px 0;
+        
+    }
+
+    .footer_icon_div {
+        display: flex;
+        column-gap: 12px;
+        margin-bottom: 16px;
+    }
+
+    #footer_icons:hover {
+        background-color: #1DC8CA;
+    }
+}
+
+/* --------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------- */
+
+@media only screen and (min-width:768px) and (max-width: 1023px) {
+    .navBar {
+        display: none;
+    }
+    
+    .nav_icon {
+        position: fixed;
+        background-color: rgb(244, 248, 250);
+        width: 100%;
+    }
+
+    .lnr-menu {
+        float: right;
+        padding: 20px;
+        font-size: 35px;
+    }
+
+    .bannerContent {
+        width: auto;
+        height: 1045px;
+        background-image: url(../Assets/Images/banner.jpg);
+        background-position: center;
+        background-size: cover;
+        padding: 0 15px;
+    }
+
+    .bannerHeading {
+        font-family: Montserrat-Bold;
+        font-size: 48px;
+        padding-top: 55%;
+        text-align: center;
+    }
+
+    .bannerPara {
+        color: white;
+        font-size: 28px;
+        text-align: center;
+        padding: 34px 0;
+    }
+
+    .bannerBtn {
+        display: flex;
+        justify-content: center;
+    }
+
+    .buynow_btn {
+        background-color: white;
+        font-family: Montserrat-Light;
+        border: none;
+        border-radius: 5px;
+        width: 140px;
+        height: 50px;
+        padding: 12px 32px;
+        font-size: 16px;
+        margin: 6px 12px;
+    }
+
+    .buynow_btn:hover {
+        background-color: #8D97AD;
+    }
+
+    .waysto_bnt {
+        font-family: Montserrat-Light;
+        border: 2px solid #FFFFFF;
+        border-radius: 5px;
+        width: 180px;
+        height: 50px;
+        padding: 12px 32px;
+        font-size: 16px;
+        margin: 6px 12px;
+        color: #FFFFFF;
+        background: transparent;
+    }
+
+    .waysto_bnt:hover {
+        background-color: white;
+        color: black;
+    }
+
+    .journal {
+        width: auto;
+        height: auto;
+        padding: 60px 36px;
+    }
+
+    .journalheading {
+        font-size: 28px;
+        margin-bottom: 16px;
+    }
+
+    .journalDes {
+        color: #8D97AD;
+        font-family: Montserrat-Light;
+        font-size: 16px;
+        margin-bottom: 24px;
+        line-height: 26px;
+    }
+
+    .journalContainer {
+        display: flex;
+        flex-wrap: wrap;
+      
+        border: 1px solid #e4e4e4;
+        border-radius: 5px; 
+    }
+
+    .journalBox {
+        padding: 48px 32px;
+        width: 165px;
+        height: 215px;
+    }
+
+    .journal_para {
+        color: #8D97AD;
+        font-family: Montserrat-Light;
+        margin-bottom: 26px;
+        line-height: 24px;
+    }
+
+    .journalReadMeTag {
+        color: #1DC8CA;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+
+    #journal_arrow {
+        padding-left: 5px;
+    }
+
+    .journalReadMeTag:hover {
+        color: #137173;
+    }
+
+    .journal_image_Box {
+        width:  230px;
+        height: 320px;
+    }
+
+    .joural_image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .journalFooter {
+        padding: 60px 98px;
+        line-height: 24px;
+        color: #8D97AD;
+        font-family: Montserrat-Light;
+        text-indent: 15px; 
+    }
+
+    .emailContainer {
+        background-image: url(../Assets/Images/footer\ -\ original.jpg);
+        background-position: center;
+        background-size: cover;
+        width: auto;
+        height: 180px;
+        padding: 90px 0;
+    }
+
+    .emailHeading {
+        text-align: center;
+        color: white;
+        font-size: 48px;
+        padding-bottom: 40px;
+    }
+
+    .emailGrp {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .emailInput {
+        width: 500px;
+        height: 50px;
+        padding: 0 30px;
+        font-size: 18px;
+        font-family: Montserrat-Regular;
+        border: none;
+        border-radius: 5px 0 0 5px;
+        margin-bottom: 10px;
+    }
+
+    .emailBtn {
+        width: 120px;
+        height: 50px;
+        padding: 0 20px;
+        text-align: center;
+        font-size: 16px;
+        font-family: Montserrat-Regular;
+        border: none;
+        border-radius: 0 5px 5px 0;
+        margin-bottom: 10px;
+        background-color: #1DC8CA;
+        color: white;
+    }
+
+    .emailBtn:hover {
+        background-color: #137173;
+    }
+
+    .geographic {
+        width: auto;
+        height: auto;
+        padding: 90px 36px;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 30px;
+    }
+
+    .geographicList_one {
+        padding: 32px;
+        background-image:linear-gradient(to bottom left, #1FCBC5, #29DAA1);
+        color: white;
+        border-radius: 5px;
+        margin-bottom: 80px;
+        width: 265px;
+        height: 220px;
+    }
+
+    .geographicHead {
+        font-size: 20px;
+        padding-bottom: 24px;
+    }
+
+    .geographicContent {
+        line-height: 26px;
+        font-size: 16px;
+        width: 270px;
+    }
+
+    .geo_ReadMeTag {
+        padding-top: 24px;
+        display: flex;
+    }
+
+    .geo_ReadMeTag:hover {
+        color: grey;
+    }
+
+    #geo_arrow {
+        padding-left: 5px;
+    }
+
+    .geographicList_two {
+        padding: 32px;
+        background-image:linear-gradient(to bottom left, #2E6EE8, #1A8CF3);
+        color: white;
+        border-radius: 5px;
+        margin-bottom: 80px;
+        width: 265px;
+        height: 220px;
+    }
+
+    .geographicList_three {
+        padding: 32px;
+        background-image:linear-gradient(to bottom left, #FF685F, #FF5376);
+        color: white;
+        border-radius: 5px;
+        margin-bottom: 80px;
+        width: 265px;
+        height: 220px;
+    }
+
+    .geographicFooter {
+        padding: 0 85px;
+    }
+
+    .fa-quote-left {
+        color: #f0f0f0;
+        font-size: 50px;
+    }
+
+    .geographicFooterContent {
+        line-height: 24px;
+        color: #8D97AD;
+        font-family: Montserrat-Light;
+        font-size: 20px;
+        padding-bottom: 30px;
+    }
+
+    .travelContainer {
+        padding: 90px 15px 0 15px;
+        width: auto;
+        height: auto;
+        display: flex;
+    }
+
+    .travel_card_one {
+        padding: 16px 16px 48px 16px;
+        width: 200px;
+    }
+
+    .travelTypeOneHead {
+        font-size: 28px;
+        margin-bottom: 24px;
+        line-height: 38px;
+    }
+
+    .travelTypeOneContent {
+        line-height: 28px;
+        color: #8D97AD;
+        margin-bottom: 18px;
+        font-family: Montserrat-Light;
+    }
+
+    .travel_btn {
+        display: block;
+        text-align: center;
+    }
+
+    .travelTypeOneBtn {
+        background-color: #1DC8CA;
+        color: white;
+        margin: 6px 12px;
+        padding: 12px 32px;
+        height: 96px;
+        font-family: Montserrat-Light;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .travelTypeOneBtn:hover {
+        background-color: #137173;
+    }
+
+    .travel_image_div {
+        width: 200px;
+        height: 130px;
+        border-radius: 5px;
+        box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.15);
+        margin-bottom: 32px;
+    }
+
+    .travel_image {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+    }
+
+    .travel_card_two {
+        padding: 16px 16px 48px 16px;
+        width: 200px;
+    }
+
+    .travelTypeTwoHead {
+        padding-bottom: 12px;
+    }
+
+    .travel_card_three {
+        padding: 16px 16px 48px 16px;
+        width: 200px;
+    }
+
+    .travel_ReadMeTag {
+        padding-top: 16px;
+        display: flex;
+        align-items: center;
+        color: #1DC8CA;
+    }
+
+    .travel_ReadMeTag:hover {
+        color: #137173;
+    }
+
+    
+    #travel_arrow {
+        padding-left: 5px;
+    }
+
+    .blogContainer {
+        padding: 45px 36px 90px 36px;
+        width: auto;
+        height: auto;
+    }
+
+    .blogtitle {
+        text-align: center;
+        margin-bottom: 24px;
+        font-size: 30px;
+    }
+
+    .blogDes {
+        text-align: center;
+        line-height: 24px;
+        color: #8D97AD;
+        margin-bottom: 24px;
+        font-size: 20px;
+        font-family: Montserrat-Light;
+    }
+
+    .blogContent {
+        display: flex;
+    }
+
+    .blogCard {
+       margin: 16px 16px 32px 16px;
+        border-radius: 5px;
+        box-shadow: 0 5px 10px 0 rgba(212, 212, 212, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.15);
+    }
+
+    .blog_image_div {
+        width: 198px;
+        height: 131px;
+         border-radius: 5px;
+    }
+
+    .blog_image {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px 5px 0 0;
+    }
+
+    .blog_box {
+        padding: 32px;
+    }
+
+    .blogCardName {
+        text-align: center;
+        margin-bottom: 16px;
+        font-size: 19px;
+    }
+
+    .blogCardContent {
+        text-align: center;
+        line-height: 24px;
+        color: #8D97AD;
+        margin-bottom: 16px;
+        font-size: 17px;
+        font-family: Montserrat-Light;
+    }
+
+    .blog_ReadMeTag {
+        padding-top: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #1DC8CA;
+        font-size: 16px;
+    }
+
+    .blog_ReadMeTag:hover {
+        color: #137173;
+    }
+
+    #blog_arrow {
+        padding-left: 5px;
+    }
+
+    .footer {
+        width: auto;
+        height: auto;
+        padding: 60px 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+        align-items: center;
+        background-color: rgb(244, 248, 250);
+    }
+
+    .footerCard {
+
+        padding: 0 15px;
+        width: 300px;
+    }
+
+    .footerHead {
+        font-family: Montserrat-Bold;
+        font-size: 20px;
+        padding-bottom: 24px;
+    }
+
+    .footerContent {      
+        line-height: 24px;
+        color: #8D97AD;
+        font-size: 17px;
+        font-family: Montserrat-Light;
+        margin-bottom: 16px;
+    }
+
+    .footerHeadSub {
+        font-size: 20px;
+        padding-bottom: 24px;
+    }
+
+    #footer_icons {
+        background-color: #52E5E5;
+        text-decoration: none;
+        color: white;
+        border-radius: 50%;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 14px 0;
+        
+    }
+
+    .footer_icon_div {
+        display: flex;
+        column-gap: 12px;
+        margin-bottom: 16px;
+    }
+
+    #footer_icons:hover {
+        background-color: #1DC8CA;
+    }
+}
+
+/* --------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------- */
+
+@media only screen and (min-width:1024px) and (max-width: 1439px) {
+    .navBar {
+       display: flex;
+       justify-content: end;
+       align-items: center;
+       column-gap: 10px;
+       background-color: rgb(244, 248, 250);
+       position: fixed;
+       width: 100%;
+    }
+
+    .navBar ul {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        column-gap: 10px;
+    }
+    
+    .navBar li {
+        padding: 30px 0;
+        padding-left: 30px;
+        
+    }
+
+    .fa-sort-desc {
+        margin-top: -10px;
+        margin-left: -5px;
+    }
+
+    .buynowbtn {
+        padding: 0 30px;
+    }
+
+    .buy_btn {
+        padding: 10px 18px;
+        background-color: #1DC8CA;
+        color: white;
+        border-radius: 5px;
+        border: none;
+        font-family: Montserrat-Regular;
+    }
+
+
+
+    .nav_icon {
+        position: fixed;
+        background-color: rgb(244, 248, 250);
+        width: 100%;
+        display: none;
+    }
+
+    .lnr-menu {
+        float: right;
+        padding: 20px;
+        font-size: 35px;
+        display: none;
+    }
+
+    .bannerContent {
+        width: auto;
+        height: 1568px;
+        background-image: url(../Assets/Images/banner.jpg);
+        background-position: center;
+        background-size: cover;
+        padding: 0 15px;
+    }
+
+    .bannerHeading {
+        font-family: Montserrat-Bold;
+        font-size: 48px;
+        padding-top: 68%;
+        text-align: center;
+    }
+
+    .bannerPara {
+        color: white;
+        font-size: 28px;
+        text-align: center;
+        padding: 34px 0;
+    }
+
+    .bannerBtn {
+        display: flex;
+        justify-content: center;
+    }
+
+    .buynow_btn {
+        background-color: white;
+        font-family: Montserrat-Light;
+        border: none;
+        border-radius: 5px;
+        width: 140px;
+        height: 50px;
+        padding: 12px 32px;
+        font-size: 16px;
+        margin: 6px 12px;
+    }
+
+    .buynow_btn:hover {
+        background-color: #8D97AD;
+    }
+
+    .waysto_bnt {
+        font-family: Montserrat-Light;
+        border: 2px solid #FFFFFF;
+        border-radius: 5px;
+        width: 180px;
+        height: 50px;
+        padding: 12px 32px;
+        font-size: 16px;
+        margin: 6px 12px;
+        color: #FFFFFF;
+        background: transparent;
+    }
+
+    .waysto_bnt:hover {
+        background-color: white;
+        color: black;
+    }
+
+    .journal {
+        width: auto;
+        height: auto;
+        padding: 60px 36px;
+    }
+
+    .journalheading {
+        font-size: 28px;
+        margin-bottom: 16px;
+    }
+
+    .journalDes {
+        color: #8D97AD;
+        font-family: Montserrat-Light;
+        font-size: 16px;
+        margin-bottom: 24px;
+        line-height: 26px;
+    }
+
+    .journalContainer {
+        display: flex;
+        flex-wrap: wrap;
+        border: 1px solid #e4e4e4;
+        border-radius: 5px; 
+    }
+
+    .journalBox {
+        padding: 48px 32px;
+        width: 252px;
+        height: 215px;
+    }
+
+    .journal_para {
+        color: #8D97AD;
+        font-family: Montserrat-Light;
+        margin-bottom: 26px;
+        line-height: 24px;
+    }
+
+    .journalReadMeTag {
+        color: #1DC8CA;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+
+    #journal_arrow {
+        padding-left: 5px;
+    }
+
+    .journalReadMeTag:hover {
+        color: #137173;
+    }
+
+    .journal_image_Box {
+        width:  316px;
+        height: 320px;
+    }
+
+    .joural_image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .journalFooter {
+        padding: 60px 200px;
+        line-height: 24px;
+        color: #8D97AD;
+        font-family: Montserrat-Light;
+        text-indent: 15px; 
+    }
+
+    .emailContainer {
+        background-image: url(../Assets/Images/footer\ -\ original.jpg);
+        background-position: center;
+        background-size: cover;
+        width: auto;
+        height: 180px;
+        padding: 90px 0;
+    }
+
+    .emailHeading {
+        text-align: center;
+        color: white;
+        font-size: 48px;
+        padding-bottom: 40px;
+    }
+
+    .emailGrp {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .emailInput {
+        width: 500px;
+        height: 50px;
+        padding: 0 30px;
+        font-size: 18px;
+        font-family: Montserrat-Regular;
+        border: none;
+        border-radius: 5px 0 0 5px;
+        margin-bottom: 10px;
+    }
+
+    .emailBtn {
+        width: 120px;
+        height: 50px;
+        padding: 0 20px;
+        text-align: center;
+        font-size: 16px;
+        font-family: Montserrat-Regular;
+        border: none;
+        border-radius: 0 5px 5px 0;
+        margin-bottom: 10px;
+        background-color: #1DC8CA;
+        color: white;
+    }
+
+    .emailBtn:hover {
+        background-color: #137173;
+    }
+
+    .geographic {
+        width: auto;
+        height: auto;
+        padding: 90px 36px;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 30px;
+    }
+
+    .geographicList_one {
+        padding: 32px;
+        background-image:linear-gradient(to bottom left, #1FCBC5, #29DAA1);
+        color: white;
+        border-radius: 5px;
+        margin-bottom: 80px;
+        width: 230px;
+        height: 220px;
+    }
+
+    .geographicHead {
+        font-size: 20px;
+        padding-bottom: 24px;
+    }
+
+    .geographicContent {
+        line-height: 26px;
+        font-size: 16px;
+        width: 270px;
+    }
+
+    .geo_ReadMeTag {
+        padding-top: 24px;
+        display: flex;
+    }
+
+    .geo_ReadMeTag:hover {
+        color: grey;
+    }
+
+    #geo_arrow {
+        padding-left: 5px;
+    }
+
+    .geographicList_two {
+        padding: 32px;
+        background-image:linear-gradient(to bottom left, #2E6EE8, #1A8CF3);
+        color: white;
+        border-radius: 5px;
+        margin-bottom: 80px;
+        width: 230px;
+        height: 220px;
+    }
+
+    .geographicList_three {
+        padding: 32px;
+        background-image:linear-gradient(to bottom left, #FF685F, #FF5376);
+        color: white;
+        border-radius: 5px;
+        margin-bottom: 80px;
+        width: 230px;
+        height: 220px;
+    }
+
+    .geographicFooter {
+        padding: 0 195px;
+    }
+
+    .fa-quote-left {
+        color: #f0f0f0;
+        font-size: 50px;
+    }
+
+    .geographicFooterContent {
+        line-height: 24px;
+        color: #8D97AD;
+        font-family: Montserrat-Light;
+        font-size: 20px;
+        padding-bottom: 30px;
+    }
+
+    .travelContainer {
+        padding: 90px 45px 0 45px;
+        width: auto;
+        height: auto;
+        display: flex;
+    }
+
+    .travel_card_one {
+        padding: 16px 16px 48px 16px;
+        width: 290px;
+    }
+
+    .travelTypeOneHead {
+        font-size: 28px;
+        margin-bottom: 24px;
+        line-height: 38px;
+    }
+
+    .travelTypeOneContent {
+        line-height: 28px;
+        color: #8D97AD;
+        margin-bottom: 18px;
+        font-family: Montserrat-Light;
+    }
+
+    .travel_btn {
+        display: block;
+        text-align: center;
+    }
+
+    .travelTypeOneBtn {
+        background-color: #1DC8CA;
+        color: white;
+        margin: 6px 12px;
+        padding: 12px 32px;
+        height: 60px;
+        font-family: Montserrat-Light;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .travelTypeOneBtn:hover {
+        background-color: #137173;
+    }
+
+    .travel_image_div {
+        width: 270px;
+        height: 180px;
+        border-radius: 5px;
+        box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.15);
+        margin-bottom: 32px;
+    }
+
+    .travel_image {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+    }
+
+    .travel_card_two {
+        padding: 16px 16px 48px 16px;
+        width: 290px;
+    }
+
+    .travelTypeTwoHead {
+        padding-bottom: 12px;
+    }
+
+    .travel_card_three {
+        padding: 16px 16px 48px 16px;
+        width: 290px;
+    }
+
+    .travel_ReadMeTag {
+        padding-top: 16px;
+        display: flex;
+        align-items: center;
+        color: #1DC8CA;
+    }
+
+    .travel_ReadMeTag:hover {
+        color: #137173;
+    }
+
+    
+    #travel_arrow {
+        padding-left: 5px;
+    }
+
+    .blogContainer {
+        padding: 45px 36px 90px 36px;
+        width: auto;
+        height: auto;
+    }
+
+    .blogtitle {
+        text-align: center;
+        margin-bottom: 24px;
+        font-size: 30px;
+    }
+
+    .blogDes {
+        text-align: center;
+        line-height: 24px;
+        color: #8D97AD;
+        margin-bottom: 24px;
+        font-size: 20px;
+        font-family: Montserrat-Light;
+    }
+
+    .blogContent {
+        display: flex;
+    }
+
+    .blogCard {
+       margin: 16px 16px 32px 16px;
+        border-radius: 5px;
+        box-shadow: 0 5px 10px 0 rgba(212, 212, 212, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.15);
+    }
+
+    .blog_image_div {
+        width: 285px;
+        height: 180px;
+         border-radius: 5px;
+    }
+
+    .blog_image {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px 5px 0 0;
+    }
+
+    .blog_box {
+        padding: 32px;
+    }
+
+    .blogCardName {
+        text-align: center;
+        margin-bottom: 16px;
+        font-size: 19px;
+    }
+
+    .blogCardContent {
+        text-align: center;
+        line-height: 24px;
+        color: #8D97AD;
+        margin-bottom: 16px;
+        font-size: 17px;
+        font-family: Montserrat-Light;
+    }
+
+    .blog_ReadMeTag {
+        padding-top: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #1DC8CA;
+        font-size: 16px;
+    }
+
+    .blog_ReadMeTag:hover {
+        color: #137173;
+    }
+
+    #blog_arrow {
+        padding-left: 5px;
+    }
+
+    .footer {
+        width: auto;
+        height: auto;
+        padding: 60px 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+        align-items: center;
+        background-color: rgb(244, 248, 250);
+    }
+
+    .footerCard {
+        padding: 0 15px;
+        width: 200px;
+    }
+
+    .footerHead {
+        font-family: Montserrat-Bold;
+        font-size: 20px;
+        padding-bottom: 24px;
+        width: 200px;
+    }
+
+    .footerContent {      
+        line-height: 24px;
+        color: #8D97AD;
+        font-size: 17px;
+        font-family: Montserrat-Light;
+        margin-bottom: 16px;
+    }
+
+    .footerHeadSub {
+        font-size: 20px;
+        padding-bottom: 24px;
+    }
+
+    #footer_icons {
+        background-color: #52E5E5;
+        text-decoration: none;
+        color: white;
+        border-radius: 50%;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 14px 0;
+        
+    }
+
+    .footer_icon_div {
+        display: flex;
+        column-gap: 12px;
+        margin-bottom: 16px;
+    }
+
+    #footer_icons:hover {
+        background-color: #1DC8CA;
+    }
+}
+
+/* --------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------- */
+
+@media only screen and (min-width:1440px) and (max-width: 2559px) {
+    .navBar {
+       display: flex;
+       justify-content: end;
+       align-items: center;
+       column-gap: 10px;
+       background-color: rgb(244, 248, 250);
+       position: fixed;
+       width: 100%;
+    }
+
+    .navBar ul {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        column-gap: 10px;
+    }
+    
+    .navBar li {
+        padding: 36px 0;
+        padding-left: 42px; 
+    }
+
+    .fa-sort-desc {
+        margin-top: -8px;
+        margin-left: -5px;
+    }
+
+    .buynowbtn {
+        padding: 0 36px;
+    }
+
+    .buy_btn {
+        padding: 14px 36px;
+        background-color: #1DC8CA;
+        color: white;
+        border-radius: 5px;
+        border: none;
+        font-family: Montserrat-Regular;
+    }
+
+    .nav_icon {
+        position: fixed;
+        background-color: rgb(244, 248, 250);
+        width: 100%;
+        display: none;
+    }
+
+    .lnr-menu {
+        float: right;
+        padding: 20px;
+        font-size: 35px;
+        display: none;
+    }
+
+    .bannerContent {
+        width: auto;
+        height: 1960px;
+        background-image: url(../Assets/Images/banner.jpg);
+        background-position: center;
+        background-size: cover;
+        padding: 0 15px;
+    }
+
+    .bannerHeading {
+        font-family: Montserrat-Bold;
+        font-size: 48px;
+        padding-top: 50%;
+        text-align: center;
+    }
+
+    .bannerPara {
+        color: white;
+        font-size: 28px;
+        text-align: center;
+        padding: 34px 0;
+    }
+
+    .bannerBtn {
+        display: flex;
+        justify-content: center;
+    }
+
+    .buynow_btn {
+        background-color: white;
+        font-family: Montserrat-Light;
+        border: none;
+        border-radius: 5px;
+        width: 140px;
+        height: 50px;
+        padding: 12px 32px;
+        font-size: 16px;
+        margin: 6px 12px;
+    }
+
+    .buynow_btn:hover {
+        background-color: #8D97AD;
+    }
+
+    .waysto_bnt {
+        font-family: Montserrat-Light;
+        border: 2px solid #FFFFFF;
+        border-radius: 5px;
+        width: 180px;
+        height: 50px;
+        padding: 12px 32px;
+        font-size: 16px;
+        margin: 6px 12px;
+        color: #FFFFFF;
+        background: transparent;
+    }
+
+    .waysto_bnt:hover {
+        background-color: white;
+        color: black;
+    }
+
+    .journal {
+        width: auto;
+        height: auto;
+        padding: 60px 36px;
+        margin: 0 150px;
+    }
+
+    .journalheading {
+        font-size: 28px;
+        margin-bottom: 16px;
+    }
+
+    .journalDes {
+        color: #8D97AD;
+        font-family: Montserrat-Light;
+        font-size: 16px;
+        margin-bottom: 24px;
+        line-height: 26px;
+        width: 750px;
+    }
+
+    .journalContainer {
+        display: flex;
+        flex-wrap: wrap;
+        border: 1px solid #e4e4e4;
+        border-radius: 5px; 
+    }
+
+    .journalBox {
+        padding: 48px 32px;
+        width: 292px;
+        height: 140px;
+    }
+
+    .journal_para {
+        color: #8D97AD;
+        font-family: Montserrat-Light;
+        margin-bottom: 26px;
+        line-height: 24px;
+    }
+
+    .journalReadMeTag {
+        color: #1DC8CA;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+
+    #journal_arrow {
+        padding-left: 5px;
+    }
+
+    .journalReadMeTag:hover {
+        color: #137173;
+    }
+
+    .journal_image_Box {
+        width:  354px;
+        height: 244px;
+    }
+
+    .joural_image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .journalFooter {
+        padding: 60px 360px;
+        line-height: 24px;
+        color: #8D97AD;
+        font-family: Montserrat-Light;
+        text-indent: 15px; 
+    }
+
+    .emailContainer {
+        background-image: url(../Assets/Images/footer\ -\ original.jpg);
+        background-position: center;
+        background-size: cover;
+        width: auto;
+        height: 180px;
+        padding: 90px 0;
+    }
+
+    .emailHeading {
+        text-align: center;
+        color: white;
+        font-size: 48px;
+        padding-bottom: 40px;
+    }
+
+    .emailGrp {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .emailInput {
+        width: 500px;
+        height: 50px;
+        padding: 0 30px;
+        font-size: 18px;
+        font-family: Montserrat-Regular;
+        border: none;
+        border-radius: 5px 0 0 5px;
+        margin-bottom: 10px;
+    }
+
+    .emailBtn {
+        width: 120px;
+        height: 50px;
+        padding: 0 20px;
+        text-align: center;
+        font-size: 16px;
+        font-family: Montserrat-Regular;
+        border: none;
+        border-radius: 0 5px 5px 0;
+        margin-bottom: 10px;
+        background-color: #1DC8CA;
+        color: white;
+    }
+
+    .emailBtn:hover {
+        background-color: #137173;
+    }
+
+    .geographic {
+        width: auto;
+        height: auto;
+        padding: 90px 36px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 30px;
+    }
+
+    .geographicList_one {
+        padding: 32px;
+        background-image:linear-gradient(to bottom left, #1FCBC5, #29DAA1);
+        color: white;
+        border-radius: 5px;
+        margin-bottom: 80px;
+        width: 330px;
+        height: 230px;
+    }
+
+    .geographicHead {
+        font-size: 20px;
+        padding-bottom: 24px;
+    }
+
+    .geographicContent {
+        line-height: 26px;
+        font-size: 16px;
+        width: 270px;
+    }
+
+    .geo_ReadMeTag {
+        padding-top: 24px;
+        display: flex;
+    }
+
+    .geo_ReadMeTag:hover {
+        color: grey;
+    }
+
+    #geo_arrow {
+        padding-left: 5px;
+    }
+
+    .geographicList_two {
+        padding: 32px;
+        background-image:linear-gradient(to bottom left, #2E6EE8, #1A8CF3);
+        color: white;
+        border-radius: 5px;
+        margin-bottom: 80px;
+        width: 330px;
+        height: 230px;
+    }
+
+    .geographicList_three {
+        padding: 32px;
+        background-image:linear-gradient(to bottom left, #FF685F, #FF5376);
+        color: white;
+        border-radius: 5px;
+        margin-bottom: 80px;
+        width: 330px;
+        height: 230px;
+    }
+
+    .geographicFooter {
+        padding: 0 335px;
+    }
+
+    .fa-quote-left {
+        color: #f0f0f0;
+        font-size: 50px;
+    }
+
+    .geographicFooterContent {
+        line-height: 24px;
+        color: #8D97AD;
+        font-family: Montserrat-Light;
+        font-size: 20px;
+        padding-bottom: 30px;
+    }
+
+    .travelContainer {
+        padding: 90px 45px 0 45px;
+        width: auto;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .travel_card_one {
+        padding: 16px 16px 48px 16px;
+        width: 360px;
+    }
+
+    .travelTypeOneHead {
+        font-size: 28px;
+        margin-bottom: 24px;
+        line-height: 38px;
+    }
+
+    .travelTypeOneContent {
+        line-height: 28px;
+        color: #8D97AD;
+        margin-bottom: 18px;
+        font-family: Montserrat-Light;
+    }
+
+    .travel_btn {
+        display: block;
+        text-align: center;
+    }
+
+    .travelTypeOneBtn {
+        background-color: #1DC8CA;
+        color: white;
+        margin: 6px 12px;
+        padding: 12px 32px;
+        height: 60px;
+        font-family: Montserrat-Light;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .travelTypeOneBtn:hover {
+        background-color: #137173;
+    }
+
+    .travel_image_div {
+        width: 360px;
+        height: 220px;
+        border-radius: 5px;
+        box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.15);
+        margin-bottom: 32px;
+    }
+
+    .travel_image {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+    }
+
+    .travel_card_two {
+        padding: 16px 16px 48px 16px;
+        width: 360px;
+    }
+
+    .travelTypeTwoHead {
+        padding-bottom: 12px;
+    }
+
+    .travel_card_three {
+        padding: 16px 16px 48px 16px;
+        width: 360px;
+    }
+
+    .travel_ReadMeTag {
+        padding-top: 16px;
+        display: flex;
+        align-items: center;
+        color: #1DC8CA;
+    }
+
+    .travel_ReadMeTag:hover {
+        color: #137173;
+    }
+
+    
+    #travel_arrow {
+        padding-left: 5px;
+    }
+
+    .blogContainer {
+        padding: 45px 36px 90px 36px;
+        width: auto;
+        height: 555px;
+    }
+
+    .blogtitle {
+        text-align: center;
+        margin-bottom: 24px;
+        font-size: 30px;
+    }
+
+    .blogDes {
+        text-align: center;
+        line-height: 24px;
+        color: #8D97AD;
+        margin-bottom: 24px;
+        font-size: 20px;
+        font-family: Montserrat-Light;
+        padding: 0 275px;
+    }
+
+    .blogContent {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .blogCard {
+        margin: 16px 16px 32px 16px;
+        border-radius: 5px;
+        box-shadow: 0 5px 10px 0 rgba(212, 212, 212, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.15);
+        width: 360px;
+        height: 224px;
+    }
+
+    .blog_image_div {
+        width: 360px;
+        height: 224px;
+        border-radius: 5px;
+    }
+
+    .blog_image {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px 5px 0 0;
+    }
+
+    .blog_box {
+        padding: 32px;
+    }
+
+    .blogCardName {
+        text-align: center;
+        margin-bottom: 16px;
+        font-size: 19px;
+    }
+
+    .blogCardContent {
+        text-align: center;
+        line-height: 24px;
+        color: #8D97AD;
+        margin-bottom: 16px;
+        font-size: 17px;
+        font-family: Montserrat-Light;
+    }
+
+    .blog_ReadMeTag {
+        padding-top: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #1DC8CA;
+        font-size: 16px;
+    }
+
+    .blog_ReadMeTag:hover {
+        color: #137173;
+    }
+
+    #blog_arrow {
+        padding-left: 5px;
+    }
+
+    .footer {
+        width: auto;
+        height: auto;
+        padding: 60px 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(244, 248, 250);
+        column-gap: 80px;
+    }
+
+    .footerCard {
+        padding: 0 15px;
+        width: 200px;
+    }
+
+    .footerHead {
+        font-family: Montserrat-Bold;
+        font-size: 20px;
+        padding-bottom: 24px;
+        width: 200px;
+    }
+
+    .footerContent {      
+        line-height: 24px;
+        color: #8D97AD;
+        font-size: 17px;
+        font-family: Montserrat-Light;
+        margin-bottom: 16px;
+    }
+
+    .footerHeadSub {
+        font-size: 20px;
+        padding-bottom: 24px;
+    }
+
+    #footer_icons {
+        background-color: #52E5E5;
+        text-decoration: none;
+        color: white;
+        border-radius: 50%;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 14px 0;
+        
+    }
+
+    .footer_icon_div {
+        display: flex;
+        column-gap: 12px;
+        margin-bottom: 16px;
+    }
+
+    #footer_icons:hover {
+        background-color: #1DC8CA;
+    }
+}
+
+/* --------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------- */
+
+@media only screen and (min-width:2560px) {
+    .navBar {
+       display: flex;
+       justify-content: end;
+       align-items: center;
+       column-gap: 10px;
+       background-color: rgb(244, 248, 250);
+       position: fixed;
+       width: 100%;
+    }
+
+    .navBar ul {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        column-gap: 10px;
+    }
+    
+    .navBar li {
+        padding: 36px 0;
+        padding-left: 42px; 
+    }
+
+    .fa-sort-desc {
+        margin-top: -8px;
+        margin-left: -5px;
+    }
+
+    .buynowbtn {
+        padding: 0 36px;
+    }
+
+    .buy_btn {
+        padding: 14px 36px;
+        background-color: #1DC8CA;
+        color: white;
+        border-radius: 5px;
+        border: none;
+        font-family: Montserrat-Regular;
+    }
+
+    .nav_icon {
+        position: fixed;
+        background-color: rgb(244, 248, 250);
+        width: 100%;
+        display: none;
+    }
+
+    .lnr-menu {
+        float: right;
+        padding: 20px;
+        font-size: 35px;
+        display: none;
+    }
+
+    .bannerContent {
+        width: auto;
+        height: 1960px;
+        background-image: url(../Assets/Images/banner.jpg);
+        background-position: center;
+        background-size: cover;
+        padding: 0 15px;
+    }
+
+    .bannerHeading {
+        font-family: Montserrat-Bold;
+        font-size: 48px;
+        padding-top: 50%;
+        text-align: center;
+    }
+
+    .bannerPara {
+        color: white;
+        font-size: 28px;
+        text-align: center;
+        padding: 34px 0;
+    }
+
+    .bannerBtn {
+        display: flex;
+        justify-content: center;
+    }
+
+    .buynow_btn {
+        background-color: white;
+        font-family: Montserrat-Light;
+        border: none;
+        border-radius: 5px;
+        width: 140px;
+        height: 50px;
+        padding: 12px 32px;
+        font-size: 16px;
+        margin: 6px 12px;
+    }
+
+    .buynow_btn:hover {
+        background-color: #8D97AD;
+    }
+
+    .waysto_bnt {
+        font-family: Montserrat-Light;
+        border: 2px solid #FFFFFF;
+        border-radius: 5px;
+        width: 180px;
+        height: 50px;
+        padding: 12px 32px;
+        font-size: 16px;
+        margin: 6px 12px;
+        color: #FFFFFF;
+        background: transparent;
+    }
+
+    .waysto_bnt:hover {
+        background-color: white;
+        color: black;
+    }
+
+    .journal {
+        width: auto;
+        height: auto;
+        padding: 60px 36px;
+        margin: 0 710px;
+
+    }
+
+    .journalheading {
+        font-size: 28px;
+        margin-bottom: 16px;
+    }
+
+    .journalDes {
+        color: #8D97AD;
+        font-family: Montserrat-Light;
+        font-size: 16px;
+        margin-bottom: 24px;
+        line-height: 26px;
+        width: 750px;
+    }
+
+    .journalContainer {
+        display: flex;
+        flex-wrap: wrap;
+        border: 1px solid #e4e4e4;
+        border-radius: 5px; 
+    }
+
+    .journalBox {
+        padding: 48px 32px;
+        width: 292px;
+        height: 140px;
+    }
+
+    .journal_para {
+        color: #8D97AD;
+        font-family: Montserrat-Light;
+        margin-bottom: 26px;
+        line-height: 24px;
+    }
+
+    .journalReadMeTag {
+        color: #1DC8CA;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+
+    #journal_arrow {
+        padding-left: 5px;
+    }
+
+    .journalReadMeTag:hover {
+        color: #137173;
+    }
+
+    .journal_image_Box {
+        width:  354px;
+        height: 244px;
+    }
+
+    .joural_image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .journalFooter {
+        padding: 60px 920px;
+        line-height: 24px;
+        color: #8D97AD;
+        font-family: Montserrat-Light;
+        text-indent: 15px; 
+    }
+
+    .emailContainer {
+        background-image: url(../Assets/Images/footer\ -\ original.jpg);
+        background-position: center;
+        background-size: cover;
+        width: auto;
+        height: 180px;
+        padding: 90px 0;
+    }
+
+    .emailHeading {
+        text-align: center;
+        color: white;
+        font-size: 48px;
+        padding-bottom: 40px;
+    }
+
+    .emailGrp {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .emailInput {
+        width: 590px;
+        height: 50px;
+        padding: 0 30px;
+        font-size: 18px;
+        font-family: Montserrat-Regular;
+        border: none;
+        border-radius: 5px 0 0 5px;
+        margin-bottom: 10px;
+    }
+
+    .emailBtn {
+        width: 140px;
+        height: 50px;
+        padding: 0 20px;
+        text-align: center;
+        font-size: 16px;
+        font-family: Montserrat-Regular;
+        border: none;
+        border-radius: 0 5px 5px 0;
+        margin-bottom: 10px;
+        background-color: #1DC8CA;
+        color: white;
+    }
+
+    .emailBtn:hover {
+        background-color: #137173;
+    }
+
+    .geographic {
+        width: auto;
+        height: auto;
+        padding: 90px 36px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 30px;
+    }
+
+    .geographicList_one {
+        padding: 32px;
+        background-image:linear-gradient(to bottom left, #1FCBC5, #29DAA1);
+        color: white;
+        border-radius: 5px;
+        margin-bottom: 80px;
+        width: 330px;
+        height: 230px;
+    }
+
+    .geographicHead {
+        font-size: 20px;
+        padding-bottom: 24px;
+    }
+
+    .geographicContent {
+        line-height: 26px;
+        font-size: 16px;
+        width: 270px;
+    }
+
+    .geo_ReadMeTag {
+        padding-top: 24px;
+        display: flex;
+    }
+
+    .geo_ReadMeTag:hover {
+        color: grey;
+    }
+
+    #geo_arrow {
+        padding-left: 5px;
+    }
+
+    .geographicList_two {
+        padding: 32px;
+        background-image:linear-gradient(to bottom left, #2E6EE8, #1A8CF3);
+        color: white;
+        border-radius: 5px;
+        margin-bottom: 80px;
+        width: 330px;
+        height: 230px;
+    }
+
+    .geographicList_three {
+        padding: 32px;
+        background-image:linear-gradient(to bottom left, #FF685F, #FF5376);
+        color: white;
+        border-radius: 5px;
+        margin-bottom: 80px;
+        width: 330px;
+        height: 230px;
+    }
+
+    .geographicFooter {
+        padding: 0 920px;
+    }
+
+    .fa-quote-left {
+        color: #f0f0f0;
+        font-size: 50px;
+    }
+
+    .geographicFooterContent {
+        line-height: 24px;
+        color: #8D97AD;
+        font-family: Montserrat-Light;
+        font-size: 20px;
+        padding-bottom: 30px;
+    }
+
+    .travelContainer {
+        padding: 90px 45px 0 45px;
+        width: auto;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .travel_card_one {
+        padding: 16px 16px 48px 16px;
+        width: 360px;
+    }
+
+    .travelTypeOneHead {
+        font-size: 28px;
+        margin-bottom: 24px;
+        line-height: 38px;
+    }
+
+    .travelTypeOneContent {
+        line-height: 28px;
+        color: #8D97AD;
+        margin-bottom: 18px;
+        font-family: Montserrat-Light;
+    }
+
+    .travel_btn {
+        display: block;
+        text-align: center;
+    }
+
+    .travelTypeOneBtn {
+        background-color: #1DC8CA;
+        color: white;
+        margin: 6px 12px;
+        padding: 12px 32px;
+        height: 60px;
+        font-family: Montserrat-Light;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .travelTypeOneBtn:hover {
+        background-color: #137173;
+    }
+
+    .travel_image_div {
+        width: 360px;
+        height: 220px;
+        border-radius: 5px;
+        box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.15);
+        margin-bottom: 32px;
+    }
+
+    .travel_image {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+    }
+
+    .travel_card_two {
+        padding: 16px 16px 48px 16px;
+        width: 360px;
+    }
+
+    .travelTypeTwoHead {
+        padding-bottom: 12px;
+    }
+
+    .travel_card_three {
+        padding: 16px 16px 48px 16px;
+        width: 360px;
+    }
+
+    .travel_ReadMeTag {
+        padding-top: 16px;
+        display: flex;
+        align-items: center;
+        color: #1DC8CA;
+    }
+
+    .travel_ReadMeTag:hover {
+        color: #137173;
+    }
+
+    
+    #travel_arrow {
+        padding-left: 5px;
+    }
+
+    .blogContainer {
+        padding: 45px 36px 90px 36px;
+        width: auto;
+        height: 555px;
+    }
+
+    .blogtitle {
+        text-align: center;
+        margin-bottom: 24px;
+        font-size: 30px;
+    }
+
+    .blogDes {
+        text-align: center;
+        line-height: 24px;
+        color: #8D97AD;
+        margin-bottom: 24px;
+        font-size: 20px;
+        font-family: Montserrat-Light;
+        padding: 0 820px;
+    }
+
+    .blogContent {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .blogCard {
+        margin: 16px 16px 32px 16px;
+        border-radius: 5px;
+        box-shadow: 0 5px 10px 0 rgba(212, 212, 212, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.15);
+        width: 360px;
+        height: 224px;
+    }
+
+    .blog_image_div {
+        width: 360px;
+        height: 224px;
+        border-radius: 5px;
+    }
+
+    .blog_image {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px 5px 0 0;
+    }
+
+    .blog_box {
+        padding: 32px;
+    }
+
+    .blogCardName {
+        text-align: center;
+        margin-bottom: 16px;
+        font-size: 19px;
+    }
+
+    .blogCardContent {
+        text-align: center;
+        line-height: 24px;
+        color: #8D97AD;
+        margin-bottom: 16px;
+        font-size: 17px;
+        font-family: Montserrat-Light;
+    }
+
+    .blog_ReadMeTag {
+        padding-top: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #1DC8CA;
+        font-size: 16px;
+    }
+
+    .blog_ReadMeTag:hover {
+        color: #137173;
+    }
+
+    #blog_arrow {
+        padding-left: 5px;
+    }
+
+    .footer {
+        width: auto;
+        height: auto;
+        padding: 60px 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(244, 248, 250);
+        column-gap: 80px;
+    }
+
+    .footerCard {
+        padding: 0 15px;
+        width: 200px;
+    }
+
+    .footerHead {
+        font-family: Montserrat-Bold;
+        font-size: 20px;
+        padding-bottom: 24px;
+        width: 200px;
+    }
+
+    .footerContent {      
+        line-height: 24px;
+        color: #8D97AD;
+        font-size: 17px;
+        font-family: Montserrat-Light;
+        margin-bottom: 16px;
+    }
+
+    .footerHeadSub {
+        font-size: 20px;
+        padding-bottom: 24px;
+    }
+
+    #footer_icons {
+        background-color: #52E5E5;
+        text-decoration: none;
+        color: white;
+        border-radius: 50%;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 14px 0;
+        
+    }
+
+    .footer_icon_div {
+        display: flex;
+        column-gap: 12px;
+        margin-bottom: 16px;
+    }
+
+    #footer_icons:hover {
+        background-color: #1DC8CA;
+    }
+}
+
+/* --------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------- */
