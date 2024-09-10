@@ -1,0 +1,589 @@
+@font-face {
+    font-family: WorkSans-Regular;
+    src: url(../Assets/Fonts/Work_Sans/static/WorkSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Medium;
+    src: url(../Assets/fonts/Poppins/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: Poppins-SemiBold;
+    src: url(../Assets/fonts/Poppins/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Bold;
+    src: url(../Assets/fonts/Poppins/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: Poppins-BoldItalic;
+    src: url(../Assets/fonts/Poppins/Poppins-BoldItalic.ttf);
+}
+
+body {
+    font-family: sans-serif;
+}
+
+@media only screen and (max-width:375px) {
+    .container {
+        overflow: auto;
+        position: relative;
+    }
+
+    .nav_Top {
+        width: 290px;
+        padding: 10px 15px;
+        border-bottom: 0.5px solid rgba(255, 255, 255, 0.43);
+    }
+    
+    .phone {
+        display: flex;
+        column-gap: 5px;
+        align-items: center;
+        line-height: 24px;
+        font-size: 14px;
+    }
+    
+    .icons {
+        display: none;
+    }
+
+    .nav_list, .nav_btn {
+        display: none;
+    }
+
+    .nav_below {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        background-color: black;  
+    }
+
+    .top_logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 10px;
+    }
+
+    .fa-bars {
+        font-size: 18px;
+        color: white;
+    }
+
+    .dot_icons {
+        display: none;
+    }
+
+    .header_container {
+        background-image: url(../Assets/Images/slider2.jpg);
+        background-position: center;
+        background-size: auto;
+        padding: 64px 15px;
+        color: white;
+    }
+
+    .head {
+        font-size: 36px;
+        font-family: Poppins-SemiBold;  
+        line-height: 42px;
+    }
+
+    .head_para {
+        color: white;
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 28px;
+        color: rgb(221, 221, 221);
+        margin-bottom: 30px;
+    }
+
+    .contact_btn {
+        padding: 18px 35px;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        background-color: #2154CF;
+        font-family: Poppins-SemiBold;
+        font-size: 14px;
+        letter-spacing: 1px;
+        margin: 0px 15px 5px 0;
+    }
+
+    .learn_btn {
+        padding: 18px 40px;
+        border: none;
+        border-radius: 5px;
+        font-family: Poppins-SemiBold;
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+    
+    .fa-arrow-right {
+        padding-left: 5px;
+    }
+
+    .contact_btn:hover {
+        background-color: black;
+        transition: .5s;
+        color: white;
+        cursor: pointer;
+    }
+    
+    .learn_btn:hover {
+        background-color: #2154CF;
+        transition: .5s;
+        color: white;
+        cursor: pointer;
+    }
+
+    .plan_container {
+        width: auto;
+        height: auto;
+        padding: 100px 10px 70px 10px;
+    }
+
+    .plan_card {
+        padding: 50px 30px;
+        width: auto;
+        height: auto;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.11), 0 1px 10px 0 rgba(0, 0, 0, 0.11);
+        margin-bottom: 40px;
+    }
+
+    .plan_card:hover {
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.11), 0 1px 30px 0 rgba(0, 0, 0, 0.11);
+        transition: .5s ease;
+        border-bottom: 5px solid #2154CF;
+    }
+
+    .plan_image {
+        margin-bottom: 30px;
+    }
+
+    .plan_head {
+        font-family: Poppins-SemiBold;
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    .plan_para {
+        color: rgb(102, 102, 102);
+        margin-bottom: 25px;
+        line-height: 26px;
+        font-size: 16px;
+    }
+
+    .fa-arrow-right {
+        margin-left: -5px;
+    }
+
+    .plan_footer {
+        background-color: #2154CF;
+        color: white;
+        width: auto;
+        height: auto;
+        padding: 50px 15px;
+    }
+
+    .plan_content {
+        font-size: 36px;
+        font-family: Poppins-SemiBold;
+        margin-bottom: 20px;
+    }
+    
+    .plan_btn {
+        padding: 18px 45px;
+        border: none;
+        border-radius: 5px;
+        font-family: Poppins-SemiBold;
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+    
+    .plan_btn:hover {
+        background-color: black;
+        transition: .5s;
+        color: white;
+        cursor: pointer;
+    }
+
+    .project_container {
+        padding: 115px 10px 70px 10px;
+        width: auto;
+        height: auto;
+    }
+
+    .project_head {
+        font-family: Poppins-SemiBold;
+        font-size: 35px;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .project_list_div {
+        margin-bottom: 40px;
+        padding: 0 10px;
+    }
+    
+    .project_list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    .list {
+        padding: 0 10px;
+        margin-bottom: 5px;
+        color: rgb(102, 102, 102);
+        line-height: 24px;
+    }
+    
+    .all {
+        color: #2154CF;
+        padding: 0 10px;
+        margin-bottom: 5px;
+        line-height: 24px;
+    }
+    
+    .list:hover {
+        color: #2154CF;
+        cursor: pointer;
+    }
+
+    .project_felx_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project_card {
+        width: 270px;
+        height: 300px;
+        position: relative;
+    }
+    
+    .project_image {
+        width: 100%;
+        height: 243px;
+    }
+
+    .overlay {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.850);
+        overflow: hidden;
+        width: 100%;
+        height: 0;
+        transition: .3s ease;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project_card:hover .overlay {
+        height: 100%;
+    }
+    
+    .overlay_head {
+        color: rgb(224, 224, 224);
+        font-family: Poppins-SemiBold;
+        font-size: 20px;
+    }
+    
+    .overlay_head:hover {
+        color: white;
+        cursor: pointer;
+    }
+    
+    .overlay_subhead {
+        font-family: sans-serif;
+        font-size: 16px;
+        color: rgb(224, 224, 224);
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+    }
+
+    .about_container {
+        width: auto;
+        height: auto;
+        padding: 110px 15px 90px 15px;
+        background-color: #F4F7FC;
+    }
+
+    .about_image_box {
+        display: none;
+    }
+
+    .about_content {
+        margin-bottom: 30px;
+    }
+
+    .about_head {
+        font-family: Poppins-Bold;
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    
+    .about_descp {
+        font-size: 24px;
+        line-height: 28px;
+        margin-bottom: 20px;
+    }
+    
+    .about_para {
+        color:  rgb(102, 102, 102);
+        line-height: 30px;
+        margin-bottom: 30px;
+    }
+    
+    .about_btn {
+        padding: 18px 45px;
+        border: none;
+        border-radius: 5px;
+        font-family: Poppins-SemiBold;
+        font-size: 14px;
+        background-color: #2154CF;
+        color: white;
+        letter-spacing: 1px;
+    }
+    
+    .about_btn:hover {
+        background-color: black;
+        transition: .5s;
+        color: white;
+        cursor: pointer;
+    }
+
+    .services_container {
+        width: auto;
+        height: auto;
+        padding: 115px 10px 75px 10px;
+    }
+
+    .service_head {
+        text-align: center;
+        font-family: Poppins-SemiBold;
+        font-size: 35px;
+        padding-bottom: 20px;
+        line-height: 42px;
+    }
+
+    .service_flex_container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .service_content {
+        padding: 30px;
+    }
+
+    .service_card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        width: 280px;  
+        height: auto; 
+        margin-bottom: 40px;
+    }
+
+    .service_card_head {
+        font-family: Poppins-SemiBold;
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .service_card_head:hover {
+        color: #2154CF;
+        cursor: pointer;
+    }
+    
+    .service_card_para {
+        color:  rgb(102, 102, 102);
+        line-height: 24px;
+        margin-bottom: 25px;
+    }
+    
+    .service_card_footer {
+        color: rgb(102, 102, 102);
+        font-family: Poppins-SemiBold;
+    }
+    
+    .service_card_footer:hover {
+        color: #2154CF;
+        cursor: pointer;
+    }
+    
+    .imageDiv {
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .imageDiv::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        transition: .2s ease-in;
+    }
+    
+    .service_card:hover .imageDiv::after {
+        background-color: rgba(33, 85, 207, 0.87);
+        cursor: pointer;
+    }
+    
+    .service_image {
+        width: 100%;
+        position: relative;
+        transition: transform .5s ease;
+    }
+    
+    .service_card:hover .service_image {
+        transform: scale(1.05);
+    }
+    
+    .fa-link {
+        font-size: 30px;
+    }
+    
+    .overlay_style {
+        position: absolute;
+        top: 40%;
+        left: 40%;
+        display: none;
+    }
+    
+    .service_card:hover .overlay_style {
+        display: block;
+        z-index: 1;
+        cursor: pointer;
+    }
+
+    .count_background {
+        background-image: url(../Assets/Images/bg-counter.jpg);
+        width: auto;
+        height: 1025px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        color: white;
+        display: flex;
+    }
+
+    .count_container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;    
+    }
+
+    #profile {
+        font-size: 54px;  
+    }
+    
+    .count {
+        font-family: Poppins-SemiBold;
+        font-size: 36px;
+        padding: 15px 0;
+    }
+    
+    .contact_content {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .contact_container {
+        padding: 100px 15px;
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact_box {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        width: auto;
+        height: auto;
+        padding: 30px 20px;
+        margin-top: 25px;
+        border-bottom: 5px solid #2154CF;
+    }
+
+    .contact_footer_btn {
+        padding: 20px 45px;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        background-color: #2154CF;
+        font-family: Poppins-SemiBold;
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+    
+    .contact_footer_btn:hover {
+        background-color: black;
+        transition: .5s;
+        color: white;
+        cursor: pointer;
+    }
+
+    .contact_head {
+        font-family: Poppins-SemiBold;
+        font-size: 35px;
+        line-height: 48px;
+        color: rgb(51, 51, 51);
+        margin-bottom: 15px;
+    }
+    
+    .contact_para {
+        color:  rgb(102, 102, 102);
+        line-height: 30px;
+        margin-bottom: 40px;
+    }
+
+    .lnr-thumbs-up {
+        padding-right: 13px;
+    }
+
+    .contact_list {
+        display: flex;
+        flex-direction: column;
+        color:  rgb(102, 102, 102);
+    }
+
+    .contact_list li{
+        margin-bottom: 30px;
+    }
+
+    .thumbs_list {
+        margin-bottom: 30px;
+    }
+
+    .image_container {
+        width: 290px;
+        height: 288px;
+        margin-top: 30px;
+      
+    }
+
+    .contact_image {
+        width: 290px;
+        height: 288px;
+    }
+}

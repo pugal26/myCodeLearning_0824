@@ -451,8 +451,7 @@ body {
 
 .service_card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    width: 355px;
-    
+    width: 355px;   
 }
 
 .service_card_head {
