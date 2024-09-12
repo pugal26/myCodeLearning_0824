@@ -813,8 +813,8 @@ body {
 .news_flex_container {
     display: flex;
     justify-content: center;
-
-column-gap: 40px;}
+    column-gap: 40px;
+}
 
 .news_card {
     width: 290px;
