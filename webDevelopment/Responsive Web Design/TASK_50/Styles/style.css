@@ -572,7 +572,11 @@ body {
         color:  rgb(102, 102, 102);
     }
 
-    .contact_list li{
+    .contact_list_1 li {
+        margin-bottom: 30px;
+    }
+
+    .contact_list_2 li {
         margin-bottom: 30px;
     }
 
@@ -1560,7 +1564,11 @@ body {
         color:  rgb(102, 102, 102);
     }
 
-    .contact_list li{
+    .contact_list_1 li {
+        margin-bottom: 30px;
+    }
+
+    .contact_list_2 li {
         margin-bottom: 30px;
     }
 
@@ -2550,8 +2558,12 @@ body {
         color:  rgb(102, 102, 102);
     }
 
-    .contact_list li{
-        margin-bottom: 25px;
+    .contact_list_1 li {
+        margin-bottom: 30px;
+    }
+
+    .contact_list_2 li {
+        margin-bottom: 30px;
     }
 
     .thumbs_list {
@@ -3569,14 +3581,18 @@ body {
         padding-right: 13px;
     }
 
-    .contact_list {
+    .contact_list_div {
         display: flex;
+        column-gap: 150px;
         color:  rgb(102, 102, 102);
     }
 
-    .contact_list li{
-        margin-bottom: 25px;
-        width: 305px;
+    .contact_list_1 li {
+        margin-bottom: 30px;
+    }
+
+    .contact_list_2 li {
+        margin-bottom: 30px;
     }
 
     .thumbs_list {
