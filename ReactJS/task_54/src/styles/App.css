@@ -1,0 +1,99 @@
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url(../assets/Fonts/Montserrat/static/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url(../assets/Fonts/Montserrat/static/Montserrat-Bold.ttf);
+}
+@font-face {
+    font-family: Montserrat-Light;
+    src: url(../assets/Fonts/Montserrat/static/Montserrat-Light.ttf);
+}
+@font-face {
+    font-family: Montserrat-Medium;
+    src: url(../assets/Fonts/Montserrat/static/Montserrat-Medium.ttf);
+}
+@font-face {
+    font-family: Montserrat-Thin;
+    src: url(../assets/Fonts/Montserrat/static/Montserrat-Thin.ttf);
+}
+
+body {
+    font-family: Montserrat-Regular;
+}
+
+.banner {
+    background-image: url(../assets/Images/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: auto;
+    height: 1200px;
+    position: relative;
+    background-attachment: scroll;
+    background-origin: initial;   
+}
+
+ul {
+    display: flex;
+    justify-content: end;
+    margin: 30px;
+    position: fixed;
+    right: 150px;
+}
+
+li {
+    margin-left: 40px;
+    margin-right: 40px;
+    color: #444444;
+    font-size: 20px;
+}
+
+.buynowbtn {
+    background-color: #1DC8CA;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 40px;
+    top: 20px;
+    border-radius: 5px;
+    color: white;
+    font-family: Montserrat-Medium;
+}
+
+.bannerContent {
+    text-align: center;
+    position: absolute;
+    top: 446px;
+    right: 540px;
+}
+
+.bannerHeading {
+    font-family: Montserrat-Bold;
+    font-size: 60px;
+    padding: 20px;
+}
+
+.bannerPara {
+    font-size: 30px;
+    font-family: Montserrat-Light;
+    padding: 20px;
+    color: white;
+    margin-top: 5px;
+}
+
+.bannerBtn {
+    font-family: Montserrat-Regular;
+    margin-top: 50px;
+    padding: 10px 25px 10px 25px;
+    margin-left: 20px;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-size: 18px;   
+}
