@@ -10,7 +10,9 @@ import client4 from './assets/Images/client4.png';
 import client5 from './assets/Images/client5.png';
 import map from './assets/Images/map.png';
 import feedbackImg from './assets/Images/feedbackImg.jpg';
-// import WbIncandescentOutlinedIcon from '@mui/icons-material/WbIncandescentOutlined';
+import WbIncandescentOutlinedIcon from '@mui/icons-material/WbIncandescentOutlined';
+import AccountCircleIcon from '@material-ui/icons/AccountCircle';
+import PaletteOutlinedIcon from '@material-ui/icons/PaletteOutlined';
 import './styles/Reset.css';
 import './styles/App.css';
 
@@ -40,57 +42,60 @@ function App() {
         </div>
       </div>
 
-      {/* <div className="serviceContainer">
+      <div className="serviceContainer">
         <h2 className="serviceHead">Our Services</h2>
         <div className="serviceBox">
           <div className="boxContent">
-              <span  
-                  style={{fontSize: "115px",
-                          rotate: "180deg",
-                          color: "#A148FF",
-                          backgroundColor: "rgb(255, 255, 255, 0.5)",
-                          padding: "15px",
-                          borderRadius: "500px",
-                          boxShadow: "1px 2px 30px 1px #d4d4d4",
-                          margin: "50px 35px 10px 135px"
-                        }}>
-                  <WbIncandescentOutlinedIcon />
-              </span>
-              <h5 className="boxContentHead">Interior Photography</h5>
-              <p className="boxPara">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu risus eget sapien pellentesque porttitor nec ut velit.</p>
+            <WbIncandescentOutlinedIcon style={{
+                    rotate: "180deg",
+                    color: "#A148FF",
+                    backgroundColor: "rgb(255, 255, 255, 0.5)",
+                    padding: "25px",
+                    borderRadius: "100px",
+                    boxShadow: "1px 2px 30px 1px #d4d4d4",
+                    margin: "auto",
+                    marginTop: "50px",
+                    width: "100px",
+                    height: "100px",
+                    display: "flex"
+                  }}/>
+            <h5 className="boxContentHead">Interior Photography</h5>
+            <p className="boxPara">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu risus eget sapien pellentesque porttitor nec ut velit.</p>
           </div>
           <div className="boxContent">
-              <span className="material-symbols-outlined" 
-                  style={{fontSize: "115px",
-                          fontWeight: "bold",
-                          color: "#A148FF",
-                          backgroundColor: "rgb(255, 255, 255, 0.5)",
-                          padding:"15px",
-                          borderRadius: "500px",
-                          boxShadow: "1px 2px 30px 1px #d4d4d4",
-                          margin: "50px 35px 10px 140px"
-                        }}>
-                  account_circle</span>
-              <h5 className="boxContentHead">Portrait Photo</h5>
-              <p className="boxPara">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu risus eget sapien pellentesque porttitor nec ut velit.</p>
+            <AccountCircleIcon style={{                          
+                      color: "#A148FF",
+                      backgroundColor: "rgb(255, 255, 255, 0.5)",
+                      padding:"25px",
+                      borderRadius: "100px",
+                      boxShadow: "1px 2px 30px 1px #d4d4d4",
+                      margin: "auto",
+                      marginTop: "50px",
+                      width: "100px",
+                      height: "100px",
+                      display: "flex"
+                    }}/>
+            <h5 className="boxContentHead">Portrait Photo</h5>
+            <p className="boxPara">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu risus eget sapien pellentesque porttitor nec ut velit.</p>
           </div>
-          <div className="boxContent">
-              <span className="material-symbols-outlined"
-                  style={{fontSize: "115px",
-                          fontWeight: "bold",
-                          color: "#A148FF",
-                          backgroundColor: "rgb(255, 255, 255, 0.5)",
-                          padding: "15px",
-                          borderRadius: "500px",
-                          boxShadow: "1px 2px 30px 1px #d4d4d4",
-                          margin: "50px 35px 10px 125px",
-                        }}>
-                  palette</span>
-              <h5 className="boxContentHead">Art Photo</h5>
-              <p className="boxPara">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu risus eget sapien pellentesque porttitor nec ut velit.</p>
+          <div className="boxContent">              
+            <PaletteOutlinedIcon style={{                    
+                    color: "#A148FF",
+                    backgroundColor: "rgb(255, 255, 255, 0.5)",
+                    padding: "25px",
+                    borderRadius: "100px",
+                    boxShadow: "1px 2px 30px 1px #d4d4d4",
+                    margin: "auto",
+                    marginTop: "50px",
+                    width: "100px",
+                    height: "100px",
+                    display: "flex"
+                  }}/>
+            <h5 className="boxContentHead">Art Photo</h5>
+            <p className="boxPara">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu risus eget sapien pellentesque porttitor nec ut velit.</p>
           </div>
         </div>
-      </div> */}
+      </div>
 
       <div className="pricingContainer">
         <div className="pricingHeading">

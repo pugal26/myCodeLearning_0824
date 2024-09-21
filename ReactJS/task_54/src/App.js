@@ -164,7 +164,7 @@ function App() {
 
         <div className="footerCard">
             <h3 className="footerHeadSub">Social</h3>
-            <a href="#" className='geo_arrowRight'></a>
+            <a href="#" className='fa fa-facebook'></a>
             <a href="#" className="fa fa-twitter"></a>
             <a href="#" className="fa fa-instagram"></a>
         </div>
