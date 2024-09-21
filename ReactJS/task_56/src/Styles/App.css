@@ -1,0 +1,731 @@
+@font-face {
+    font-family: Poppins-Regular;
+    src: url(../Assets/Fonts/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Medium;
+    src: url(../Assets/Fonts/Poppins/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Bold;
+    src: url(../Assets/Fonts/Poppins/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: Poppins-SemiBold;
+    src: url(../Assets/Fonts/Poppins/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Thin;
+    src: url(../Assets/Fonts/Poppins/Poppins-Thin.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Light;
+    src: url(../Assets/Fonts/Poppins/Poppins-Light.ttf);
+}
+
+
+.logo {
+    margin-right: 380px;
+}
+
+.nav {
+    font-family: Poppins-Medium;
+    display: flex;
+    justify-content: end;
+    padding: 16px 16px 10px 16px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: auto;
+    background-color: white;
+    padding-right: 190px;
+    z-index: 19;
+}
+
+.navBar {
+    overflow: hidden;
+    background-color: white;
+}
+
+.navBar a {
+    float:left;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-decoration: none;
+    padding: 12px 12px;
+    font-size: 12.5px;
+}
+
+.navBar a:hover {
+    color: #8490ff;
+}
+
+.navBar a:hover, .dropdown:hover .dropbtn {
+    color: #8490ff;
+}
+
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    border: none;
+    outline: none;
+    color: black;
+    background-color: transparent;
+    font-family: Poppins-Medium;
+    margin: 0;
+    font-size: 12.5px;
+    padding: 10px 16px;
+}
+
+.blogDropdown {
+    display: none;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    background-color: white;
+}
+
+.blogDropdown a {
+    float: none;
+    color: black;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    padding: 10px 15px;
+    margin: 15px 180px 15px 0;   
+}
+
+.dropdown:hover .blogDropdown {
+    display: block;
+    color: #8490ff;
+    top: 65px;
+}
+
+.pagesDropdown {
+    display: none;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    background-color: white;
+}
+
+.pagesDropdown a {
+    float: none;
+    color: black;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    padding: 10px 15px;
+    margin: 15px 180px 15px 0;   
+}
+
+.dropdown:hover .pagesDropdown {
+    display: block;
+    color: #8490ff;
+    right: 100px;
+    top: 65px;
+}
+
+.titleContainer {
+    background-color: #F9F9FF;
+    display: flex;
+    align-items: center;
+    padding-top: 80px; 
+}
+
+.titleContent {
+    margin-left: 195px;
+    
+}
+
+.titleHead {
+    font-family: Poppins-Regular;
+    letter-spacing: 3px;
+    font-size: 15px;
+}
+
+.titleName {
+    font-family: Poppins-SemiBold;
+    font-size: 60px;
+    padding: 15px 0;
+}
+
+.titlePara {
+    font-family: Poppins-Light;
+    font-size: 13px;
+    color: rgb(119, 119, 119);
+    line-height: 25px;
+    padding-top: 5px;
+}
+
+.titleImg {
+    margin-left: 115px;    
+}
+
+.titleBtn {
+    width: 190px;
+    height: 50px;
+    color: white;
+    font-family: Poppins-Medium;
+    font-size: 16px;
+    border: none;
+    background-image: linear-gradient(to right, #818ffd, #63BDFD);
+    margin-top: 25px;
+    display: inline-block;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.titleBtn:hover {
+    box-shadow: 0 18px 35px -6px #818ffd ;
+}
+
+.aboutContainer {
+    display: flex;
+    align-items: center;
+    margin: 70px 125px 0px 195px;
+}
+
+.aboutImg {
+    width: 550px;
+    height: 390px;
+}
+
+.aboutContent {
+    padding-left: 35px;
+    padding-right: 100px;
+}
+
+.abouthead {
+    font-family: Poppins-Regular;
+    font-size: 15px;
+}
+
+.aboutName {
+    font-family: Poppins-SemiBold;
+    font-size: 40px;
+    padding: 20px 0;
+}
+
+.aboutpara {
+    font-family: Poppins-Light;
+    font-size: 13px;
+    color: rgb(119, 119, 119);
+    line-height: 25px;
+}
+
+.aboutbtn {
+    width: 220px;
+    height: 50px;
+    color: white;
+    font-family: Poppins-Medium;
+    font-size: 16px;
+    border: none;
+    background-image: linear-gradient(to right, #818ffd, #63BDFD);
+    margin-top: 25px;
+    display: inline-block;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.aboutbtn:hover {
+    box-shadow: 0 18px 35px -6px #818ffd ;
+}
+
+.serviceContainer {
+    text-align: center;
+    margin: 0 150px;
+    padding-top: 60px;
+}
+
+.serviceHeader {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.serviceTitle {
+    font-family: Poppins-SemiBold;
+    font-size: 40px;
+    padding: 20px 0;
+}
+
+.serviceDesp {
+    font-family: Poppins-Light;
+    font-size: 13px;
+    color: rgb(119, 119, 119);
+    line-height: 25px;
+    margin: 10px 270px 50px 270px;
+}
+
+.serviceBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service {
+    padding: 20px;
+    width: 340px;
+    height: 220px;
+}
+
+.service i {
+    font-size: 35px;
+}
+
+.service h3 {
+    font-family: Poppins-SemiBold;
+    font-size: 20px;
+    margin: 20px 10px;
+}
+
+.service p {
+    font-family: Poppins-Light;
+    font-size: 14px;
+    color: rgb(119, 119, 119);
+    line-height: 25px;
+    margin-bottom: 25px;
+}
+
+.serivcei_h3:hover {
+    color: #8490ff;
+}
+
+.countContainer {
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to right, #818ffd, #63BDFD);
+    padding: 64px 0;
+}
+
+.countBox {
+    width: 270px;
+    height: 50px;
+    text-align: center;
+}
+
+.countBox h3 {
+    font-family: Poppins-Bold;
+    font-size: 40px;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.countBox p {
+    font-family: Poppins-Light;
+    font-size: 13px;
+    color: white;
+    letter-spacing: 0.5px;
+}
+
+.projectsContainer {
+    text-align: center;
+    margin: 0 150px;
+    padding: 60px 0;
+}
+
+.projectHeader {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.projectTitle {
+    font-family: Poppins-SemiBold;
+    font-size: 40px;
+    padding: 20px 0;
+}
+
+.projectDesp {
+    font-family: Poppins-Light;
+    font-size: 13px;
+    color: rgb(119, 119, 119);
+    line-height: 25px;
+    margin: 10px 270px 40px 270px;
+}
+
+.projectList ul {
+    font-family: Poppins-Medium;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.projectList li {
+    padding: 25px 20px;
+    margin-bottom: 10px;
+}
+
+.hover-underline:after {
+    content: '';
+    display: none;
+    position: absolute;
+    width: 18px;
+    border: 2px solid;
+    margin-top: 10px;
+}
+
+.hover-underline:hover:after {
+    display: block;
+    width: 18px;
+}
+
+.projectBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 25px;
+    row-gap: 35px;
+}
+
+.projectCard h4 {
+    font-family: Poppins-SemiBold;
+    font-size: 20px;
+    margin: 25px 10px 10px 10px;
+}
+
+.projectCard p {
+    font-family: Poppins-Regular;
+    font-size: 17px;
+    color: rgb(119, 119, 119); 
+}
+
+.ImageDiv {
+    position: relative;
+}
+
+.ImageDiv::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: .5s ease-in;
+}
+
+.ImageDiv:hover::after {
+    background-image: linear-gradient(to right, #818ffda7, #63bdfdb4);
+}
+
+.background-style {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transition: .5s ease-in;
+    display: none;
+}
+
+.ImageDiv:hover .background-style {
+    display: block;
+    z-index: 1;
+}
+
+.planContainer {
+    margin: 0 150px;
+    padding: 40px 0;
+}
+
+.planHeader {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.planTitle {
+    font-family: Poppins-SemiBold;
+    font-size: 40px;
+    padding: 20px;
+}
+
+.planDesp {
+    font-family: Poppins-Light;
+    font-size: 13px;
+    color: rgb(119, 119, 119);
+    line-height: 25px;
+    margin: 10px 270px 40px 270px;
+}
+
+.planBox {
+    display: flex;
+    justify-content: center;
+    background-color: #F9F9FF;
+    margin: 10px 50px ;
+}
+
+.planSerialNo {
+    font-family: Poppins-Light;
+    font-size: 35px;
+    padding-top: 27px;   
+    position: relative;
+}
+
+.round {
+    width: 90px;
+    height: 90px;
+    background: #EDEFFF;
+    border-radius: 100%;
+    border: 30px solid #E2E5FF;
+    margin: 0 45px;   
+}
+
+.planContent h3 {
+    font-family: Poppins-SemiBold;
+    font-size: 20px;
+    margin: 30px 0;
+}
+
+.planContent p {
+    font-family: Poppins-Light;
+    font-size: 13px;
+    color: rgb(119, 119, 119);
+    line-height: 25px;
+    padding: 10px 0;
+    border-bottom: 0.5px solid rgba(128, 128, 128, 0.329);
+}
+
+.inner-style {
+    border-top: 0.5px solid rgba(128, 128, 128, 0.329);
+}
+
+.planCard {
+    width: 260px;
+    text-align: center;
+    padding: 40px 15px;
+    position: relative;
+}
+
+.price {
+    font-family: Poppins-SemiBold;
+    font-size: 40px;
+    padding: 20px 0;
+    margin-top: 10px;
+}
+
+.buyNowTxt {
+    font-family: Poppins-SemiBold;
+    font-size: 15px;
+    width: 100%;
+    height: 55px;
+    background-color: white;
+    border: none;
+}
+
+.planContent {
+    position: relative;
+}
+
+.buyNow { 
+    position: absolute;
+    bottom: 2%;
+    width: 220px;
+    padding-left: 15px;
+    display: none;
+}
+
+.planCard {
+    color: rgb(0, 0, 0);
+    transition: transform .5s;
+}
+
+.planCard:hover .round {
+    background-image: linear-gradient(to right, #818ffdde, #63bdfdcf);
+    border: 30px solid #97C6FE;
+}
+
+.planCard:hover{
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(to right, #818ffdde, #63bdfdcf);
+    transform: scale(1.05); 
+}
+
+.planCard:hover .planContent p {
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255);
+}
+
+.planCard:hover .inner-style {
+    border-top: 1px solid rgba(255, 255, 255);
+}
+
+.planCard:hover .buyNow {
+    display: block;
+    z-index: 1;
+}
+
+.blogContainer {
+    padding: 60px 150px;
+    background-color: #F9F9FF;
+}
+
+.blogHeader {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.blogTitle {
+    font-family: Poppins-SemiBold;
+    font-size: 40px;
+    padding: 20px 0;
+}
+
+.blogDesp {
+    font-family: Poppins-Light;
+    font-size: 13px;
+    color: rgb(119, 119, 119);
+    line-height: 25px;
+    margin: 10px 270px 40px 270px;
+}
+
+.settings {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    font-family: Poppins-Light;
+    font-size: 14px;
+    color: rgb(119, 119, 119);
+    border-bottom: 0.5px solid rgba(128, 128, 128, 0.329);
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.blogCard {
+    width: 360px;
+}
+
+.blogContent {
+    padding: 10px 0;
+}
+
+.blogContent h4 {
+    padding: 10px 0;
+    font-family: Poppins-SemiBold;
+    font-size: 18px;
+}
+
+.blogContent p {
+    padding: 10px 0;
+    font-family: Poppins-Light;
+    font-size: 13.5px;
+    color: rgb(119, 119, 119);
+    line-height: 26px;
+}
+
+.blogBox {
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+.blogImage {
+    overflow: hidden;
+}
+
+.Image {
+    transition: transform .2s;
+    overflow: hidden;
+}
+
+.Image:hover {
+    transform: scale(1.02);
+}
+
+.blogCard:hover {
+    color: #818ffd;
+}
+
+.clientContainer {
+    background-image: linear-gradient(to right, #818ffdde, #63bdfdcf);
+    display: flex;
+    justify-content: center;
+}
+
+.clientContainer img {
+    padding: 80px 50px;
+    text-align: center;
+    opacity: 0.5;
+}
+
+.clientContainer img:hover {
+  opacity: 1;
+}
+
+.footerContainer {
+    display: flex;
+    padding: 115px 0;
+    justify-content: center;
+    column-gap: 90px;
+    width: 1500px;
+    background-color: black;
+    color: white;
+}
+
+.footerAbout {
+    width: 450px;
+}
+
+.footerNews {
+    width: 370px;
+}
+
+.footerContainer h4 {
+    font-family: Poppins-SemiBold;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.footerContainer p {
+    font-family: Poppins-Light;
+    font-size: 13.5px;
+    margin-bottom: 20px;
+    line-height: 22px;
+    color: rgba(171, 171, 171, 0.777);
+}
+
+.author {
+    color: #4F7FF1;
+}
+
+.author:hover {
+    color: #31A6F5;
+}
+
+.emailInput {
+    width: 300px;
+    height: 40px;
+    border: none;
+}
+
+.emailBtn {
+    width: 55px;
+    height: 46px;
+    background-image: linear-gradient(to right, #818ffdde, #63bdfdcf);
+    color: white;
+}
+
+.footerIcons i {
+    padding-right: 10px;
+}
+
+.footerIcons i:hover {
+    color: #8490FF;
+}
+
+.emailInput  {
+    padding-left: 10px;
+    font-family: Poppins-Light;
+    font-size: 14px;
+}
