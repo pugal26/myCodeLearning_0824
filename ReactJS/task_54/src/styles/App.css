@@ -97,3 +97,307 @@ li {
     border-radius: 5px;
     font-size: 18px;   
 }
+
+.journal {
+    margin: 60px 60px;
+}
+
+.journalheading {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.journalDes {
+    font-family: Montserrat-Light;
+    font-size: 22px;
+    color: #8d97ad;
+    width: 900px;
+    line-height: 25px;
+}
+
+.journalContainer {
+    margin-top: 45px;
+}
+
+.journalBox {
+    border: 1px solid lightgrey;
+    width: 460px;
+    height: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #8d97ad;
+    line-height: 32px;
+    font-size: 23px;
+    font-family: Montserrat-Light;
+}
+
+.journalContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.journalReadMeTag {
+    color: #1DC8CA;
+    display: flex;
+    gap: 5px;
+}
+
+.arrowRight {
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+.journalFooter {
+    margin: 200px 250px;
+    height: 150px;
+    font-size: 24px;
+    font-family: Montserrat-Light;
+    line-height: 35px;
+    color: #8d97ad;
+    text-indent: 25px;
+}
+
+.emailContainer {
+    width: auto;
+    height: 400px;
+    background-image: url(../assets/Images/footer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.emailHeading {
+    text-align: center;
+    color: white;
+    font-size: 65px;
+    padding-top: 120px;
+}
+
+.emailGrp {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.emailInput {
+    width: 650px;
+    height: 60px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.emialBtn {
+    width: 150px;
+    background-color: #1DC8CA;
+    color: white;
+    font-size: 20px;
+    font-family: Montserrat-Regular;
+    border: none;
+    border-radius: 0 5px 5px 0;
+}
+
+.emailInput, placeholder {
+    font-family: Montserrat-Regular;
+    font-size: 24px;
+    padding-left: 50px;
+}
+
+.geographic {
+    display: flex;
+    margin: 100px 50px;
+}
+
+.geographicList {
+    width: 460px;
+    height: 360px;
+    border: 1px solid;
+    margin: 25px;
+    border-radius: 5px;
+
+}
+
+.geographicHead {
+    padding: 50px 50px 15px 50px;
+    font-size: 25px;
+}
+
+.geographicContent {
+    padding: 15px 50px 15px 50px;
+    font-size: 22px;
+    line-height: 35px;
+}
+
+.geographicReadMore {
+    padding: 15px 50px 15px 50px;
+    font-size: 22px;
+}
+
+.geo_arrowRight {
+    padding-top: 2px;
+    padding-left: 5px;
+}
+
+.geographicQuote {
+    color: lightgray;
+    font-size: 70px;
+}
+
+.geographicFooter {
+    margin: 60px 320px;
+}
+
+.geographicFooterContent {
+    font-size: 28px;
+    line-height: 45px;
+    color: #8d97ad;
+    font-family: Montserrat-Light;
+}
+
+.travelContainer {
+    display: flex;
+    margin: 100px 50px;
+}
+
+.travelTypeOne {
+    margin: 25px;
+}
+
+.travelTypeOneHead {
+    font-size: 40px;
+    margin-bottom: 60px;
+}
+
+.travelTypeOneContent {
+    width: 370px;
+    font-size: 22px;
+    color: #8d97ad;
+    margin-top: 20px;
+    line-height: 35px;
+    font-family: Montserrat-Light;
+}
+
+.travelTypeOneBtn {
+    width: 350px;
+    height: 90px;
+    margin-left: 15px;
+    margin-top: 20px;
+    padding: 10px 35px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1DC8CA;
+    color: white;
+    font-size: 23px;
+    font-family: Montserrat-Light;
+}
+
+.travelTypeTwoHead {
+    font-size: 26px;
+    margin-top: 30px;
+}
+
+.travelReadme {
+    color: #1DC8CA;
+    margin: 25px 0 45px 10px;
+    font-size: 20px;
+}
+
+.blogHeading {
+    text-align: center;
+}
+
+.blogtitle {
+    font-size: 35px;
+    margin: 40px 0;
+}
+
+.blogDes {
+    font-size: 25px;
+    font-family: Montserrat-Light;
+    color: #8d97ad;
+    margin: 5px 250px;
+}
+
+.blogCard {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+    max-width: 380px;
+    margin: auto;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 100px;
+}
+
+.blogContent {
+    display: flex;
+    margin: 50px 140px;
+    width: 1280px;
+}
+
+.blogCardName {
+    font-size: 28px;
+    margin: 40px 20px 10px 20px ;
+}
+
+.blogCardContent {
+    font-size: 20px;
+    margin: 20px 20px 10px 20px;
+    color: #8d97ad;
+    line-height: 35px;
+    padding: 0 30px;
+}
+
+.footer {
+    display: flex;
+    background-color: #F4F8FA;
+    
+}
+
+.footerCard {
+    width: 240px;
+    margin-left: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.footerHead {
+    font-size: 25px;
+    font-family: Montserrat-Bold;
+    margin-bottom: 28px;
+}
+
+.footerContent {
+    font-size: 22px;
+    color: #8d97ad;
+    line-height: 35px;
+}
+
+.footerHeadSub {
+    font-size: 25px;
+    margin-bottom: 28px;
+}
+
+.fa-facebook {
+    background: #1DC8CA;
+    color: white;
+  }
+
+.fa-twitter {
+    background: #1DC8CA;
+    color: white;
+  }
+
+.fa-instagram {
+    background: #1DC8CA;
+    color: white;
+  }
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%
+}
