@@ -1,0 +1,807 @@
+@font-face {
+    font-family: Lexend-Regular;
+    src: url(../assets/font/Lexend/static/Lexend-Regular.ttf);
+}
+@font-face {
+    font-family: Lexend-Bold;
+    src: url(../assets/font/Lexend/static/Lexend-Bold.ttf);
+}
+@font-face {
+    font-family: Lexend-SemiBold;
+    src: url(../assets/font/Lexend/static/Lexend-SemiBold.ttf);
+}
+@font-face {
+    font-family: Lexend-Medium;
+    src: url(../assets/font/Lexend/static/Lexend-Medium.ttf);
+}
+@font-face {
+    font-family: Lexend-Thin;
+    src: url(../assets/font/Lexend/static/Lexend-Thin.ttf);
+}
+
+body {
+    color: #344a65;
+}
+
+.navBar {
+    height: 90px;
+    display: flex;
+    position: fixed;
+    z-index: 2;
+}
+
+.navList {
+    display: flex;
+    padding: 40px;
+}
+
+.navTitle {
+    margin-left: 15px;
+    font-family: Lexend-Bold;
+    font-size: 36px;
+}
+
+.navContent {
+    margin-top: 5px;
+    margin-left: 60px;
+    font-family: Lexend-Medium;
+    font-size: 26px;
+    padding-left: 5px;
+}
+
+.navBtndiv {
+    margin: 10px 0px 0 170px;
+    padding: 20px;
+    
+}
+
+.navBtn {
+    width: 195px;
+    height: 55px;
+    border: none;
+    border-radius: 50px;
+    background-image: linear-gradient(to right, #9e46eb, #f66e4f);
+    color: white;
+    font-family: Lexend-Medium;
+    font-size: 20px;
+}
+
+.navBtn:hover,
+.navBtn:focus {
+    box-shadow: 0 1.8px -0.05px var(--hover);
+    transform: translateY(-1.8px);
+}
+
+.bannerImage {
+    border-radius: 70px 0 0 70px;
+    margin-left: -250px;
+    margin-right: auto;
+    width: 800px;
+}
+
+.bannerContainer {   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 960px;
+    background-image: url(../assets/Images/background.jpg);
+    background-size: cover;
+   
+}
+
+.bannerFront {
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 3px solid rgb(255, 255, 255, 0.4);
+    border-radius: 35px;
+    width: 980px;
+    height: 615px;
+    z-index: 1;
+    backdrop-filter: blur(5px);
+    margin-left: 55px;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1), 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+}
+   
+.bannerHeading {
+    font-family: Lexend-Bold;
+    font-size: 85px;
+    margin-top: 100px;
+    margin-left: 70px;
+}
+
+.bannerContent {
+    margin: 40px 50px 0 70px;
+    font-family: Lexend-Regular;
+    font-size: 25px;    
+    line-height: 38px;
+    padding-right: 25px;
+}
+
+.bannerBtn {
+    width: 195px;
+    height: 70px;
+    border: none;
+    border-radius: 50px;
+    background-image: linear-gradient(to right, #9e46eb, #f66e4f);
+    color: white;
+    font-family: Lexend-Medium;
+    font-size: 20px;
+    margin: 45px 0 0 70px;
+}
+
+.bannerBtn:hover,
+.bannerBtn:focus {
+    box-shadow: 0 1.8px -0.05px var(--hover);
+    transform: translateY(-1.8px);
+}
+
+.serviceContainer {
+    width: auto;
+    height: 930px;
+    background-image: url(../assets/Images/background2.jpg);
+    background-size: cover;
+    position: relative;  
+}
+
+.serviceHead {
+    font-family: Lexend-Bold;
+    font-size: 55px;
+    padding: 150px 150px 10px 150px;
+    text-align: center;
+}
+
+.serviceBox {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 3px solid rgb(255, 255, 255, 0.4);
+    border-radius: 35px;
+    height: 460px;
+    margin: 60px 60px;
+    backdrop-filter: blur(5px);
+}
+
+.boxContent {
+    margin: 15px;
+    height: 420px;
+    width: auto;
+}
+
+.boxContentHead {
+    font-family: Lexend-Bold;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.boxPara {
+    font-family: Lexend-Regular;
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+    padding: 25px;
+}
+
+.aboutusContainer {
+    width: auto;
+    height: 930px;
+    background-image: url(../assets/Images/background3.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutusHead {
+    font-family: Lexend-Bold;
+    font-size: 90px;
+    margin: 120px 50px 10px 50px;
+}
+
+.aboutusContent {
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 3px solid rgb(255, 255, 255, 0.4);
+    border-radius: 35px;
+    width: 800px;
+    height: 580px;
+    margin-left: 40px;
+}
+
+.aboutusPara {
+    font-family: Lexend-Regular;
+    font-size: 20px;
+    line-height: 30px;
+    display: flex;
+    margin: 50px 50px ;
+}
+
+.pricingContainer {
+    width: auto;
+    height: 1010px;
+    position: relative;
+}
+
+.pricingContainer::before {
+    content: "";
+    background-image: url(../assets/Images/background4.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 1.75;
+}
+
+.pricingHeading {
+    text-align: center;
+    padding-top: 150px;
+    position: relative;
+}
+
+.priceHead {
+    font-family: Lexend-Regular;
+    font-size: 25px;
+}
+
+.priceDesp {
+    font-family: Lexend-Bold;
+    font-size: 35px;
+    padding: 25px;
+}
+
+.pricingCards {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 3px solid rgb(255, 255, 255, 0.4);
+    backdrop-filter: blur(5px);
+    border-radius: 35px;
+    margin: 20px;
+    height: 550px;
+    width: 430px;
+}
+
+.cardPrice {
+    font-family: Lexend-Bold;
+    font-size: 90px;
+    margin: 70px 0 0 60px;
+}
+
+.cardHead {
+    font-family: Lexend-Bold;
+    font-size: 35px;
+    margin: 45px 0 0 60px;
+}
+
+.cardPara {
+    font-family: Lexend-Regular;
+    font-size: 20px;
+    margin: 25px 0 0 60px;
+    line-height: 30px;
+    width: 300px;
+}
+
+.priceBtn {
+    width: 195px;
+    height: 70px;
+    border: none;
+    border-radius: 50px;
+    background-image: linear-gradient(to right, #9e46eb, #f66e4f);
+    color: white;
+    font-family: Lexend-Medium;
+    font-size: 20px;
+    margin: 45px 0 0 60px;
+}
+
+.priceBtn:hover,
+.priceBtn:focus {
+    box-shadow: 0 2.8px -0.10px var(--hover);
+    transform: translateY(-2.5px);
+}
+
+.workContainer {
+    width: auto;
+    height: 980px;
+    background-image: url(../assets/Images/background5.jpg);
+    background-size: cover;
+}
+
+.workHeading {
+    padding-top: 150px;
+    padding-left: 40px;
+}
+
+.workHead {
+    font-family: Lexend-Regular;
+    font-size: 25px;
+    color: black;
+}
+
+.workDesp {
+    font-family: Lexend-Bold;
+    font-size: 35px;
+    padding: 25px 25px 25px 0;
+    color: black;
+}
+
+.workCard {
+    display: flex;
+    margin: 10px 15px 10px 20px;
+}
+
+.workImage {
+    border-radius: 40px;
+    display: block;
+    width: 453px;
+    height: 500px;
+    transition: transform .2s;;
+}
+
+.workImage:hover {
+    transform: scale(1.1);
+    position: absolute;
+    content: "";
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    right: 0;
+}
+
+.workImageCard {
+    overflow: hidden;
+    margin: 20px;
+    position: relative;
+    width: 453px;
+    height: 500px;
+    border-radius: 40px;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 25px;
+    background: transparent;
+    color: #f1f1f1;
+    width: auto;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    padding: 20px;
+    text-align: justify;
+    font-family: Lexend-Bold;
+    font-size: 25px;
+    margin-left: 25px;
+    line-height: 50px;
+}
+
+.workImageCard:hover .overlay {
+    opacity: 5;
+}
+
+.overlaySec {
+    font-family: Lexend-Regular;
+    font-size: 20px;
+}
+
+.progressConatiner {
+    width: auto;
+    height: 980px;
+    background-image: url(../assets/Images/background6.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.progressBox {
+    background-color: rgb(255, 255, 255, 0.4);
+    backdrop-filter: blur(4px);
+    border: 3px solid rgb(255, 255, 255, 0.4);
+    border-radius: 35px;
+    width: 1150px;
+    height: 720px;
+    position: absolute;
+    top: 150px;
+    left: 185px;
+}
+
+.processHead {
+    font-family: Lexend-Regular;
+    font-size: 20px;
+    margin: 95px 10px 20px 95px;
+}
+
+.processSubHead {
+    font-family: Lexend-Bold;
+    font-size: 55px;
+    margin: 35px 10px 10px 95px;
+}
+
+.processPara {
+    font-family: Lexend-Regular;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 25px 25px 45px 95px;
+    width: 900px;
+}
+
+.progressContent {
+    font-family: Lexend-Regular;
+    font-size: 22px;
+    display: flex;
+    justify-content: space-between;
+    margin: 35px 25px 10px 95px;
+    width: 950px;
+}
+
+.progressBar {
+    margin: 20px 25px 10px 95px;
+    display: flex;
+    width: 950px;
+    height: 10px;
+    border-radius: 50px;
+}
+
+.FAQContainer {
+    width: auto;
+    height: 760px;
+    background-image: url(../assets/Images/background7.jpg);
+    position: relative;
+}
+
+.faqbox {
+    background-color: rgb(255, 255, 255, 0.4);
+    background-size: cover;
+    backdrop-filter: blur(5px);
+    border: 3px solid rgb(255, 255, 255, 0.4);
+    border-radius: 35px;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 120px;
+    left: 60px;
+}
+
+.faqInnerBox {
+    padding: 25px;
+    margin: 30px 0 0 45px;
+    width: 600px;
+}
+
+.faqHead {
+    font-family: Lexend-Bold;
+    font-size: 55px;
+    padding-right: 120px;
+    margin-bottom: 50px;
+}
+
+.faqPoint {
+    font-family: Lexend-Medium;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    border-color: rgba(193, 193, 193, 0.4);
+    
+}
+
+.faqLine {
+    padding: 25px 0;
+}
+
+.faqAddIcon {
+    font-family: Lexend-Thin;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: -10px;
+    padding: 25px 0;
+}
+
+.faqimg {
+    width: 580px;
+    height: 380px;
+    border-radius: 50px;
+    margin: 55px 25px;
+    padding: 25px;
+}
+
+.clientContainer {
+    width: auto;
+    height: 980px;
+    background-image: url(../assets/Images/background8.jpg);
+    background-size: cover;
+}
+
+.clientHeading {
+    text-align: center;
+    padding-top: 150px;
+    position: relative;
+    color: white;
+}
+
+.clientHead {
+    font-family: Lexend-Regular;
+    font-size: 25px;
+}
+
+.clientDesp {
+    font-family: Lexend-Bold;
+    font-size: 35px;
+    padding: 25px;
+}
+
+.clientImgCont {
+    background-color: rgb(255, 255, 255, 0.4);
+    backdrop-filter: blur(5px);
+    border: 3px solid rgb(255, 255, 255, 0.4);
+    border-radius: 35px;
+    width: 430px;
+    height: 240px;
+    margin: 20px;
+}
+
+.clientImgBox {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1460px;
+    margin: 35px;
+}
+
+.clientImg {
+    width: 200px;
+    margin: 50px 100px
+}
+
+.contactContainer {
+    width: auto;
+    height: 640px;
+    background-image: url(../assets/Images/background9.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactBox {
+    background-color: rgb(255, 255, 255, 0.6);
+    backdrop-filter: blur(5px);
+    border-radius: 35px;
+    border: 3px solid rgb(255, 255, 255, 0.4);
+    width: 1160px;
+    height: 380px;
+    text-align: center;
+}
+
+.contactLineOne {
+    font-family: Lexend-Regular;
+    font-size: 20px;
+    margin-top: 85px;
+    
+}
+
+.contactLineTwo {
+    font-family: Lexend-Bold;
+    font-size: 90px;
+    padding: 35px;
+}
+
+.contactLineThree {
+    font-family: Lexend-Regular;
+    font-size: 25px;
+   padding: 15px;
+}
+
+.mapContainer {
+    width: auto;
+    height: 890px;
+    background-image: url(../assets/Images/background10.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mapBox {
+    background-color: rgb(255, 255, 255, 0.6);
+    backdrop-filter: blur(5px);
+    border-radius: 35px;
+    width: 1380px;
+    height: 600px;
+}
+
+.mapImg {
+    width: 1380px;
+    height: 600px;
+    border-radius: 35px;
+}
+
+.feedBackContainer {
+    width: auto;
+    height: 820px;
+    background-image: url(../assets/Images/background11.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feedBackContent {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 3px solid rgb(255, 255, 255, 0.4);
+    border-radius: 35px;
+    width: 890px;
+    height: 410px;
+    margin-left: 40px;
+    margin-top: 180px;
+}
+
+.feedBackPara {
+    font-family: Lexend-Bold;
+    font-size: 35px;
+    line-height: 50px;
+    margin: 80px 80px 10px 50px;
+    letter-spacing: 0.5px;
+}
+
+.feedBackName {
+    font-family: Lexend-Medium;
+    font-size: 20px;
+    margin-top: 35px;
+}
+
+.contactUsContainer {
+    width: auto;
+    height: 1120px;
+    position: relative;
+}
+
+.contactUsContainer::before {
+    content: "";
+    background-image: url(../assets/Images/background12.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.75;
+}
+
+.contactUsBox {
+    background-color: rgb(255, 255, 255, 0.4);
+    backdrop-filter: blur(4px);
+    border: 3px solid rgb(255, 255, 255, 0.4);
+    border-radius: 35px;
+    width: 1150px;
+    height: 940px;
+    position: absolute;
+    top: 90px;
+    left: 185px;
+}
+
+.contactBtn {
+    width: 1015px;
+    height: 65px;
+    border: none;
+    border-radius: 50px;
+    background-image: linear-gradient(to right, #9e46eb, #f66e4f);
+    color: white;
+    font-family: Lexend-Medium;
+    font-size: 20px;
+    margin-left: 70px;
+}
+
+.contactBtn:hover,
+.contactBtn:focus {
+    box-shadow: 0 2.8px -0.10px var(--hover);
+    transform: translateY(-2.5px);
+}
+
+.contactHead {
+    font-family: Lexend-Regular;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+.contactInput {
+    width: 460px;
+    height: 55px;
+    background-color: rgb(255, 255, 255, 0.5);
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: none;
+    margin: 12px ;
+}
+
+.inputContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contactInput, placeholder {
+    font-family: Lexend-Regular;
+    font-size: 20px;
+    padding-left: 30px;
+}
+
+.messageBox {
+    font-family: Lexend-Regular;
+    font-size: 20px;
+    margin: 10px 0 20px 70px;
+    background-color: rgb(255, 255, 255, 0.4);
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: none;
+}
+
+.footer {
+    width: auto;
+    height: 500px;
+    background-color: #131729;
+    color: white;
+}
+
+.footerBox {
+    display: flex;
+}
+
+.footerAboutHead {
+    font-family: Lexend-Bold;
+    font-size: 25px;
+    margin: 125px 0 25px 70px;
+}
+
+.footerHead {
+    font-family: Lexend-Bold;
+    font-size: 25px;
+    margin: 125px 0 25px 130px;
+}
+
+.footerContentList {
+    font-family: Lexend-Regular;
+    font-size: 20px;
+    margin: 0px 0 125px 130px;
+}
+
+.footerContentList li {
+    padding: 8px 0;
+}
+
+.footerAboutUs {
+    width: 600px;
+}
+
+.footerContentPara {
+    font-family: Lexend-Regular;
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 70px;
+    margin-right: 95px;   
+}
+
+.footer, a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer, a:link {
+    text-decoration: none;
+}
+
+.footer, a:visited {
+    text-decoration: none;
+}
+
+.footer, a:hover {
+    text-decoration: underline;
+}
+
+.footer, a:active {
+    text-decoration: none;
+}
