@@ -1,26 +1,26 @@
 @font-face {
     font-family: WorkSans-Regular;
-    src: url(../Assets/Fonts/Work_Sans/static/WorkSans-Regular.ttf);
+    src: url(../assets/Fonts/Work_Sans/static/WorkSans-Regular.ttf);
 }
 
 @font-face {
     font-family: Poppins-Medium;
-    src: url(../Assets/fonts/Poppins/Poppins-Medium.ttf);
+    src: url(../assets/fonts/Poppins/Poppins-Medium.ttf);
 }
 
 @font-face {
     font-family: Poppins-SemiBold;
-    src: url(../Assets/fonts/Poppins/Poppins-SemiBold.ttf);
+    src: url(../assets/fonts/Poppins/Poppins-SemiBold.ttf);
 }
 
 @font-face {
     font-family: Poppins-Bold;
-    src: url(../Assets/fonts/Poppins/Poppins-Bold.ttf);
+    src: url(../assets/fonts/Poppins/Poppins-Bold.ttf);
 }
 
 @font-face {
     font-family: Poppins-BoldItalic;
-    src: url(../Assets/fonts/Poppins/Poppins-BoldItalic.ttf);
+    src: url(../assets/fonts/Poppins/Poppins-BoldItalic.ttf);
 }
 
 body {
@@ -69,14 +69,14 @@ body {
     padding-left: 18px;
 }
 
-.icons_container i {
+.icons_i {
     padding-left: 15px;
 }
 
 .header_container {
     width: auto;
     height: 930px;
-    background-image: url(../Assets/Images/slider2.jpg);
+    background-image: url(../assets/Images/slider2.jpg);
     background-size: auto;
     background-repeat: no-repeat;
     background-position-x: center ;
@@ -531,7 +531,7 @@ body {
 }
 
 .count_background {
-    background-image: url(../Assets/Images/bg-counter.jpg);
+    background-image: url(../assets/Images/bg-counter.jpg);
     height: 425px;
     background-attachment: fixed;
     background-position: center;
@@ -546,6 +546,7 @@ body {
     justify-content: center;
     column-gap: 180px;
     padding: 120px 0;
+    overflow: hidden;
 }
 
 #profile {
@@ -567,7 +568,7 @@ body {
     height: 750px;
     padding-top: 100px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .contact_box {
@@ -600,7 +601,7 @@ body {
 }
 
 .image_container {
-    margin-left: 150px;
+    margin-left: 100px;
 }
 
 .contact_head {
