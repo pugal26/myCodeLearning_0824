@@ -1,16 +1,16 @@
-import React, { useState } from "react";
+import { useState } from "react"
 
 const Value = () => {
     const [count, setCount] = useState(0);
 
-    return (
+    return(
         <div>
-            <p>Here is { count } value</p>
+            <p>Your { count } value!</p>
             <button onClick={() => setCount(count + 1)}>
-                Click Here
+                Click Here!
             </button>
         </div>
     )
 }
 
-export default Value;
+export default Value
