@@ -1,5 +1,7 @@
 import './App.css'
+import Counter from './components/Counter'
 import Task_1 from './components/Task_1'
+import Task_2 from './components/Task_2'
 
 function App() {
  
@@ -7,7 +9,8 @@ function App() {
   return (
     <>
       {/* <Counter /> */}
-      <Task_1 />
+      {/* <Task_1 /> */}
+      <Task_2 />
     </>
   )
 }
