@@ -1,7 +1,7 @@
 import './App.css'
-import Counter from './components/Counter'
+import Counter from './components/practices/Counter'
 import Task_1 from './components/Task_1'
-import Task_2 from './components/Task_2'
+import Task_2 from './components/Task_2/Task_2'
 
 function App() {
  
