@@ -4,14 +4,13 @@ import './task_3.css'
 const getInput = () => {
 
     const [getNum, setGetNum] = useState<string>('');
-    const [isDisplay, setIsDisplay] = useState([]);
+    const [isDisplay, setIsDisplay] = useState<string>([]);
 
 
     const handleSubmit = (e: { preventDefault: () => void; }) => {
         e.preventDefault();
+        setIsDisplay([...isDisplay, getNum]);
         setGetNum('')
-        setIsDisplay(String((currentDisplay: any) => [...currentDisplay, getNum]))
-        
     }
 
     return(
@@ -27,8 +26,8 @@ const getInput = () => {
                     Click Here!
                 </button>
                 {
-                    isDisplay.map((c, index)=><div>
-                        <p key={index}>{c}</p>
+                    isDisplay.map((c, index)=><div key={index}>
+                        <p>{c}</p>
                     </div>)
                 }
             </div>

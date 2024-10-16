@@ -1,5 +1,5 @@
 import { useState } from "react"
-
+import './example.css'
 
 const Example = () => {
     const [value, setValue] = useState<number>(0);

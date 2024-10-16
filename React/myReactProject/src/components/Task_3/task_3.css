@@ -3,8 +3,8 @@ body {
 }
 
 .container {
-    width: 650px;
-    height: 280px;
+    width: auto;
+    height: auto;
     border: 5px solid skyblue;
     border-radius: 50px;
     display: flex;
@@ -12,8 +12,9 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 20px;
+    margin: 0 350px;
     margin-top: 200px;
-    margin-left: 450px;
+    padding: 50px 0;
 }
 
 input {
