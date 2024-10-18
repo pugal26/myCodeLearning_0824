@@ -1,0 +1,61 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+
+
+.container {
+    width: auto;
+    height: auto;
+    border: 5px solid yellow;
+    border-radius: 50px;
+    margin: 50px;
+    margin-top: 100px;
+    padding: 50px;
+    text-align: center;
+
+}
+
+input {
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid brown;
+    border-radius: 50px;
+    font-size: 20px;
+}
+
+.inputBtn {
+    width: 150px;
+    height: 40px;
+    padding: 10px;
+    margin: 10px;
+    background-color: wheat;
+    border: none;
+    border-radius: 50px;
+    font-size: 15px;
+}
+
+.inputBtn:hover {
+    background-color: lightgoldenrodyellow;
+    cursor: pointer;
+}
+
+.deleteBtn {
+    width: 150px;
+    height: 40px;
+    padding: 10px;
+    margin: 10px;
+    background-color: lightcoral;
+    border: none;
+    border-radius: 50px;
+    font-size: 15px;
+}
+
+.deleteBtn:hover {
+    background-color: lightpink;
+    cursor: pointer;
+}
+
+.outputList {
+    list-style-type: none;
+}

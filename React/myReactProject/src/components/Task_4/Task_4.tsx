@@ -1,5 +1,5 @@
 import { useState } from "react"
-
+import './task_4.css'
 
 const task_4 = () => {
 
@@ -12,30 +12,32 @@ const task_4 = () => {
     }
 
     const handleDelete = () => {
-        setValueList([])
+        const updatedValueList = valueList.slice(0, -1)
+        setValueList(updatedValueList)
     }
 
     return(
-        <div>
+        <div className="container">
+            <p>Enter values in below inputbox, then click the button to get the input value below and if click a delete to remove the value from bottom.</p>
             <input 
                 type="text" 
                 value={value}
                 onChange={(e) => setValue(e.target.value)}
             />
 
-            <button onClick={handleClick}>
-                Click Here!
+            <button className="inputBtn" onClick={handleClick}>
+                Add
             </button>
 
-            <button onClick={handleDelete}>
-                Clear All!
+            <button className="deleteBtn" onClick={handleDelete}>
+                Delete
             </button>
 
             {
                 valueList.map((element, index) => {
                     return (
                         <div key={index}>
-                            <ul>
+                            <ul className="outputList">
                                 <li>{element}</li>
                             </ul>
                         </div>
