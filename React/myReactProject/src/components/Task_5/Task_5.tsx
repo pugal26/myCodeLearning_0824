@@ -1,5 +1,5 @@
 import { useState, ChangeEvent, FormEvent } from "react"
-import './task_5.css'
+import './task_5_2.css'
 
 interface userInputData {
     userName: string
@@ -7,174 +7,260 @@ interface userInputData {
     age: number
     gender: string
     address: string
-    option: string
+    phone:number
+    pinCode: number
+    country: string
+    isChecked: boolean
     date: string
 }
 
-const initialState = { 
+const initialState = {
     userName: '',
     email: '',
-    age:0,
+    age: 0,
     gender:'',
     address: '',
-    option: '',
-    date: ''
+    phone:0,
+    pinCode: 0,
+    country:'',
+    isChecked: false,
+    date:''
 }
 
-const task_5 = () => {
+const Task_5 = () => {
 
-    const [formValue, setFormValue] = useState<userInputData>(initialState);
+    const [userName, setUserName] = useState<userInputData>(initialState);
+    const [email, setEmail] = useState<userInputData>(initialState);
+    const [age, setAge] = useState<userInputData>(initialState);
+    const [gender, setGender] = useState<userInputData>(initialState);
+    const [address, setAddress] = useState<userInputData>(initialState);
+    const [pinCode, setPinCode] = useState<userInputData>(initialState);
+    const [country, setCountry] = useState<userInputData>(initialState);
+    const [isChecked, setIsChecked] = useState<userInputData>(initialState);
+    const [phone, setPhone] = useState<userInputData>(initialState);
+    const [date, setDate] = useState<userInputData>(initialState);
 
-    const onFieldChange = (event : ChangeEvent<HTMLInputElement>) => {
-        let value: string | number = event.target.value;
-        if (event.target.type === 'number') {
-            value = event.target.valueAsNumber
-        } else if (event.target.type === 'checked') {
-            value = event.target.value
-        }
-        setFormValue({...formValue, [event.target.id]: value});
+    const onUserNameChange = (event : ChangeEvent<HTMLInputElement>) => {
+        setUserName({...userName, userName: event.target.value})
+    }
+
+    const onEmailChange = (event: ChangeEvent<HTMLInputElement>) => {
+        setEmail({...email, email: event.target.value})       
+    }
+
+    const onAgeChange = (event: ChangeEvent<HTMLInputElement>) => {
+        setAge({...age, age: event.target.valueAsNumber})
+    }
+
+    const onGenderChange = (event: ChangeEvent<HTMLInputElement>) => {
+        setGender({...gender, gender: event.target.value})
+    }
+
+    const onAddressChange = (event: ChangeEvent<HTMLTextAreaElement>) => {
+        setAddress({...address, address:event.target.value})
+    }
+
+    const onPinCodeChange = (event: ChangeEvent<HTMLInputElement>) => {
+        setPinCode({...pinCode, pinCode:event.target.valueAsNumber})
+    }
+
+    const countries = ['India', 'United States', 'Europe', 'Russia']
+
+    const onCountryChange = (event: ChangeEvent<HTMLSelectElement>) => {
+        setCountry({...country, country:event.target.value})
+    }
+
+    const onCheckChange = (event: ChangeEvent<HTMLInputElement>) => {
+        setIsChecked({...isChecked, isChecked:event.target.checked})
+    }
+
+    const onPhoneChange = (event: ChangeEvent<HTMLInputElement>) => {
+        setPhone({...phone, phone:event.target.valueAsNumber})
+    }
+
+    const onDateChange = (event: ChangeEvent<HTMLInputElement>) => {
+        setDate({...date, date:event.target.value})
     }
 
     const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
         event.preventDefault();
-        setFormValue(initialState);
         alert(`
-                Name: ${formValue.userName}
-                Email: ${formValue.email}
-                Age: ${formValue.age}
-                Gender: ${formValue.gender}\n
-                Address: ${formValue.address}
-                Address Type: ${formValue.option}\n
-                Form Submitted Date: ${formValue.date}
-            `)
-
-            console.log(formValue)
+                Name: ${userName.userName}
+                Email: ${email.email}
+                Age: ${age.age}
+                Gender: ${gender.gender}\n
+                Address: ${address.address}
+                Phone: (+91) ${phone.phone}
+                Pin Code: ${pinCode.pinCode}
+                Country: ${country.country}\n
+                Terms & Conditios: ${isChecked.isChecked}
+                Form Submitted Date: ${date.date}
+            `);
+        setUserName(initialState)
+        setEmail(initialState)
+        setAge(initialState)
+        setGender(initialState)
+        setAddress(initialState)
+        setPhone(initialState)
+        setPinCode(initialState)
+        setCountry(initialState)
+        setIsChecked(initialState)
+        setDate(initialState)
     }
 
     return (
         <div className="container">
             <h1>Fill the form and get the alert while submit the form.</h1>
-            <form onSubmit={handleSubmit} className="formContainer">
-                <div className="formInputs">
-                    <label htmlFor="userName" className="inputTitle">User Name: </label>
+            <form onSubmit={handleSubmit}>
+                <div className="formSection">
+                    <label htmlFor="userName">User Name: </label>
                     <input 
                         type="text" 
                         id="userName"
-                        value={formValue.userName}
-                        onChange={onFieldChange}
-                        placeholder="Enter your Name"
-                        className="inputField"
-                    />
-                </div> 
-                <div className="formInputs">
-                    <label htmlFor="email" className="inputTitle">Email: </label>
-                    <input 
-                        type="email" 
-                        id="email"
-                        value={formValue.email}
-                        onChange={onFieldChange}
-                        placeholder="Enter your Email"
-                        className="inputField"
+                        value={userName.userName}
+                        onChange={onUserNameChange}
                     />
                 </div>
-                <div className="formInputs">
-                    <label htmlFor="age" className="inputTitle">Age:</label>
+                
+                <div className="formSection">
+                    <label htmlFor="email">Email: </label>
+                    <input 
+                        type="text" 
+                        id="email"
+                        value={email.email}
+                        onChange={onEmailChange}
+                    />
+                </div>
+                
+                <div className="formSection">
+                    <label htmlFor="age">Age: </label>
                     <input 
                         type="number" 
-                        id="age"
-                        value={formValue.age}
-                        onChange={onFieldChange}
-                        placeholder="Enter your Age"
-                        className="inputField"
+                        id="age" 
+                        value={age.age}
+                        onChange={onAgeChange}
                     />
                 </div>
-                <div className="formInputs">
-                    <label htmlFor="gender" className="inputTitle">Gender: </label>
+
+                <div className="formSection">
+                    <label htmlFor="gender">Gender: </label>
                     <div className="genderDiv">
                         <div className="genderList">
                             <input 
                                 type="radio" 
                                 id="gender"
                                 value='Male'
-                                checked={formValue.gender === 'Male'}
-                                onChange={onFieldChange}
+                                checked={gender.gender === 'Male'}
+                                onChange={onGenderChange}
                                 className="radioBtn"
                             />
-                            <label htmlFor="male" className="radioBtn">Male</label>
+                            <label htmlFor="male">Male</label>
                         </div>
                         <div className="genderList">
                             <input 
                                 type="radio" 
                                 id="gender"
                                 value='Female'
-                                checked={formValue.gender === 'Female'}
-                                onChange={onFieldChange}
+                                checked={gender.gender === 'Female'}
+                                onChange={onGenderChange}
                                 className="radioBtn"
                             />
-                            <label htmlFor="female" className="radioBtn">Female</label>
+                            <label htmlFor="female">Female</label>
                         </div>
                         <div className="genderList">
                             <input 
                                 type="radio" 
                                 id="gender"
-                                value='Rather not say'
-                                checked={formValue.gender === 'Rather not say'}
-                                onChange={onFieldChange}
+                                value='Rather Not Say'
+                                checked={gender.gender === 'Rather Not Say'}
+                                onChange={onGenderChange}
                                 className="radioBtn"
                             />
-                            <label htmlFor="other" className="radioBtn">Rather not say</label>
+                            <label htmlFor="ratherNotSay">Rather Not Say</label>
                         </div>
                     </div>
                 </div>
-                <div className="formInputs">
-                    <label htmlFor="address" className="inputTitle">Address: </label>
+
+                <div className="formSection">
+                    <label htmlFor="address">Address: </label>
                     <textarea 
-                        id="address" 
                         name="address" 
-                        rows={5} 
-                        cols={30} 
-                        value={formValue.address} 
-                        onChange={onFieldChange}
-                        placeholder="Enter your Full Address"
+                        id="address"
+                        rows={5}
+                        cols={30}
+                        value={address.address}
+                        onChange={onAddressChange}
                     />
                 </div>
-                <div className="formInputs">
-                    <label htmlFor="option" className="inputTitle">Address Type: </label>
-                    <div className="checkboxDiv">
-                        <div className="addressTypes">
-                            <input 
-                                type="checkbox" 
-                                id="option"
-                                value={formValue.option}
-                                onChange={onFieldChange}
-                            />
-                            <label htmlFor="option" className="checkbox">Permanent</label>
-                        </div>
-                        <div className="addressTypes">
-                            <input 
-                                type="checkbox"
-                                id="option"
-                                value={formValue.option}
-                                onChange={onFieldChange} 
-                            />
-                            <label htmlFor="option" className="checkbox">Temporary</label>
-                        </div>
-                    </div>
+
+                <div className="formSection">
+                    <label htmlFor="contact">Phone: (+91) </label>
+                    <input 
+                        type="number" 
+                        id="phone"
+                        value={phone.phone}
+                        onChange={onPhoneChange}
+                        placeholder="tel"
+                    />
                 </div>
-                <div className="formInputs">
+
+                <div className="formSection">
+                    <label htmlFor="pinCode">Pin Code:</label>
+                    <input 
+                        type="number" 
+                        id="pinCode"
+                        value={pinCode.pinCode}
+                        onChange={onPinCodeChange} 
+                    />
+                </div>
+
+                <div className="formSection">
+                    <label htmlFor="countries">Countries: </label>
+                    <select 
+                        id="countries"
+                        value={country.country}
+                        onChange={onCountryChange}
+                    >
+                    <option value=''>Select your Country</option>
+                    {
+                        countries.map((option, index) => (
+                            <option key={index} value={option}>
+                                {option}
+                            </option>
+                        ))
+                    }    
+                    </select>
+                </div>
+                
+                <div className="formSection_Terms">
+                    <input 
+                        type="checkbox"
+                        id="checkbox"
+                        checked={isChecked.isChecked}
+                        onChange={onCheckChange}
+                        className="checkbox"
+                    />
+                     <label htmlFor="terms">Agree Terms & Conditions</label>
+                </div>
+
+                <div className="formSelection">
                     <label htmlFor="submitDate" className="inputTitle">Form Submission Date: </label>
                     <input 
                         type="datetime-local"
                         id="date" 
-                        value={formValue.date}
-                        onChange={onFieldChange}
+                        value={date.date}
+                        onChange={onDateChange}
                         className="date"
                     />
                 </div>
-                <div className="btnDiv"><button type="submit" className="submitBtn">Submit</button></div>
-            </form>           
+
+                <div className="submitBtn">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
         </div>
     )
-}
 
-export default task_5
+} 
+
+export default Task_5;
