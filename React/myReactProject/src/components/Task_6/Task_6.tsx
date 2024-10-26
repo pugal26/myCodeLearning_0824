@@ -1,4 +1,5 @@
 import { ChangeEvent, FormEvent, useState } from "react"
+import './task_6.css'   
 
 interface UserInputData {
     userName: string;
@@ -7,6 +8,10 @@ interface UserInputData {
     gender: string
     address: string
     phone:string
+    pinCode: string
+    country: string
+    isChecked: boolean
+    date: string
 }
 
 type FormErrors = {
@@ -16,6 +21,10 @@ type FormErrors = {
     gender?: string
     address?: string
     phone?:string
+    pinCode?: string
+    country?: string
+    isChecked?: string
+    date?: string
 }
 
 const initialState = {
@@ -25,6 +34,10 @@ const initialState = {
     gender:'',
     address: '',
     phone:'',
+    pinCode: '',
+    country:'',
+    isChecked: false,
+     date:''
 }
 
 const Task_6 = () => {
@@ -35,6 +48,10 @@ const Task_6 = () => {
     const [gender, setGender] = useState<UserInputData>(initialState);
     const [address, setAddress] = useState<UserInputData>(initialState);
     const [phone, setPhone] = useState<UserInputData>(initialState);
+    const [pinCode, setPinCode] = useState<UserInputData>(initialState);
+    const [country, setCountry] = useState<UserInputData>(initialState);
+    const [isChecked, setIsChecked] = useState<UserInputData>(initialState);
+    const [date, setDate] = useState<UserInputData>(initialState);
     
     const [errors, setErrors] = useState<FormErrors>({});
     const [submitted, setSubmitted] = useState<boolean>(false);
@@ -63,42 +80,78 @@ const Task_6 = () => {
         setPhone({...phone, phone:event.target.value})
     }
 
+    const onPinCodeChange = (event: ChangeEvent<HTMLInputElement>) => {
+        setPinCode({...pinCode, pinCode:event.target.value})
+    }
+
+    const countries = ['India', 'United States', 'Europe', 'Russia']
+
+    const onCountryChange = (event: ChangeEvent<HTMLSelectElement>) => {
+        setCountry({...country, country:event.target.value})
+    }
+
+    const onCheckChange = (event: ChangeEvent<HTMLInputElement>) => {
+        setIsChecked({...isChecked, isChecked:event.target.checked})
+    }
+
+    const onDateChange = (event: ChangeEvent<HTMLInputElement>) => {
+        setDate({...date, date:event.target.value})
+    }
+
+
 
     const validate = (): FormErrors => {
         const errors: FormErrors = {};
 
         if (!userName.userName) {
-            errors.userName = 'Username is required';
+            errors.userName = '*Username is required*';
         } else if (userName.userName.length < 3) {
-            errors.userName = 'Username must be at least 3 characters';
+            errors.userName = '*Username must be at least 3 characters*';
         }
 
         if (!email.email) {
-            errors.email = "Email is required";
+            errors.email = '*Email is required*';
         } else if (!/\S+@\S+\.\S+/.test(email.email)) {
-            errors.email = 'Enter a valid email address';
+            errors.email = '*Enter a valid email address*';
         }   
 
         if (!age.age) {
-            errors.age = 'Age is required';
+            errors.age = '*Age is required*';
         } else if (age.age < 18 || age.age > 99) {
-            errors.age = 'Enter a valid age between 18 and 99';
+            errors.age = '*Enter a valid age between 18 and 99*';
         }
 
         if (!gender.gender) {
-            errors.gender = 'Select any one option'
+            errors.gender = '*Please select any one of the above*'
         }
 
         if (!address.address) {
-            errors.address = "Address is required"
+            errors.address = '*Address is required*'
         } else if (address.address.trim().split('\n').length < 2) {
-            errors.address = "Enter address for two lines"
+            errors.address = '*Enter address for two lines*'
         }
 
         if (!phone.phone) {
-            errors.phone = 'Phone no. is requires'
-        } else if (/^\d{10}$/.test(phone.phone))
-            errors.phone = 'Enter a valid phone no.'
+            errors.phone = '*Phone no. is requires*'
+        } else if (!/^\d{10}$/.test(phone.phone))
+            errors.phone = '*Enter a valid phone no.*'
+
+        if (!pinCode.pinCode) {
+            errors.pinCode = '*Pincode is required*'
+        } else if (!/^\d{6}$/.test(pinCode.pinCode))
+            errors.pinCode = '*Enter a 6-digit pincode*'
+
+        if (!country.country) {
+            errors.country = '*Select any one Country*'
+        }
+
+        if (!isChecked.isChecked) {
+            errors.isChecked = '*Please accept the terms and conditions*'
+        }
+
+        if (!date.date) {
+            errors.date = '*Pick a date and time*'
+        }
 
         return errors;
     };
@@ -117,6 +170,10 @@ const Task_6 = () => {
                 Gender: ${gender.gender}\n
                 Address: ${address.address}
                 Phone: +91${phone.phone}
+                Pincode: ${pinCode.pinCode}
+                Country: ${country.country}\n
+                Terms & Conditios: ${isChecked.isChecked}
+                Form Submitted Date: ${date.date}
             `)
         } else {
             setSubmitted(false);
@@ -127,6 +184,10 @@ const Task_6 = () => {
         setGender(initialState)
         setAddress(initialState)
         setPhone(initialState)
+        setPinCode(initialState)
+        setCountry(initialState)
+        setIsChecked(initialState)
+        setDate(initialState)
     }
 
 
@@ -140,10 +201,11 @@ const Task_6 = () => {
                             type="text"
                             id="userName"
                             value={userName.userName}
-                            onChange={onUserNameChange} 
+                            onChange={onUserNameChange}
+                            placeholder="Enter a username min of 3 characters" 
                         />
                     </label>
-                    {errors.userName && <p style={{ color: 'red' }}>{errors.userName}</p>}
+                    {errors.userName && <p className="errorMsj">{errors.userName}</p>}
                 </div>
 
                 <div className="formSection">
@@ -153,9 +215,10 @@ const Task_6 = () => {
                             id="email"
                             value={email.email}
                             onChange={onEmailChange} 
+                            placeholder="Enter you valid Email"
                         />
                     </label>
-                    {errors.email && <p style={{ color: 'red' }}>{errors.email}</p>}
+                    {errors.email && <p className="errorMsj">{errors.email}</p>}
                 </div>
 
                 <div className="formSection">
@@ -167,7 +230,7 @@ const Task_6 = () => {
                             onChange={onAgeChange}
                         />
                     </label>
-                    {errors.age && <p style={{ color: 'red' }}>{errors.age}</p>}
+                    {errors.age && <p className="errorMsj">{errors.age}</p>}
                 </div>
 
                 <div className="formSection">
@@ -206,8 +269,8 @@ const Task_6 = () => {
                             />
                             <label htmlFor="ratherNotSay">Rather Not Say</label>
                         </div>
-                        {errors.gender && <p style={{ color:'red' }}>{errors.gender}</p>}
                     </div>
+                    {errors.gender && <p className="errorMsj">{errors.gender}</p>}
                 </div>
 
                 <div className="formSection">
@@ -219,24 +282,85 @@ const Task_6 = () => {
                             cols={30}
                             value={address.address}
                             onChange={onAddressChange}
+                            placeholder="Enter you valid Address"
                         />
                     </label>
-                    {errors.address && <p style={{ color:'red' }}>{errors.address}</p>}
+                    {errors.address && <p className="errorMsj">{errors.address}</p>}
                 </div>
 
                 <div className="formSection">
-                    <label htmlFor="contact">Phone: (+91) </label>
-                    <input 
-                        type="tel" 
-                        id="phone"
-                        value={phone.phone}
-                        onChange={onPhoneChange}
-                        placeholder="tel"
-                    />
-                    {errors.phone && <p style={{ color:'red' }}>{errors.phone}</p>}
+                    <label htmlFor="contact">Phone: (+91) 
+                        <input 
+                            type="tel" 
+                            id="phone"
+                            value={phone.phone}
+                            onChange={onPhoneChange}
+                            placeholder="tel"
+                        />
+                    </label>
+                    {errors.phone && <p className="errorMsj">{errors.phone}</p>}
                 </div>
 
-                <div>
+                <div className="formSection">
+                    <label htmlFor="pinCode">Pin Code:
+                        <input 
+                            type="text" 
+                            id="pinCode"
+                            value={pinCode.pinCode}
+                            onChange={onPinCodeChange}
+                            maxLength={6}
+                            size={6}
+                            placeholder="Enter a 6-Digit pincode"
+                        />
+                    </label>
+                    {errors.pinCode && <p className="errorMsj">{errors.pinCode}</p>}
+                </div>
+
+                <div className="formSection">
+                    <label htmlFor="countries">Countries: </label>
+                    <select 
+                        id="countries"
+                        value={country.country}
+                        onChange={onCountryChange}
+                    >
+                    <option value=''>Select your Country</option>
+                    {
+                        countries.map((option, index) => (
+                            <option key={index} value={option}>
+                                {option}
+                            </option>
+                        ))
+                    }    
+                    </select>
+                    {errors.country && <p className="errorMsj">{errors.country}</p>}
+                </div>
+
+                <div className="formSection_Terms">
+                    <input 
+                        type="checkbox"
+                        id="checkbox"
+                        checked={isChecked.isChecked}
+                        onChange={onCheckChange}
+                        className="checkbox"
+                    />
+                    <label htmlFor="terms">Agree Terms & Conditions</label>
+                </div>
+                {errors.isChecked && <p className="errorMsjCheck">{errors.isChecked}</p>}
+
+                <div className="formSelection">
+                    <label htmlFor="submitDate" className="inputTitle">Form Submission Date: 
+                        <input 
+                            type="datetime-local"
+                            id="date" 
+                            value={date.date}
+                            onChange={onDateChange}
+                            className="date"
+                        />
+                    </label>
+                    {errors.date && <p className="errorMsj">{errors.date}</p>}
+                </div>
+
+                <div className="submitBtn">
                     <button type="submit">Submit</button>
                     {submitted && <p  style={{ color: 'green' }}>Form submitted successfully</p>}
                 </div>

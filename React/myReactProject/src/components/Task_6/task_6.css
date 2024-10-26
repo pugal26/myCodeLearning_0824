@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 17px;
+}
+
+h1:hover {
+    text-decoration: underline;
+    color: rgb(26, 153, 149)
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 0;
+    align-items: center;
+    background-color: rgb(239, 236, 226);
+}
+
+form {
+    width: max-content;
+    height: max-content;
+    border: 5px gray;
+    border-style: double;
+    padding: 10px 30px;
+    background: linear-gradient(90deg, rgba(219,219,219,1) 0%, rgba(108,108,227,1) 50%, rgba(0,212,255,1) 100%);
+}
+
+.formSection {
+    padding: 10px 0;
+}
+
+label {
+    width: 100%;
+    margin: 8px 0;
+    display: inline-block;
+}
+
+input {
+    width: 94%;
+    padding: 10px;
+    border-radius: 105px;
+    background: linear-gradient(to bottom, #599de0 0%, #ffffff 100%);
+    border: none;
+}
+
+input:hover {
+    background: linear-gradient(to bottom, #ffffff 0%, #599de0 100%);
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 105px;
+    background: linear-gradient(to bottom, #599de0 0%, #ffffff 100%);
+    border: none;
+}
+
+select:hover {
+    background: linear-gradient(to bottom, #ffffff 0%, #599de0 100%);
+}
+
+option {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+}
+
+textarea {
+    width: 98%;
+    margin: 8px 0;
+    background: linear-gradient(to bottom, #599de0 0%, #ffffff 100%);
+}
+
+textarea:hover {
+    background: linear-gradient(to bottom, #ffffff 0%, #599de0 100%);
+}
+
+.date {
+    width: 94%;
+    padding: 10px;
+    border-radius: 105px;
+    background: linear-gradient(to bottom, #599de0 0%, #ffffff 100%);
+}
+
+.date:hover {
+    background: linear-gradient(to bottom, #ffffff 0%, #599de0 100%);
+}
+
+.genderDiv {
+    display: flex;
+}
+
+.genderList {
+    display: flex;
+    align-items: center;
+    transition: transform .1s;
+}
+
+.genderList:hover {
+    transform: scale(.9);
+}
+
+.radioBtn {
+    padding-right: 25px;
+    padding-left: 15px;
+}
+
+
+[type="radio"] {
+    width: 20px;
+    height: 20px;
+}
+
+.formSection_Terms {
+    padding: 10px 0;
+    display: flex;
+    column-gap: 10px;
+    transition: transform .1s;
+}
+
+.formSection_Terms:hover {
+    transform: scale(.98);
+}
+
+.checkbox {
+    width: 20px;
+}
+
+.submitBtn {
+text-align: center;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px 50px;
+    border-radius: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    background: linear-gradient(90deg, rgba(219,219,219,1) 0%, rgba(108,227,224,1) 50%, rgba(0,255,128,1) 100%);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform .1s;
+    border: none;
+}
+
+button:hover {
+    background: linear-gradient(90deg, rgba(108,227,224,1) 0%, rgba(0,255,128,1) 50%, rgba(219,219,219,1) 100%);
+    transform: scale(1.05);
+}
+
+.errorMsj {
+    font-size: 12px;
+    color: red;
+    margin-top: 0;
+}
+
+.errorMsjCheck {
+    font-size: 12px;
+    color: red;
+    margin-top: -15px;
+}

@@ -24,8 +24,7 @@ form {
     border: 5px gray;
     border-style: double;
     padding: 10px 30px;
-    background: linear-gradient(to bottom right, #ffff00 0%, #00ffff 100%);
-    
+    background: linear-gradient(to bottom right, #ffff00 0%, #00ffff 100%);  
 }
 
 .formSection {
