@@ -1,6 +1,6 @@
 import './App.css'
-import Example18 from './components/practices/Example18'
-import Example25 from './components/practices/Example25'
+import Example211 from './components/practices/Example211'
+import Home from './components/practices/Example211/Home'
 import Task_1 from './components/Task_1'
 import Task_2 from './components/Task_2/Task_2'
 import Task_3 from './components/Task_3/Task_3'
@@ -13,17 +13,17 @@ function App() {
  
 
   return (
-    <>
-      {/* <Example18 /> */}
+    <div>
+      <Example211 />
       {/* <Task_1 /> */}
       {/* <Task_2 /> */}
       {/* <Task_3 /> */}
       {/* <Task_4 /> */}
       {/* <Task_5 /> */}
       {/* <Task_6 /> */}
-      <Task_7 />
-      {/* <Example25 /> */}
-    </>
+      {/* <Task_7 /> */}
+      {/* <Home /> */}
+    </div>
   )
 }
 
