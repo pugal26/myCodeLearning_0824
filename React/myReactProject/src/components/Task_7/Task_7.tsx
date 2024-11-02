@@ -54,6 +54,7 @@ const Task_7 = () => {
     const [pinCode, setPinCode] = useState<userInputData>(initialState);
     const [country, setCountry] = useState<userInputData>(initialState);
     const [isChecked, setIsChecked] = useState<userInputData>(initialState);
+    const [date, setDate] = useState<userInputData>(initialState);
 
     const onUserNameChange = (event: ChangeEvent<HTMLInputElement>) => {
         setUserName({ ...userName, userName: event.target.value })
@@ -93,6 +94,11 @@ const Task_7 = () => {
         setIsChecked({ ...isChecked, isChecked: event.target.checked })
     }
 
+    const onDateChange = (event: ChangeEvent<HTMLInputElement>) => {
+        setDate({...date, date: event.target.value})
+    }
+
+
     const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         alert(`
@@ -105,6 +111,7 @@ const Task_7 = () => {
                 Pin Code: ${pinCode.pinCode}
                 Country: ${country.country}\n
                 Terms & Conditios: ${isChecked.isChecked}
+                Date: ${date.date}
             `);
         setUserName(initialState)
         setEmail(initialState)
@@ -115,6 +122,7 @@ const Task_7 = () => {
         setPinCode(initialState)
         setCountry(initialState)
         setIsChecked(initialState)
+        setDate(initialState)
     }
 
 
@@ -126,7 +134,7 @@ const Task_7 = () => {
                 </Typography>
                 <form onSubmit={handleSubmit}>
                     <TextField
-                        id="outlined-required"
+                        name="username"
                         label='User Name'
                         value={userName.userName}
                         onChange={onUserNameChange}
@@ -157,7 +165,8 @@ const Task_7 = () => {
                         <RadioGroup
                             row name="gender"
                             value={gender.gender}
-                            onChange={onGenderChange}>
+                            onChange={onGenderChange}
+                        >
                             <FormControlLabel value="Male" control={<Radio />} label="Male" />
                             <FormControlLabel value="Female" control={<Radio />} label="Female" />
                             <FormControlLabel value="Rather Not Say" control={<Radio />} label="Rather Not Say" />
@@ -201,6 +210,7 @@ const Task_7 = () => {
                             name="country"
                             value={country.country}
                             onChange={onCountryChange}
+                            required
                         >
                             {countries.map((country, index) => (
                                 <MenuItem key={index} value={country}>
@@ -222,6 +232,17 @@ const Task_7 = () => {
                             label="Agree to Terms & Conditions"
                         />
                     </FormGroup>
+                    
+                    <TextField 
+                        label='Form Submission Date:'
+                        name="date"
+                        type='datetime-local'
+                        value={date.date}
+                        onChange={onDateChange}
+                        fullWidth
+                        margin="normal"
+                    />
+                    
 
                     <Button type="submit" variant="contained" color="primary">
                         Submit
