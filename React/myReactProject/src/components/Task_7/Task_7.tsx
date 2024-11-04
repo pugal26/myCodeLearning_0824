@@ -125,7 +125,6 @@ const Task_7 = () => {
         setDate(initialState)
     }
 
-
     return (
         <Box>
             <Container>

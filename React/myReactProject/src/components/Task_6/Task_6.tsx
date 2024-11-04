@@ -1,19 +1,6 @@
 import { ChangeEvent, FormEvent, useState } from "react"
 import './task_6.css'   
 
-interface UserInputData {
-    userName: string;
-    email: string
-    age: number
-    gender: string
-    address: string
-    phone:string
-    pinCode: string
-    country: string
-    isChecked: boolean
-    date: string
-}
-
 type FormErrors = {
     userName?: string;
     email?: string
@@ -27,129 +14,114 @@ type FormErrors = {
     date?: string
 }
 
-const initialState = {
-    userName: '',
-    email:'',
-    age: 0,
-    gender:'',
-    address: '',
-    phone:'',
-    pinCode: '',
-    country:'',
-    isChecked: false,
-     date:''
-}
-
 const Task_6 = () => {
 
-    const [userName, setUserName] = useState<UserInputData>(initialState);
-    const [email,setEmail] = useState<UserInputData>(initialState);
-    const [age, setAge] = useState<UserInputData>(initialState);
-    const [gender, setGender] = useState<UserInputData>(initialState);
-    const [address, setAddress] = useState<UserInputData>(initialState);
-    const [phone, setPhone] = useState<UserInputData>(initialState);
-    const [pinCode, setPinCode] = useState<UserInputData>(initialState);
-    const [country, setCountry] = useState<UserInputData>(initialState);
-    const [isChecked, setIsChecked] = useState<UserInputData>(initialState);
-    const [date, setDate] = useState<UserInputData>(initialState);
+    const [userName, setUserName] = useState<string>('');
+    const [email,setEmail] = useState<string>('');
+    const [age, setAge] = useState<number>(0);
+    const [gender, setGender] = useState<string>('');
+    const [address, setAddress] = useState<string>('');
+    const [phone, setPhone] = useState<number>(0);
+    const [pinCode, setPinCode] = useState<number>(0);
+    const [country, setCountry] = useState<string>('');
+    const [isChecked, setIsChecked] = useState<boolean>(false);
+    const [date, setDate] = useState<string>('');
     
     const [errors, setErrors] = useState<FormErrors>({});
     const [submitted, setSubmitted] = useState<boolean>(false);
 
     const onUserNameChange = (event: ChangeEvent<HTMLInputElement>) => {
-        setUserName({...userName, userName: event?.target.value})
+        setUserName(event?.target.value)
     }
 
     const onEmailChange = (event: ChangeEvent<HTMLInputElement>) => {
-        setEmail({...email, email:event.target.value})
+        setEmail(event.target.value)
     }
 
     const onAgeChange = (event: ChangeEvent<HTMLInputElement>) => {
-        setAge({...age, age: event.target.valueAsNumber})
+        setAge(event.target.valueAsNumber)
     }
 
     const onGenderChange = (event: ChangeEvent<HTMLInputElement>) => {
-        setGender({...gender, gender: event.target.value})
+        setGender(event.target.value)
     }
 
     const onAddressChange = (event: ChangeEvent<HTMLTextAreaElement>) => {
-        setAddress({...address, address:event.target.value})
+        setAddress(event.target.value)
     }
 
     const onPhoneChange = (event: ChangeEvent<HTMLInputElement>) => {
-        setPhone({...phone, phone:event.target.value})
+        setPhone(event.target.valueAsNumber)
     }
 
     const onPinCodeChange = (event: ChangeEvent<HTMLInputElement>) => {
-        setPinCode({...pinCode, pinCode:event.target.value})
+        setPinCode(event.target.valueAsNumber)
     }
 
     const countries = ['India', 'United States', 'Europe', 'Russia']
 
     const onCountryChange = (event: ChangeEvent<HTMLSelectElement>) => {
-        setCountry({...country, country:event.target.value})
+        setCountry(event.target.value)
     }
 
     const onCheckChange = (event: ChangeEvent<HTMLInputElement>) => {
-        setIsChecked({...isChecked, isChecked:event.target.checked})
+        setIsChecked(event.target.checked)
     }
 
     const onDateChange = (event: ChangeEvent<HTMLInputElement>) => {
-        setDate({...date, date:event.target.value})
+        setDate(event.target.value)
     }
-
-
 
     const validate = (): FormErrors => {
         const errors: FormErrors = {};
 
-        if (!userName.userName) {
+        if (!userName) {
             errors.userName = '*Username is required*';
-        } else if (userName.userName.length < 3) {
+        } else if (userName.length < 3) {
             errors.userName = '*Username must be at least 3 characters*';
         }
 
-        if (!email.email) {
+        if (!email) {
             errors.email = '*Email is required*';
-        } else if (!/\S+@\S+\.\S+/.test(email.email)) {
+        } else if (!/\S+@\S+\.\S+/.test(email)) {
             errors.email = '*Enter a valid email address*';
         }   
 
-        if (!age.age) {
+        if (!age) {
             errors.age = '*Age is required*';
-        } else if (age.age < 18 || age.age > 99) {
+        } else if (age < 18 || age > 99) {
             errors.age = '*Enter a valid age between 18 and 99*';
         }
 
-        if (!gender.gender) {
+        if (!gender) {
             errors.gender = '*Please select any one of the above*'
         }
 
-        if (!address.address) {
+        if (!address) {
             errors.address = '*Address is required*'
-        } else if (address.address.trim().split('\n').length < 2) {
+        } else if (address.trim().split('\n').length < 2) {
             errors.address = '*Enter address for two lines*'
         }
 
-        if (!phone.phone) {
+        if (!phone) {
             errors.phone = '*Phone no. is requires*'
-        } else if (!/^\d{10}$/.test(phone.phone))
+        } else if (!/^\d{10}$/.test(phone))
             errors.phone = '*Enter a valid phone no.*'
 
-        if (!pinCode.pinCode) {
+        if (!pinCode) {
             errors.pinCode = '*Pincode is required*'
-        } else if (!/^\d{6}$/.test(pinCode.pinCode))
+        } else if (!/^\d{6}$/.test(pinCode))
             errors.pinCode = '*Enter a 6-digit pincode*'
 
-        if (!country.country) {
+        if (!country) {
             errors.country = '*Select any one Country*'
         }
 
-        if (!isChecked.isChecked) {
+        if (!isChecked) {
             errors.isChecked = '*Please accept the terms and conditions*'
         }
 
-        if (!date.date) {
+        if (!date) {
             errors.date = '*Pick a date and time*'
         }
 
@@ -164,30 +136,41 @@ const Task_6 = () => {
         if (Object.keys(validateErrors).length === 0) {
             setSubmitted(true);
             alert(`
-                Username: ${userName.userName}
-                Email: ${email.email}
-                Age: ${age.age}
-                Gender: ${gender.gender}\n
-                Address: ${address.address}
-                Phone: +91${phone.phone}
-                Pincode: ${pinCode.pinCode}
-                Country: ${country.country}\n
-                Terms & Conditios: ${isChecked.isChecked}
-                Form Submitted Date: ${date.date}
+                Username: ${userName}
+                Email: ${email}
+                Age: ${age}
+                Gender: ${gender}\n
+                Address: ${address}
+                Phone: +91${phone}
+                Pincode: ${pinCode}
+                Country: ${country}\n
+                Terms & Conditios: ${isChecked}
+                Form Submitted Date: ${date}
             `)
-        } else {
+             
+            setUserName('');
+            setEmail('');
+        setAge(0)
+        setGender('')
+        setAddress('')
+        setPhone(0)
+        setPinCode(0)
+        setCountry('')
+        setIsChecked(false)
+        setDate('')
+        }  else {
             setSubmitted(false);
         }
-        setUserName(initialState);
-        setEmail(initialState);
-        setAge(initialState)
-        setGender(initialState)
-        setAddress(initialState)
-        setPhone(initialState)
-        setPinCode(initialState)
-        setCountry(initialState)
-        setIsChecked(initialState)
-        setDate(initialState)
+        // setUserName(initialState);
+        // setEmail(initialState);
+        // setAge(initialState)
+        // setGender(initialState)
+        // setAddress(initialState)
+        // setPhone(initialState)
+        // setPinCode(initialState)
+        // setCountry(initialState)
+        // setIsChecked(initialState)
+        // setDate(initialState)
     }
 
 
@@ -200,7 +183,7 @@ const Task_6 = () => {
                         <input 
                             type="text"
                             id="userName"
-                            value={userName.userName}
+                            value={userName}
                             onChange={onUserNameChange}
                             placeholder="Enter a username min of 3 characters" 
                         />
@@ -213,7 +196,7 @@ const Task_6 = () => {
                         <input 
                             type="email"
                             id="email"
-                            value={email.email}
+                            value={email}
                             onChange={onEmailChange} 
                             placeholder="Enter you valid Email"
                         />
@@ -226,7 +209,7 @@ const Task_6 = () => {
                         <input 
                             type="number" 
                             id="age" 
-                            value={age.age}
+                            value={age}
                             onChange={onAgeChange}
                         />
                     </label>
@@ -241,7 +224,7 @@ const Task_6 = () => {
                                 type="radio" 
                                 id="gender"
                                 value='Male'
-                                checked={gender.gender === 'Male'}
+                                checked={gender === 'Male'}
                                 onChange={onGenderChange}
                                 className="radioBtn"
                             />
@@ -252,7 +235,7 @@ const Task_6 = () => {
                                 type="radio" 
                                 id="gender"
                                 value='Female'
-                                checked={gender.gender === 'Female'}
+                                checked={gender === 'Female'}
                                 onChange={onGenderChange}
                                 className="radioBtn"
                             />
@@ -263,7 +246,7 @@ const Task_6 = () => {
                                 type="radio" 
                                 id="gender"
                                 value='Rather Not Say'
-                                checked={gender.gender === 'Rather Not Say'}
+                                checked={gender === 'Rather Not Say'}
                                 onChange={onGenderChange}
                                 className="radioBtn"
                             />
@@ -280,7 +263,7 @@ const Task_6 = () => {
                             id="address"
                             rows={5}
                             cols={30}
-                            value={address.address}
+                            value={address}
                             onChange={onAddressChange}
                             placeholder="Enter you valid Address"
                         />
@@ -293,7 +276,7 @@ const Task_6 = () => {
                         <input 
                             type="tel" 
                             id="phone"
-                            value={phone.phone}
+                            value={phone}
                             onChange={onPhoneChange}
                             placeholder="tel"
                         />
@@ -306,7 +289,7 @@ const Task_6 = () => {
                         <input 
                             type="text" 
                             id="pinCode"
-                            value={pinCode.pinCode}
+                            value={pinCode}
                             onChange={onPinCodeChange}
                             maxLength={6}
                             size={6}
@@ -320,7 +303,7 @@ const Task_6 = () => {
                     <label htmlFor="countries">Countries: </label>
                     <select 
                         id="countries"
-                        value={country.country}
+                        value={country}
                         onChange={onCountryChange}
                     >
                     <option value=''>Select your Country</option>
@@ -339,7 +322,7 @@ const Task_6 = () => {
                     <input 
                         type="checkbox"
                         id="checkbox"
-                        checked={isChecked.isChecked}
+                        checked={isChecked}
                         onChange={onCheckChange}
                         className="checkbox"
                     />
@@ -352,7 +335,7 @@ const Task_6 = () => {
                         <input 
                             type="datetime-local"
                             id="date" 
-                            value={date.date}
+                            value={date}
                             onChange={onDateChange}
                             className="date"
                         />

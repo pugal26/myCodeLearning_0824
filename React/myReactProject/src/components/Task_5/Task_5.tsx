@@ -1,111 +1,85 @@
 import { useState, ChangeEvent, FormEvent } from "react"
-import './task_5_2.css'
-
-interface userInputData {
-    userName: string
-    email: string
-    age: number
-    gender: string
-    address: string
-    phone:number
-    pinCode: number
-    country: string
-    isChecked: boolean
-    date: string
-}
-
-const initialState = {
-    userName: '',
-    email: '',
-    age: 0,
-    gender:'',
-    address: '',
-    phone:0,
-    pinCode: 0,
-    country:'',
-    isChecked: false,
-    date:''
-}
+import './task_5.css'
 
 const Task_5 = () => {
 
-    const [userName, setUserName] = useState<userInputData>(initialState);
-    const [email, setEmail] = useState<userInputData>(initialState);
-    const [age, setAge] = useState<userInputData>(initialState);
-    const [gender, setGender] = useState<userInputData>(initialState);
-    const [address, setAddress] = useState<userInputData>(initialState);
-    const [pinCode, setPinCode] = useState<userInputData>(initialState);
-    const [country, setCountry] = useState<userInputData>(initialState);
-    const [isChecked, setIsChecked] = useState<userInputData>(initialState);
-    const [phone, setPhone] = useState<userInputData>(initialState);
-    const [date, setDate] = useState<userInputData>(initialState);
+    const [userName, setUserName] = useState<string>('');
+    const [email, setEmail] = useState<string>('');
+    const [age, setAge] = useState<number>(0);
+    const [gender, setGender] = useState<string>('');
+    const [address, setAddress] = useState<string>('');
+    const [pinCode, setPinCode] = useState<number>(0);
+    const [country, setCountry] = useState<string>('');
+    const [isChecked, setIsChecked] = useState<boolean>(false);
+    const [phone, setPhone] = useState<number>(0);
+    const [date, setDate] = useState<string>('');
 
     const onUserNameChange = (event : ChangeEvent<HTMLInputElement>) => {
-        setUserName({...userName, userName: event.target.value})
+        setUserName(event.target.value)
     }
 
     const onEmailChange = (event: ChangeEvent<HTMLInputElement>) => {
-        setEmail({...email, email: event.target.value})       
+        setEmail(event.target.value)       
     }
 
     const onAgeChange = (event: ChangeEvent<HTMLInputElement>) => {
-        setAge({...age, age: event.target.valueAsNumber})
+        setAge(event.target.valueAsNumber)
     }
 
     const onGenderChange = (event: ChangeEvent<HTMLInputElement>) => {
-        setGender({...gender, gender: event.target.value})
+        setGender(event.target.value)
     }
 
     const onAddressChange = (event: ChangeEvent<HTMLTextAreaElement>) => {
-        setAddress({...address, address:event.target.value})
+        setAddress(event.target.value)
     }
 
     const onPinCodeChange = (event: ChangeEvent<HTMLInputElement>) => {
-        setPinCode({...pinCode, pinCode:event.target.valueAsNumber})
+        setPinCode(event.target.valueAsNumber)
     }
 
     const countries = ['India', 'United States', 'Europe', 'Russia']
 
     const onCountryChange = (event: ChangeEvent<HTMLSelectElement>) => {
-        setCountry({...country, country:event.target.value})
+        setCountry(event.target.value)
     }
 
     const onCheckChange = (event: ChangeEvent<HTMLInputElement>) => {
-        setIsChecked({...isChecked, isChecked:event.target.checked})
+        setIsChecked(event.target.checked)
     }
 
     const onPhoneChange = (event: ChangeEvent<HTMLInputElement>) => {
-        setPhone({...phone, phone:event.target.valueAsNumber})
+        setPhone(event.target.valueAsNumber)
     }
 
     const onDateChange = (event: ChangeEvent<HTMLInputElement>) => {
-        setDate({...date, date:event.target.value})
+        setDate(event.target.value)
     }
 
     const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         alert(`
-                Name: ${userName.userName}
-                Email: ${email.email}
-                Age: ${age.age}
-                Gender: ${gender.gender}\n
-                Address: ${address.address}
-                Phone: (+91) ${phone.phone}
-                Pin Code: ${pinCode.pinCode}
-                Country: ${country.country}\n
-                Terms & Conditios: ${isChecked.isChecked}
-                Form Submitted Date: ${date.date}
+                Name: ${userName}
+                Email: ${email}
+                Age: ${age}
+                Gender: ${gender}\n
+                Address: ${address}
+                Phone: (+91) ${phone}
+                Pin Code: ${pinCode}
+                Country: ${country}\n
+                Terms & Conditios: ${isChecked}
+                Form Submitted Date: ${date}
             `);
-        setUserName(initialState)
-        setEmail(initialState)
-        setAge(initialState)
-        setGender(initialState)
-        setAddress(initialState)
-        setPhone(initialState)
-        setPinCode(initialState)
-        setCountry(initialState)
-        setIsChecked(initialState)
-        setDate(initialState)
+        setUserName('')
+        setEmail('')
+        setAge(0)
+        setGender('')
+        setAddress('')
+        setPhone(0)
+        setPinCode(0)
+        setCountry('')
+        setIsChecked(false)
+        setDate('')
     }
 
     return (
@@ -117,7 +91,7 @@ const Task_5 = () => {
                     <input 
                         type="text" 
                         id="userName"
-                        value={userName.userName}
+                        value={userName}
                         onChange={onUserNameChange}
                     />
                 </div>
@@ -127,7 +101,7 @@ const Task_5 = () => {
                     <input 
                         type="text" 
                         id="email"
-                        value={email.email}
+                        value={email}
                         onChange={onEmailChange}
                     />
                 </div>
@@ -137,7 +111,7 @@ const Task_5 = () => {
                     <input 
                         type="number" 
                         id="age" 
-                        value={age.age}
+                        value={age}
                         onChange={onAgeChange}
                     />
                 </div>
@@ -150,7 +124,7 @@ const Task_5 = () => {
                                 type="radio" 
                                 id="gender"
                                 value='Male'
-                                checked={gender.gender === 'Male'}
+                                checked={gender === 'Male'}
                                 onChange={onGenderChange}
                                 className="radioBtn"
                             />
@@ -161,7 +135,7 @@ const Task_5 = () => {
                                 type="radio" 
                                 id="gender"
                                 value='Female'
-                                checked={gender.gender === 'Female'}
+                                checked={gender === 'Female'}
                                 onChange={onGenderChange}
                                 className="radioBtn"
                             />
@@ -172,7 +146,7 @@ const Task_5 = () => {
                                 type="radio" 
                                 id="gender"
                                 value='Rather Not Say'
-                                checked={gender.gender === 'Rather Not Say'}
+                                checked={gender === 'Rather Not Say'}
                                 onChange={onGenderChange}
                                 className="radioBtn"
                             />
@@ -188,7 +162,7 @@ const Task_5 = () => {
                         id="address"
                         rows={5}
                         cols={30}
-                        value={address.address}
+                        value={address}
                         onChange={onAddressChange}
                     />
                 </div>
@@ -198,7 +172,7 @@ const Task_5 = () => {
                     <input 
                         type="number" 
                         id="phone"
-                        value={phone.phone}
+                        value={phone}
                         onChange={onPhoneChange}
                         placeholder="tel"
                     />
@@ -209,7 +183,7 @@ const Task_5 = () => {
                     <input 
                         type="number" 
                         id="pinCode"
-                        value={pinCode.pinCode}
+                        value={pinCode}
                         onChange={onPinCodeChange} 
                     />
                 </div>
@@ -218,7 +192,7 @@ const Task_5 = () => {
                     <label htmlFor="countries">Countries: </label>
                     <select 
                         id="countries"
-                        value={country.country}
+                        value={country}
                         onChange={onCountryChange}
                     >
                     <option value=''>Select your Country</option>
@@ -236,7 +210,7 @@ const Task_5 = () => {
                     <input 
                         type="checkbox"
                         id="checkbox"
-                        checked={isChecked.isChecked}
+                        checked={isChecked}
                         onChange={onCheckChange}
                         className="checkbox"
                     />
@@ -248,7 +222,7 @@ const Task_5 = () => {
                     <input 
                         type="datetime-local"
                         id="date" 
-                        value={date.date}
+                        value={date}
                         onChange={onDateChange}
                         className="date"
                     />
