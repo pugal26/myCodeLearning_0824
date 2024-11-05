@@ -51,7 +51,9 @@ const Task_6 = () => {
     }
 
     const onPhoneChange = (event: ChangeEvent<HTMLInputElement>) => {
+        // console.log(event.target.valueAsNumber)
         setPhone(event.target.valueAsNumber)
+        // console.log(phone)
     }
 
     const onPinCodeChange = (event: ChangeEvent<HTMLInputElement>) => {
@@ -103,14 +105,15 @@ const Task_6 = () => {
             errors.address = '*Enter address for two lines*'
         }
 
+        // console.log(phone);
         if (!phone) {
             errors.phone = '*Phone no. is requires*'
-        } else if (!/^\d{10}$/.test(phone))
+        } else if (phone.toString().length != 10)
             errors.phone = '*Enter a valid phone no.*'
 
         if (!pinCode) {
             errors.pinCode = '*Pincode is required*'
-        } else if (!/^\d{6}$/.test(pinCode))
+        } else if (pinCode.toString().length != 6)
             errors.pinCode = '*Enter a 6-digit pincode*'
 
         if (!country) {
@@ -274,7 +277,7 @@ const Task_6 = () => {
                 <div className="formSection">
                     <label htmlFor="contact">Phone: (+91) 
                         <input 
-                            type="tel" 
+                            type="number" 
                             id="phone"
                             value={phone}
                             onChange={onPhoneChange}
@@ -287,7 +290,7 @@ const Task_6 = () => {
                 <div className="formSection">
                     <label htmlFor="pinCode">Pin Code:
                         <input 
-                            type="text" 
+                            type="number" 
                             id="pinCode"
                             value={pinCode}
                             onChange={onPinCodeChange}
