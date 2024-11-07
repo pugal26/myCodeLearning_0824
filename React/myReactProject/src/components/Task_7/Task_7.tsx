@@ -9,120 +9,96 @@ import FormLabel from "@mui/material/FormLabel";
 import RadioGroup from "@mui/material/RadioGroup";
 import Radio from "@mui/material/Radio";
 import InputLabel from "@mui/material/InputLabel";
-import Select from "@mui/material/Select";
+import Select, { SelectChangeEvent } from "@mui/material/Select";
 import MenuItem from "@mui/material/MenuItem";
 import Button from "@mui/material/Button";
 import FormGroup from "@mui/material/FormGroup";
 import Checkbox from "@mui/material/Checkbox";
 import Container from "@mui/material/Container";
 
-interface userInputData {
-    userName: string
-    email: string
-    age: number
-    gender: string
-    address: string
-    phone: number
-    pinCode: number
-    country: string
-    isChecked: boolean
-    date: string
-
-}
-
-const initialState = {
-    userName: '',
-    email: '',
-    age: 0,
-    gender: '',
-    address: '',
-    phone: 0,
-    pinCode: 0,
-    country: '',
-    isChecked: false,
-    date: ''
-}
 
 const Task_7 = () => {
 
-    const [userName, setUserName] = useState<userInputData>(initialState);
-    const [email, setEmail] = useState<userInputData>(initialState);
-    const [age, setAge] = useState<userInputData>(initialState);
-    const [gender, setGender] = useState<userInputData>(initialState);
-    const [address, setAddress] = useState<userInputData>(initialState);
-    const [phone, setPhone] = useState<userInputData>(initialState);
-    const [pinCode, setPinCode] = useState<userInputData>(initialState);
-    const [country, setCountry] = useState<userInputData>(initialState);
-    const [isChecked, setIsChecked] = useState<userInputData>(initialState);
-    const [date, setDate] = useState<userInputData>(initialState);
+    const [userName, setUserName] = useState<string>('');
+    const [email, setEmail] = useState<string>('');
+    const [age, setAge] = useState<number>(0);
+    const [gender, setGender] = useState<string>('');
+    const [address, setAddress] = useState<string>('');
+    const [phone, setPhone] = useState<number>(0);
+    const [pinCode, setPinCode] = useState<number>(0);
+    const [country, setCountry] = useState<string>('');
+    const [isChecked, setIsChecked] = useState<boolean>(false);
+    const [date, setDate] = useState<string>('');
 
-    const onUserNameChange = (event: ChangeEvent<HTMLInputElement>) => {
-        setUserName({ ...userName, userName: event.target.value })
+    const onUserNameChange = (event:ChangeEvent<HTMLTextAreaElement | HTMLInputElement>) => {
+        setUserName(event.target.value)
     }
 
-    const onEmailChange = (event: ChangeEvent<HTMLInputElement>) => {
-        setEmail({ ...email, email: event.target.value })
+    const onEmailChange = (event:ChangeEvent<HTMLTextAreaElement | HTMLInputElement>) => {
+        setEmail(event.target.value)
     }
 
-    const onAgeChange = (event: ChangeEvent<HTMLInputElement>) => {
-        setAge({ ...age, age: event.target.valueAsNumber })
+    const onAgeChange = (event:ChangeEvent<HTMLTextAreaElement | HTMLInputElement>) => {
+        // Number(event.target.value)
+        setAge(Number(event.target.value))
+        // console.log(typeof Number(event.target.value));
     }
 
-    const onGenderChange = (event: ChangeEvent<HTMLInputElement>) => {
-        setGender({ ...gender, gender: event.target.value })
+    const onGenderChange = (event: ChangeEvent<HTMLTextAreaElement | HTMLInputElement>) => {
+        setGender(event.target.value)
     }
 
-    const onAddressChange = (event: ChangeEvent<HTMLTextAreaElement>) => {
-        setAddress({ ...address, address: event.target.value })
+    const onAddressChange = (event: ChangeEvent<HTMLTextAreaElement | HTMLInputElement>) => {
+        setAddress(event.target.value)
     }
 
-    const onPhoneChange = (event: ChangeEvent<HTMLInputElement>) => {
-        setPhone({ ...phone, phone: event.target.valueAsNumber })
+    const onPhoneChange = (event: ChangeEvent<HTMLTextAreaElement | HTMLInputElement>) => {
+        setPhone(Number(event.target.value))
     }
 
-    const onPinCodeChange = (event: ChangeEvent<HTMLInputElement>) => {
-        setPinCode({ ...pinCode, pinCode: event.target.valueAsNumber })
+    const onPinCodeChange = (event: ChangeEvent<HTMLTextAreaElement | HTMLInputElement>) => {
+        setPinCode(Number(event.target.value))
     }
 
     const countries = ['India', 'United States', 'Europe', 'Russia']
 
-    const onCountryChange = (event: ChangeEvent<HTMLSelectElement>) => {
-        setCountry({ ...country, country: event.target.value })
+    const onCountryChange = (event: SelectChangeEvent<string>) => {
+        setCountry(event.target.value)
     }
 
-    const onCheckChange = (event: ChangeEvent<HTMLInputElement>) => {
-        setIsChecked({ ...isChecked, isChecked: event.target.checked })
+    const onConditionChange = (event: ChangeEvent<HTMLInputElement>) => {
+        setIsChecked(event.target.checked)
     }
 
-    const onDateChange = (event: ChangeEvent<HTMLInputElement>) => {
-        setDate({...date, date: event.target.value})
+    const onDateChange = (event: ChangeEvent<HTMLTextAreaElement | HTMLInputElement>) => {
+        setDate(event.target.value)
     }
 
 
     const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         alert(`
-                Name: ${userName.userName}
-                Email: ${email.email}
-                Age: ${age.age}
-                Gender: ${gender.gender}\n
-                Address: ${address.address}
-                Phone: (+91) ${phone.phone}
-                Pin Code: ${pinCode.pinCode}
-                Country: ${country.country}\n
-                Terms & Conditios: ${isChecked.isChecked}
-                Date: ${date.date}
+                Name: ${userName}
+                Email: ${email}
+                Age: ${age}
+                Gender: ${gender}\n
+                Address: ${address}
+                Phone: (+91) ${phone}
+                Pin Code: ${pinCode}
+                Country: ${country}\n
+                Terms & Conditios: ${isChecked}
+                Date: ${date}
             `);
-        setUserName(initialState)
-        setEmail(initialState)
-        setAge(initialState)
-        setGender(initialState)
-        setAddress(initialState)
-        setPhone(initialState)
-        setPinCode(initialState)
-        setCountry(initialState)
-        setIsChecked(initialState)
-        setDate(initialState)
+        setUserName('')
+        setEmail('')
+        setAge(0)
+        setGender('')
+        setAddress('')
+        setPhone(0)
+        setPinCode(0)
+        setCountry('')
+        setIsChecked(false)
+        setDate('')
     }
 
     return (
@@ -131,12 +107,12 @@ const Task_7 = () => {
                 <Typography variant="h3" gutterBottom>
                     Fill the form and get the alert while submit the form.
                 </Typography>
-                <form onSubmit={handleSubmit}>
+                <form onSubmit={(event) => {handleSubmit(event)}}>
                     <TextField
                         name="username"
                         label='User Name'
-                        value={userName.userName}
-                        onChange={onUserNameChange}
+                        value={userName}
+                        onChange={(event) => {onUserNameChange(event)}}
                         fullWidth
                         margin="normal"
                     />
@@ -144,17 +120,16 @@ const Task_7 = () => {
                     <TextField
                         label="Email"
                         name="email"
-                        value={email.email}
-                        onChange={onEmailChange}
+                        value={email}
+                        onChange={(event) => {onEmailChange(event)}}
                         fullWidth
                         margin="normal"
                     />
 
                     <TextField
                         label="Age"
-                        type="number"
-                        value={age.age}
-                        onChange={onAgeChange}
+                        value={age}
+                        onChange={(event) => {onAgeChange(event)}}
                         fullWidth
                         margin="normal"
                     />
@@ -163,8 +138,8 @@ const Task_7 = () => {
                         <FormLabel component="legend">Gender</FormLabel>
                         <RadioGroup
                             row name="gender"
-                            value={gender.gender}
-                            onChange={onGenderChange}
+                            value={gender}
+                            onChange={(event) => {onGenderChange(event)}}
                         >
                             <FormControlLabel value="Male" control={<Radio />} label="Male" />
                             <FormControlLabel value="Female" control={<Radio />} label="Female" />
@@ -175,8 +150,8 @@ const Task_7 = () => {
                     <TextField
                         label="Address"
                         name="address"
-                        value={address.address}
-                        onChange={onAddressChange}
+                        value={address}
+                        onChange={(event) => {onAddressChange(event)}}
                         multiline
                         rows={4}
                         fullWidth
@@ -187,8 +162,8 @@ const Task_7 = () => {
                         label="Phone (+91)"
                         type="number"
                         name="phone"
-                        value={phone.phone}
-                        onChange={onPhoneChange}
+                        value={phone}
+                        onChange={(event) => {onPhoneChange(event)}}
                         fullWidth
                         margin="normal"
                     />
@@ -197,8 +172,8 @@ const Task_7 = () => {
                         label="Pin Code"
                         type="number"
                         name="pinCode"
-                        value={pinCode.pinCode}
-                        onChange={onPinCodeChange}
+                        value={pinCode}
+                        onChange={(event) => {onPinCodeChange(event)}}
                         fullWidth
                         margin="normal"
                     />
@@ -207,9 +182,8 @@ const Task_7 = () => {
                         <InputLabel>Country</InputLabel>
                         <Select
                             name="country"
-                            value={country.country}
-                            onChange={onCountryChange}
-                            required
+                            value={country}
+                            onChange={(event) => {onCountryChange(event)}}
                         >
                             {countries.map((country, index) => (
                                 <MenuItem key={index} value={country}>
@@ -223,8 +197,8 @@ const Task_7 = () => {
                         <FormControlLabel
                             control={
                                 <Checkbox
-                                    checked={isChecked.isChecked}
-                                    onChange={onCheckChange}
+                                    checked={isChecked}
+                                    onChange={(event) => {onConditionChange(event)}}
                                     name="isChecked"
                                 />
                             }
@@ -233,11 +207,11 @@ const Task_7 = () => {
                     </FormGroup>
                     
                     <TextField 
-                        label='Form Submission Date:'
+                        // label='Form Submission Date:'
                         name="date"
                         type='datetime-local'
-                        value={date.date}
-                        onChange={onDateChange}
+                        value={date}
+                        onChange={(event) => {onDateChange(event)}}
                         fullWidth
                         margin="normal"
                     />
