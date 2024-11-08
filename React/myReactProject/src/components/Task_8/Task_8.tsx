@@ -50,7 +50,7 @@ const Task_8 = () => {
     const [isGenderError, setIsGenderError] = useState<boolean>(false);
     const [isAddressError, setIsAddressError] = useState<boolean>(false);
     const [isPhoneError, setIsPhoneError] = useState<boolean>(false);
-    const [isIsPinCodeError, setIsPinCodeError] = useState<boolean>(false);
+    const [isPinCodeError, setIsPinCodeError] = useState<boolean>(false);
     const [isCountryError, setIsCountryError] = useState<boolean>(false);
     const [isCheckedError, setIsCheckedError] = useState<boolean>(false);
     const [isDateError, setIsDateError] = useState<boolean>(false);
@@ -153,7 +153,6 @@ const Task_8 = () => {
     const onPinCodeChange = (event: ChangeEvent<HTMLTextAreaElement | HTMLInputElement>) => {
         const pincodeInput = Number(event.target.value)
         setPinCode(pincodeInput);
-        console.log(typeof(pincodeInput.toString()))
 
         if (isNaN(pincodeInput)) {
             setIsPinCodeError(true)
@@ -330,7 +329,7 @@ const Task_8 = () => {
                         onChange={(event) => {onPinCodeChange(event)}}
                         fullWidth
                         margin="normal"
-                        error={isIsPinCodeError}
+                        error={isPinCodeError}
                         helperText={pinCodeError}
                     /> 
 
@@ -374,6 +373,8 @@ const Task_8 = () => {
                         onChange={(event) => {onDateChange(event)}}
                         fullWidth
                         margin="normal"
+                        error={isDateError}
+                        helperText={dateError}
                     />
 
                     <Button type="submit" variant="contained">Submit</Button>
