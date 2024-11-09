@@ -16,8 +16,6 @@ import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import Select, { SelectChangeEvent } from "@mui/material/Select";
 
-
-
 const Task_8 = () => {
 
     const [username, setUsername] = useState<string>('');
@@ -244,7 +242,7 @@ const Task_8 = () => {
                     Fill the form and get the alert while submit the form with form validation
                 </Typography>
 
-                <form noValidate onSubmit={(event) => {handleSubmit(event)}}>
+                <form onSubmit={(event) => {handleSubmit(event)}}>
                     <TextField 
                         required
                         id="outlined-required"

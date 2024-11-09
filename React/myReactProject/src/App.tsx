@@ -26,9 +26,10 @@ function App() {
       {/* <Task_6 /> */}
       {/* <Task_7 /> */}
       {/* <Home /> */}
-      <Task_8 />
+      {/* <Task_8 /> */}
       {/* <FormValidation /> */}
       {/* <Example711 /> */}
+      <FormValidation />
     </div>
   )
 }

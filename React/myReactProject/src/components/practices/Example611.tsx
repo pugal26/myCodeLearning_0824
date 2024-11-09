@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { ChangeEvent, FormEvent, useState } from "react";
 import { TextField, Box, Button } from "@mui/material";
 
 
@@ -9,9 +9,9 @@ export default function FormValidation() {
     const [emailError, setEmailError] = useState(false);
     
     
-    const handleNameChange = e => {
-        setName(e.target.value);
-        if (e.target.validity.valid) {
+    const handleNameChange = (event: ChangeEvent<HTMLTextAreaElement | HTMLInputElement>)  => {
+        setName(event.target.value);
+        if (event.target.validity.valid) {
             setNameError(false);
         } else {
             setNameError(true);
@@ -19,9 +19,9 @@ export default function FormValidation() {
     };
     
     
-    const handleEmailChange = e => {
-        setEmail(e.target.value);
-        if (e.target.validity.valid) {
+    const handleEmailChange = (event: ChangeEvent<HTMLTextAreaElement | HTMLInputElement>) => {
+        setEmail(event.target.value);
+        if (event.target.validity.valid) {
             setEmailError(false);
         } else {
             setEmailError(true);
@@ -29,42 +29,44 @@ export default function FormValidation() {
     };
     
     
-    const handleSubmit = e => {
-        e.preventDefault();
-        // if (e.target.checkValidity()) {
-        //     alert("Form is valid! Submitting the form...");
-        // } else {
-        //     alert("Form is invalid! Please check the fields...");
-        // }
+    const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+        event.preventDefault();
+        if (event.currentTarget.checkValidity()) {
+            alert("Form is valid! Submitting the form...");
+
+            setName('')
+            setEmail('')
+        } else {
+            alert("Form is invalid! Please check the fields...");
+        }
+
     };
     
     
     return (
-        <Box component="form" onSubmit={handleSubmit} noValidate>
+        <Box component="form" onSubmit={(event) => {handleSubmit(event)}}>
             <TextField
                 required
                 label="Name"
                 value={name}
-                onChange={handleNameChange}
+                onChange={(event) => {handleNameChange(event)}}
                 error={nameError}
-                inputProps={{
-                    pattern: "[A-Za-z ]+",
-                }}
+                type="text"
                 helperText={
                     nameError ? "Please enter your name (letters and spaces only)" : ""
                 }
-            />
+                margin="normal" 
+            /> 
             <TextField
                 required
                 label="Email"
                 value={email}
-                onChange={handleEmailChange}
+                onChange={(event) => {handleEmailChange(event)}}
                 error={emailError}
                 helperText={emailError ? "Please enter a valid email" : ""}
-                inputProps={{
-                    type: "email",
-                }}
-            />
+                type="email"
+                margin="normal"
+            /> <br/>
             <Button variant="contained" color="primary" type="submit">
                 Submit
             </Button>
