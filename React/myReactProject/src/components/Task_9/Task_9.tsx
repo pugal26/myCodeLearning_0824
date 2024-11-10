@@ -17,8 +17,10 @@ import Select, { SelectChangeEvent } from "@mui/material/Select";
 import Autocomplete from "@mui/material/Autocomplete";
 import OutlinedInput from "@mui/material/OutlinedInput";
 import ListItemText from "@mui/material/ListItemText";
-import { Chip } from "@mui/material";
-import { Key } from "@mui/icons-material";
+import Chip from "@mui/material/Chip";
+import Dialog from "@mui/material/Dialog";
+import { DialogActions, DialogContent, DialogTitle, ListSubheader, Menu } from "@mui/material";
+
 
 
 
@@ -35,8 +37,16 @@ const Task_9 = () => {
     const [language, setLanguage] = useState<string[]>([]);
     const [program, setProgram] = useState<string[]>([]);
     const [interested, setInterested] = useState<string[]>([]);
+    const [workType, setWorkType] = useState<string>('');
+    const [open, setOpen] = useState<boolean>(false)
+    const [experince, setExperince] = useState<string>('');
+    const [opendialog, setOpenDialog] = useState<boolean>(false);
+    const [HTMLgroup, setHTMLGroup] = useState<string>('');
+    const [reactGroup, setReactGroup] = useState<string>('');
     const [isChecked, setIsChecked] = useState<boolean>(false);
     const [date, setDate] = useState<string>('');
+    
+    
 
     const onNameChange = (event: ChangeEvent<HTMLTextAreaElement | HTMLInputElement>) => {
         const nameInput = event.target.value
@@ -119,6 +129,39 @@ const Task_9 = () => {
         setInterested(value);
     }
 
+    const OnWorkTypeChange = (event: SelectChangeEvent<typeof workType>) => {
+        setWorkType(event.target.value)
+    }
+
+    const handleClose = (event: React.SyntheticEvent) => {
+        setOpen(false);
+    }
+
+    const handleOpen = (event: React.SyntheticEvent) => {
+        setOpen(true);
+    }
+
+    const onExperinceChange = (event: SelectChangeEvent<typeof experince>) => {
+        setExperince(event.target.value || '')
+    }
+
+    const handleClickOpen = () => {
+        setOpenDialog(true)
+    }
+
+    const handleClickClose = (event: React.SyntheticEvent<unknown>, reason? : string) => {
+        if (reason !== 'backdropClick') {
+            setOpenDialog(false);
+        }
+    }
+
+    const onHTMLGroupChange = (event: SelectChangeEvent<string>) => {
+        setHTMLGroup(event.target.value);
+    };
+
+      const onReactGroupChange = (event: SelectChangeEvent<string>) => {
+        setReactGroup(event.target.value);
+    };
 
     const onConditionChange = (event: ChangeEvent<HTMLInputElement>) => {
         const conditionInput = event.target.checked
@@ -144,6 +187,9 @@ const Task_9 = () => {
                 Languages: ${language}
                 Program Know: ${program}
                 Interested Area: ${interested}
+                Preferred Work Type: ${workType}
+                Experince: ${experince}
+                Components: ${HTMLgroup}, ${reactGroup}
                 Terms & Conditios: ${isChecked}
                 Date: ${date}
             `)
@@ -158,6 +204,12 @@ const Task_9 = () => {
         setLanguage([]);
         setProgram([]);
         setInterested([]);
+        setWorkType('');
+        setOpen(false);
+        setExperince('');
+        setOpenDialog(false);
+        setHTMLGroup('');
+        setReactGroup('');
         setIsChecked(false);
         setDate('');
     }
@@ -349,7 +401,118 @@ const Task_9 = () => {
                                     </option>
                                 ))}
                             </Select>
-                    </FormControl>       
+                    </FormControl> <br />
+
+                    <Button sx={{ display: 'block', mt: 2 }} onClick={handleOpen} >Open the select</Button>
+                    <FormControl sx={{ width: 210, my: 1}}>  
+                            <InputLabel id='demo-controlled-open-select-label'>Preferred Work Type:</InputLabel>
+                            <Select
+                                labelId="demo-controlled-open-select-label"
+                                id="demo-controlled-open-select"
+                                open={open}
+                                onClose={(event) => {handleClose(event)}}
+                                onOpen={(event) => {handleOpen(event)}}
+                                value={workType}
+                                label='Preferred Work Type:'
+                                onChange={(event) => {OnWorkTypeChange(event)}}
+                            >
+                                <MenuItem value=''>
+                                    <em>None</em>
+                                </MenuItem>
+                                <MenuItem value='In-Person'>In-Person</MenuItem>
+                                <MenuItem value='WFH'>Work From Home</MenuItem>
+                                <MenuItem value='Hybrid'>Hybrid</MenuItem>
+                            </Select>
+                    </FormControl>   
+
+
+                    <Button variant="contained" sx={{ m:2, mt:2 }} onClick={handleClickOpen}>Open Select Dialog</Button>
+                    <Dialog disableEscapeKeyDown open={opendialog} onClose={handleClickClose}>
+                        <DialogTitle>Fill the Form</DialogTitle>
+                        <DialogContent>
+                            <Box component='form' sx={{ display: 'flex', flexWrap: 'wrap' }}>
+                                <FormControl sx={{ m:1, minWidth: 120 }}>
+                                    <InputLabel>Experince</InputLabel>
+                                    <Select
+                                        native
+                                        value={experince}
+                                        onChange={(event) => {onExperinceChange(event)}}
+                                        input={<OutlinedInput label='Experince' id="demo-dialog-native" />}
+                                    >
+                                        <option aria-label="None" value='' />
+                                        <option value="Fresher">Fresher</option>
+                                        <option value="Below One Year">Below One Year</option>
+                                        <option value="One to Five Years">One to Five Year</option>
+                                        <option  value="More than Five Years">More than Five Year</option>
+                                    </Select>
+                                </FormControl>
+                                <FormControl sx={{ m:1, minWidth: 120 }}>
+                                    <InputLabel id='demo-dialog-select-label'></InputLabel>
+                                    <Select
+                                        labelId="demo-dialog-select-label"
+                                        id="demo-dialog-select"
+                                        value={experince}
+                                        onChange={(event) => {onExperinceChange(event)}}
+                                        input={<OutlinedInput label='Years' />}
+                                    >
+                                        <MenuItem value=''><em>None</em></MenuItem>
+                                        <MenuItem value="Fresher">Fresher</MenuItem>
+                                        <MenuItem value="Below One Year">Below One Year</MenuItem>
+                                        <MenuItem value="One to Five Years">One to Five Years</MenuItem>
+                                        <MenuItem value="More than Five Years">More than Five Years</MenuItem>
+                                    </Select>
+                                </FormControl>
+                            </Box>
+                        </DialogContent>
+                        <DialogActions>
+                            <Button onClick={handleClickClose}>Cancel</Button>
+                            <Button onClick={handleClickClose}>Ok</Button>
+                        </DialogActions>    
+                    </Dialog>
+
+                    <FormControl sx={{ m:1, minWidth: 120 }}>
+                        <InputLabel htmlFor='grouped-native-select'>HTML Components</InputLabel>
+                        <Select
+                            native
+                            value={HTMLgroup}
+                            onChange={(event) => {onHTMLGroupChange(event)}}
+                            id='grouped-native-select'
+                            label='HTML Components'
+                        >
+                            <option aria-label="None" value="" />
+                            <optgroup label="HTML">
+                                <option value='Heading Tag'>Heading Tag</option>
+                                <option value='Paragraph Tag'>Paragraph Tag</option>
+                                <option value='Button Tag'>Button Tag</option>
+                            </optgroup>
+                            <optgroup label="Events">
+                                <option value='OnClick'>Onclick</option>
+                                <option value='OnSubmit'>OnSubmit</option>
+                                <option value='OnChange'>OnChange</option>
+                            </optgroup>
+                        </Select>
+                    </FormControl>
+                    <FormControl sx={{ m:1, minWidth: 120 }}>  
+                        <InputLabel htmlFor='grouped-select'>React Components</InputLabel> 
+                        <Select
+                            id='grouped-select' 
+                            label='React Components'
+                            value={reactGroup}
+                            onChange={(event) => {onReactGroupChange(event)}}
+                        >
+                            <MenuItem value=''>
+                                <em>None</em>
+                            </MenuItem>
+                            <ListSubheader>Components</ListSubheader>
+                            <MenuItem value='TextField'>TextField</MenuItem>
+                            <MenuItem value='AutoComplete'>AutoComplete</MenuItem>
+                            <MenuItem value='Box'>Box</MenuItem>
+                            <ListSubheader>React Form Components</ListSubheader>
+                            <MenuItem value='FormControl'>FormControl</MenuItem>
+                            <MenuItem value='InputLabel'>InputLabel</MenuItem>
+                            <MenuItem value='FormLabel'>FormLabel</MenuItem>
+                        </Select>
+                    </FormControl>
 
                     <FormGroup>
                         <FormControlLabel
