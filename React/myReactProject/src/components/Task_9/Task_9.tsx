@@ -47,27 +47,31 @@ const Task_9 = () => {
     const [date, setDate] = useState<string>('');
     
     
-
+    //Name function, input type text
     const onNameChange = (event: ChangeEvent<HTMLTextAreaElement | HTMLInputElement>) => {
         const nameInput = event.target.value
         setName(nameInput);
     }
 
+    //Email function, input type email
     const onEmailChange = (event: ChangeEvent<HTMLTextAreaElement | HTMLInputElement>) => {
         const emailInput = event.target.value
         setEmail(emailInput);
     }
 
+    //Gender function, input type radio
     const onGenderChange = (event: ChangeEvent<HTMLTextAreaElement | HTMLInputElement>) => {
         const genderInput = event.target.value
         setGender(genderInput)
     }
 
+    //Address Function, input type text
     const onAddressChange = (event: ChangeEvent<HTMLTextAreaElement | HTMLInputElement>) => {
         const addressInput = event.target.value
         setAddress(addressInput)
     }
 
+    //phone code function, input type autocomplete
     const countriesCode = [
         { code: 'IN', label: 'India', phone: '+91' },
         { code: 'US', label: 'United States', phone: '+1' },
@@ -82,12 +86,13 @@ const Task_9 = () => {
         setCode(value);
     };
 
-
+    //phone function, input type number
     const onPhoneChange = (event: ChangeEvent<HTMLTextAreaElement | HTMLInputElement>) => {
         const phoneInput = Number(event.target.value)
         setPhone(phoneInput)
     }
 
+    //countries function, input type dropdown
     const countries = ['India', 'United States', 'Europe', 'Russia'];
 
     const onCountryChange = (event: SelectChangeEvent<string>) => {
@@ -95,6 +100,7 @@ const Task_9 = () => {
         setCountry(countryInput)
     }
 
+    //hobbies function, input type dropdown checkbox
     const hobbies = ['Gardening', 'Painting', 'Reading Books', 'Playing Carrom', 'None of these'];
 
     const onhobbyChange = (event: SelectChangeEvent<typeof hobbies>) => {
@@ -102,6 +108,7 @@ const Task_9 = () => {
         setHobby(typeof value === 'string' ? value.split(',') : value,)
     }
 
+    //lanuages function, input type dropdown chip
     const lanuages = ['Tamil', 'English', 'French', 'Malayalam', 'Hindi', 'Urudu', 'Kannadam', 'Telugu'];
 
     const onLanguageChange = (event: SelectChangeEvent<typeof lanuages>) => {
@@ -109,6 +116,7 @@ const Task_9 = () => {
         setLanguage(typeof value === 'string' ? value.split(',') : value,)
     }
 
+    //programming function, input type dropdown placeholder
     const programmes = ['HTML', 'JavaScript', 'TypeScript', 'React', 'AngularJS']
 
     const onProgramChange = (event: SelectChangeEvent<typeof programmes>) => {
@@ -116,6 +124,7 @@ const Task_9 = () => {
         setProgram(typeof value === 'string' ? value.split(',') : value,)
     }
 
+    //Interested ares function, input type native display
     const interestedAreas = ['Web Design', 'Web Development', 'React', 'Full-Stack', 'UI/UX', 'Back-end']
     
     const onInterestedChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
@@ -129,51 +138,62 @@ const Task_9 = () => {
         setInterested(value);
     }
 
+
+    //work type function, dropdown with button to open it.
     const OnWorkTypeChange = (event: SelectChangeEvent<typeof workType>) => {
         setWorkType(event.target.value)
     }
 
+    //dropdown btn close function
     const handleClose = (event: React.SyntheticEvent) => {
         setOpen(false);
     }
 
+    //dropdown btn open function
     const handleOpen = (event: React.SyntheticEvent) => {
         setOpen(true);
     }
 
+    //year's experince 
     const onExperinceChange = (event: SelectChangeEvent<typeof experince>) => {
         setExperince(event.target.value || '')
     }
 
+    //experince dialog box button open
     const handleClickOpen = () => {
         setOpenDialog(true)
     }
 
+    //experince dialog box button close
     const handleClickClose = (event: React.SyntheticEvent<unknown>, reason? : string) => {
         if (reason !== 'backdropClick') {
             setOpenDialog(false);
         }
     }
 
+    //group dropdown function
     const onHTMLGroupChange = (event: SelectChangeEvent<string>) => {
         setHTMLGroup(event.target.value);
     };
 
-      const onReactGroupChange = (event: SelectChangeEvent<string>) => {
+    //group dropdown function
+    const onReactGroupChange = (event: SelectChangeEvent<string>) => {
         setReactGroup(event.target.value);
     };
 
+    //terms and condition true or false function
     const onConditionChange = (event: ChangeEvent<HTMLInputElement>) => {
         const conditionInput = event.target.checked
         setIsChecked(conditionInput)
     }
 
+    //date function
     const onDateChange = (event: ChangeEvent<HTMLTextAreaElement | HTMLInputElement>) => {
         const dateInput = event.target.value
         setDate(dateInput)
     }
 
-
+    //form submit function
     const handleFormSubmit = (event: FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         alert(`
@@ -217,10 +237,12 @@ const Task_9 = () => {
     return (
         <Box>
             <Container>
+                {/* Heading */}
                 <Typography variant="h4" gutterBottom>
                     Fill the form and get the alert while submit the form.
                 </Typography>
                 <form onSubmit={(event) => { handleFormSubmit(event) }}>
+                    {/* Name Input */}
                     <TextField
                         name="name"
                         type="text"
@@ -230,6 +252,7 @@ const Task_9 = () => {
                         margin="normal"
                     /> <br />
 
+                    {/* Email Input */}
                     <TextField
                         name="email"
                         type="email"
@@ -239,6 +262,7 @@ const Task_9 = () => {
                         margin="normal"
                     /> <br />
 
+                    {/* Radio Button Input for Gender */}
                     <FormControl component="fieldset" margin="normal">
                         <FormLabel component="legend">Gender</FormLabel>
                         <RadioGroup
@@ -252,6 +276,7 @@ const Task_9 = () => {
                         </RadioGroup>
                     </FormControl> <br />
 
+                    {/* Address Input */}
                     <TextField
                         label="Address"
                         name="address"
@@ -262,6 +287,7 @@ const Task_9 = () => {
                         margin="normal"
                     /> <br />
 
+                    {/* Autocomplete input for select country code and type to search */}
                     <Autocomplete
                         id="country-select-demo"
                         sx={{ width: 210, my:1 }}
@@ -285,6 +311,7 @@ const Task_9 = () => {
                         )}
                     />
 
+                    {/* Contact no. input number */}
                     <TextField
                         label="Contact No."
                         type="number"
@@ -294,6 +321,7 @@ const Task_9 = () => {
                         margin="normal"
                     /> <br />
 
+                    {/* Dropdown for country */}
                     <FormControl margin="normal" sx={{ width: 210 }}>
                         <InputLabel>Country</InputLabel>
                         <Select
@@ -309,6 +337,7 @@ const Task_9 = () => {
                         </Select>
                     </FormControl> <br />
 
+                    {/* Checkbox dropdown for hobby */}
                     <FormControl sx={{ width: 210, my:1 }}>
                             <InputLabel id='demo-multiple-name-label'>Hobby</InputLabel>
                             <Select
@@ -328,7 +357,8 @@ const Task_9 = () => {
                                 ))}
                             </Select>
                     </FormControl>
-
+                    
+                    {/* Chip dropdown for languages */}
                     <FormControl sx={{ width: 210, m: 1 }}>
                         <InputLabel id='multiple-chip-label'>Languages Known</InputLabel>
                         <Select
@@ -357,6 +387,7 @@ const Task_9 = () => {
                         </Select>
                     </FormControl>
                     
+                    {/* Placeholder dropdown for programming */}
                     <FormControl sx={{ width: 210, m: 1 }}>
                         <Select
                             multiple
@@ -386,6 +417,7 @@ const Task_9 = () => {
                         </Select>
                     </FormControl> <br/>
 
+                    {/* Native & display all with scroll bar dropdown for intereseted areas*/}
                     <FormControl>
                             <InputLabel shrink htmlFor='select-multiple-native'>Interested</InputLabel>
                             <Select<string[]>
@@ -425,7 +457,7 @@ const Task_9 = () => {
                             </Select>
                     </FormControl>   
 
-
+                    {/* Dialog box with dropdown for work type  */}
                     <Button variant="contained" sx={{ m:2, mt:2 }} onClick={handleClickOpen}>Open Select Dialog</Button>
                     <Dialog disableEscapeKeyDown open={opendialog} onClose={handleClickClose}>
                         <DialogTitle>Fill the Form</DialogTitle>
@@ -469,7 +501,8 @@ const Task_9 = () => {
                             <Button onClick={handleClickClose}>Ok</Button>
                         </DialogActions>    
                     </Dialog>
-
+                    
+                    {/* group dropdown for experience */}
                     <FormControl sx={{ m:1, minWidth: 120 }}>
                         <InputLabel htmlFor='grouped-native-select'>HTML Components</InputLabel>
                         <Select
@@ -514,6 +547,7 @@ const Task_9 = () => {
                         </Select>
                     </FormControl>
 
+                    {/* terms and condition check box for true or false */}
                     <FormGroup>
                         <FormControlLabel
                             control={
@@ -527,6 +561,7 @@ const Task_9 = () => {
                         />
                     </FormGroup> <br />
 
+                    {/* date picker input of date submission */}
                     <TextField
                         // label='Form Submission Date:'
                         name="date"
@@ -536,11 +571,10 @@ const Task_9 = () => {
                         margin="normal"
                     /> <br />
 
-
+                    {/* btn to submit the form */}
                     <Button variant="contained" type="submit">Submit</Button>
                 </form>
             </Container>
-
         </Box>
     )
 }
