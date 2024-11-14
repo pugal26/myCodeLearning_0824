@@ -1,4 +1,7 @@
 import './App.css'
+// import ParentComponent from './components/practices/Props/ParentComponent'
+import Task_10 from './components/Task_10/Task_10'
+// import TestingTaskTen from './components/practices/testingTaskTen'
 // import Example211 from './components/practices/Example211'
 // import Home from './components/practices/Example211/Home'
 // import FormValidation from './components/practices/Example611'
@@ -11,7 +14,7 @@ import './App.css'
 // import Task_6 from './components/Task_6/Task_6'
 // import Task_7 from './components/Task_7/Task_7'
 // import Task_8 from './components/Task_8/Task_8'
-import Task_9 from './components/Task_9/Task_9'
+// import Task_9 from './components/Task_9/Task_9'
 
 function App() {
  
@@ -31,7 +34,10 @@ function App() {
       {/* <FormValidation /> */}
       {/* <Example711 /> */}
       {/* <FormValidation /> */}
-      <Task_9 />
+      {/* <Task_9 /> */}
+      {/* <TestingTaskTen /> */}
+      {/* <ParentComponent /> */}
+      <Task_10 />
 
     </div>
   )

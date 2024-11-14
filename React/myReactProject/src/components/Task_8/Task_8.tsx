@@ -206,9 +206,7 @@ const Task_8 = () => {
         }
     }
 
-
-
-
+    
     const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         alert(`
