@@ -1,21 +1,11 @@
-import { useState } from 'react'
-import ParentComponent from './ParentComponent';
+import React from "react"
 
-const ChildComponent = () => {
 
-    const [data, setData] = useState('')
-
-    const handleClick = () => {
-        alert(data);
-    }
-
+const ChildComponent: React.FC<{ count: number }> = ({ count }) => {
   return (
-    <>
-        <div>ChildComponent</div>
-        <input type='text' value={data} onChange={(event) => setData(event.target.value)}/>
-
-        <ParentComponent onClick={handleClick} />
-    </>
+    <div>
+      <p>Count: { count }</p>
+    </div>
   )
 }
 

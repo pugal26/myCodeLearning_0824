@@ -1,5 +1,7 @@
 import './App.css'
-import Task_11 from './components/Task_11/Task_11'
+import Task_12 from './components/Task_12/Task_12'
+// import RoutePractice from './components/practices/Routing/RoutePractice'
+// import Task_11 from './components/Task_11/Task_11'
 // import ParentComponent from './components/practices/Props/ParentComponent'
 // import Task_10 from './components/Task_10/Task_10'
 // import TestingTaskTen from './components/practices/testingTaskTen'
@@ -39,7 +41,9 @@ function App() {
       {/* <TestingTaskTen /> */}
       {/* <ParentComponent /> */}
       {/* <Task_10 /> */}
-      <Task_11 />
+      {/* <Task_11 /> */}
+      {/* <RoutePractice /> */}
+      <Task_12 />
 
     </div>
   )
