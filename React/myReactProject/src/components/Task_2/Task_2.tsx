@@ -1,7 +1,7 @@
 import { useState } from "react"
 import './task_2.css'
 
-const Value = () => {
+const Task_2 = () => {
     const [text, setText] = useState<string>('');
 
     return(
@@ -24,4 +24,4 @@ const Value = () => {
     )
 } 
 
-export default Value
+export default Task_2

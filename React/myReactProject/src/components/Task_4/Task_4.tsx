@@ -1,7 +1,7 @@
 import { useState } from "react"
 import './task_4.css'
 
-const task_4 = () => {
+const Task_4 = () => {
 
     const [value, setValue] = useState<string>('');
     const [valueList, setValueList] = useState<string[]>([]);
@@ -48,4 +48,4 @@ const task_4 = () => {
     )
 }
 
-export default task_4
+export default Task_4

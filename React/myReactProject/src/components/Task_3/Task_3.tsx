@@ -1,7 +1,7 @@
 import { useState } from "react"
 import './task_3.css'
 
-const getInput = () => {
+const Task_3 = () => {
 
     const [num, setNum] = useState<number>(0);
     const [numList, setNumList] = useState<number[]>([]);
@@ -43,4 +43,4 @@ const getInput = () => {
     )
 }
 
-export default getInput
+export default Task_3
