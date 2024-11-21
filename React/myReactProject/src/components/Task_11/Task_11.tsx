@@ -3,13 +3,15 @@ import Home from './Pages/Home'
 import About from './Pages/About'
 import Contact from './Pages/Contact'
 import Login from './Pages/Login'
-import RootLayout from './Pages/RootLayout'
+import RootRoute from './Pages/RootRoute'
+import { Box } from '@mui/material'
+import RootLayout from '../Task_13/pages/RootLayout'
 
 
 const Task_11 = () => {
 
   const router = createBrowserRouter(createRoutesFromElements(
-      <Route path='/' element={<RootLayout />}>
+      <Route path='/' element={<RootRoute />}>
         <Route index element={<Home />} />
         <Route path='about' element={<About />} />
         <Route path='contact' element={<Contact />} />
@@ -19,7 +21,11 @@ const Task_11 = () => {
   );
 
   return (
-    <RouterProvider router={ router }></RouterProvider>
+    <Box>
+      <RootLayout />
+      <RouterProvider router={ router }></RouterProvider>
+    </Box>
+    
   )
 }
 

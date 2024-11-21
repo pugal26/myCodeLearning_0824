@@ -1,4 +1,4 @@
-import RootLayout from '../RootLayout'
+import RootLayout from './RootLayout'
 import Box from '@mui/material/Box'
 
 const Home = () => {
@@ -6,7 +6,7 @@ const Home = () => {
     <div>
         <Box sx={{ display: 'flex' }}>
             <RootLayout />            
-            <Box component='main' sx={{ flexGrow: 1, p: 3 }}>               
+            <Box component='main' sx={{ flexGrow: 1, p: 5 }}>               
                 <h1>Home</h1>
             </Box>
         </Box>

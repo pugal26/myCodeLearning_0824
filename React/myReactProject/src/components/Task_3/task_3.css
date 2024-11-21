@@ -2,7 +2,7 @@ body {
     margin: 0;
 }
 
-.container {
+.container_task3 {
     width: auto;
     height: auto;
     border: 5px solid skyblue;
@@ -15,6 +15,10 @@ body {
     margin: 0 350px;
     margin-top: 200px;
     padding: 50px 0;
+}
+
+.section {
+    text-align: center;
 }
 
 input {

@@ -15,6 +15,7 @@ import FormGroup from "@mui/material/FormGroup";
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import Select, { SelectChangeEvent } from "@mui/material/Select";
+import RootLayout from "../Task_13/pages/RootLayout";
 
 const Task_8 = () => {
 
@@ -234,8 +235,9 @@ const Task_8 = () => {
     } 
 
     return (
-       <Box>
-            <Container>
+       <Box sx={{ display: 'flex' }}>
+            <RootLayout />
+            <Container sx={{ marginTop: 10, marginBottom: 10 }}>
                 <Typography variant="h4" gutterBottom>
                     Fill the form and get the alert while submit the form with form validation
                 </Typography>
@@ -373,7 +375,7 @@ const Task_8 = () => {
                         helperText={dateError}
                     />
 
-                    <Button type="submit" variant="contained">Submit</Button>
+                    <Button sx={{ my: 2 }} type="submit" variant="contained">Submit</Button>
                 </form>
             </Container>
        </Box>

@@ -1,14 +1,14 @@
 import { useState } from "react"
-import RootLayout from "../Task_13/RootLayout";
+import RootLayout from "../Task_13/pages/RootLayout";
 
 
 const Task_1 = () => {
     const [name, setName] = useState(false);
 
     return(
-        <div>
+        <div style={{ display: 'flex' }}>
             <RootLayout />
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
+            <div style={{ marginTop: 50, padding: 50 }}>
                 <button onClick={() => setName(!name)}>Click here</button> <br />  
                 {name ? "Pugal" : ""}
             </div>

@@ -15,6 +15,7 @@ import Button from "@mui/material/Button";
 import FormGroup from "@mui/material/FormGroup";
 import Checkbox from "@mui/material/Checkbox";
 import Container from "@mui/material/Container";
+import RootLayout from "../Task_13/pages/RootLayout";
 
 
 const Task_7 = () => {
@@ -102,8 +103,9 @@ const Task_7 = () => {
     }
 
     return (
-        <Box>
-            <Container>
+        <Box sx={{ display: 'flex' }}>
+            <RootLayout />
+            <Container sx={{ marginTop: 10, marginBottom: 10 }}>
                 <Typography variant="h3" gutterBottom>
                     Fill the form and get the alert while submit the form.
                 </Typography>
@@ -217,7 +219,7 @@ const Task_7 = () => {
                     />
                     
 
-                    <Button type="submit" variant="contained" color="primary">
+                    <Button sx={{ my: 2 }} type="submit" variant="contained" color="primary">
                         Submit
                     </Button>
 

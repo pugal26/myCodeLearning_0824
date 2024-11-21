@@ -1,5 +1,6 @@
 import { useState, ChangeEvent, FormEvent } from "react"
 import './task_5.css'
+import RootLayout from "../Task_13/pages/RootLayout";
 
 const Task_5 = () => {
 
@@ -14,12 +15,12 @@ const Task_5 = () => {
     const [phone, setPhone] = useState<number>(0);
     const [date, setDate] = useState<string>('');
 
-    const onUserNameChange = (event : ChangeEvent<HTMLInputElement>) => {
+    const onUserNameChange = (event: ChangeEvent<HTMLInputElement>) => {
         setUserName(event.target.value)
     }
 
     const onEmailChange = (event: ChangeEvent<HTMLInputElement>) => {
-        setEmail(event.target.value)       
+        setEmail(event.target.value)
     }
 
     const onAgeChange = (event: ChangeEvent<HTMLInputElement>) => {
@@ -83,158 +84,168 @@ const Task_5 = () => {
     }
 
     return (
-        <div className="container">
-            <h1>Fill the form and get the alert while submit the form.</h1>
-            <form onSubmit={handleSubmit}>
-                <div className="formSection">
-                    <label htmlFor="userName">User Name: </label>
-                    <input 
-                        type="text" 
-                        id="userName"
-                        value={userName}
-                        onChange={onUserNameChange}
-                    />
-                </div>
-                
-                <div className="formSection">
-                    <label htmlFor="email">Email: </label>
-                    <input 
-                        type="text" 
-                        id="email"
-                        value={email}
-                        onChange={onEmailChange}
-                    />
-                </div>
-                
-                <div className="formSection">
-                    <label htmlFor="age">Age: </label>
-                    <input 
-                        type="number" 
-                        id="age" 
-                        value={age}
-                        onChange={onAgeChange}
-                    />
-                </div>
+        <div style={{ display: 'flex' }}>
+            <RootLayout />
+            <div className="task5_container">
+                <h1 className="task5_title">Fill the form and get the alert while submit the form.</h1>
+                <form onSubmit={handleSubmit} className="task5_form">
+                    <div className="formSection">
+                        <label htmlFor="userName" className="task5_label">User Name: </label>
+                        <input
+                            type="text"
+                            id="userName"
+                            value={userName}
+                            onChange={onUserNameChange}
+                            className="task5_input"
+                        />
+                    </div>
 
-                <div className="formSection">
-                    <label htmlFor="gender">Gender: </label>
-                    <div className="genderDiv">
-                        <div className="genderList">
-                            <input 
-                                type="radio" 
-                                id="gender"
-                                value='Male'
-                                checked={gender === 'Male'}
-                                onChange={onGenderChange}
-                                className="radioBtn"
-                            />
-                            <label htmlFor="male">Male</label>
-                        </div>
-                        <div className="genderList">
-                            <input 
-                                type="radio" 
-                                id="gender"
-                                value='Female'
-                                checked={gender === 'Female'}
-                                onChange={onGenderChange}
-                                className="radioBtn"
-                            />
-                            <label htmlFor="female">Female</label>
-                        </div>
-                        <div className="genderList">
-                            <input 
-                                type="radio" 
-                                id="gender"
-                                value='Rather Not Say'
-                                checked={gender === 'Rather Not Say'}
-                                onChange={onGenderChange}
-                                className="radioBtn"
-                            />
-                            <label htmlFor="ratherNotSay">Rather Not Say</label>
+                    <div className="formSection">
+                        <label htmlFor="email" className="task5_label">Email: </label>
+                        <input
+                            type="text"
+                            id="email"
+                            value={email}
+                            onChange={onEmailChange}
+                            className="task5_input"
+                        />
+                    </div>
+
+                    <div className="formSection">
+                        <label htmlFor="age" className="task5_label">Age: </label>
+                        <input
+                            type="number"
+                            id="age"
+                            value={age}
+                            onChange={onAgeChange}
+                            className="task5_input"
+                        />
+                    </div>
+
+                    <div className="formSection">
+                        <label htmlFor="gender" className="task5_label">Gender: </label>
+                        <div className="genderDiv">
+                            <div className="genderList">
+                                <input
+                                    type="radio"
+                                    id="gender"
+                                    value='Male'
+                                    checked={gender === 'Male'}
+                                    onChange={onGenderChange}
+                                    className="radioBtn"
+                                />
+                                <label htmlFor="male" className="task5_label">Male</label>
+                            </div>
+                            <div className="genderList">
+                                <input
+                                    type="radio"
+                                    id="gender"
+                                    value='Female'
+                                    checked={gender === 'Female'}
+                                    onChange={onGenderChange}
+                                    className="radioBtn"
+                                />
+                                <label htmlFor="female" className="task5_label">Female</label>
+                            </div>
+                            <div className="genderList">
+                                <input
+                                    type="radio"
+                                    id="gender"
+                                    value='Rather Not Say'
+                                    checked={gender === 'Rather Not Say'}
+                                    onChange={onGenderChange}
+                                    className="radioBtn"
+                                />
+                                <label htmlFor="ratherNotSay" className="task5_label">Rather Not Say</label>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div className="formSection">
-                    <label htmlFor="address">Address: </label>
-                    <textarea 
-                        name="address" 
-                        id="address"
-                        rows={5}
-                        cols={30}
-                        value={address}
-                        onChange={onAddressChange}
-                    />
-                </div>
+                    <div className="formSection">
+                        <label htmlFor="address" className="task5_label">Address: </label>
+                        <textarea
+                            name="address"
+                            id="address"
+                            rows={5}
+                            cols={30}
+                            value={address}
+                            onChange={onAddressChange}
+                            className="task5_textarea"
+                        />
+                    </div>
 
-                <div className="formSection">
-                    <label htmlFor="contact">Phone: (+91) </label>
-                    <input 
-                        type="number" 
-                        id="phone"
-                        value={phone}
-                        onChange={onPhoneChange}
-                        placeholder="tel"
-                    />
-                </div>
+                    <div className="formSection">
+                        <label htmlFor="contact" className="task5_label">Phone: (+91) </label>
+                        <input
+                            type="number"
+                            id="phone"
+                            value={phone}
+                            onChange={onPhoneChange}
+                            placeholder="tel"
+                            className="task5_input"
+                        />
+                    </div>
 
-                <div className="formSection">
-                    <label htmlFor="pinCode">Pin Code:</label>
-                    <input 
-                        type="number" 
-                        id="pinCode"
-                        value={pinCode}
-                        onChange={onPinCodeChange} 
-                    />
-                </div>
+                    <div className="formSection">
+                        <label htmlFor="pinCode" className="task5_label">Pin Code:</label>
+                        <input
+                            type="number"
+                            id="pinCode"
+                            value={pinCode}
+                            onChange={onPinCodeChange}
+                            className="task5_input"
+                        />
+                    </div>
 
-                <div className="formSection">
-                    <label htmlFor="countries">Countries: </label>
-                    <select 
-                        id="countries"
-                        value={country}
-                        onChange={onCountryChange}
-                    >
-                    <option value=''>Select your Country</option>
-                    {
-                        countries.map((option, index) => (
-                            <option key={index} value={option}>
-                                {option}
-                            </option>
-                        ))
-                    }    
-                    </select>
-                </div>
-                
-                <div className="formSection_Terms">
-                    <input 
-                        type="checkbox"
-                        id="checkbox"
-                        checked={isChecked}
-                        onChange={onCheckChange}
-                        className="checkbox"
-                    />
-                     <label htmlFor="terms">Agree Terms & Conditions</label>
-                </div>
+                    <div className="formSection">
+                        <label htmlFor="countries" className="task5_label">Countries: </label>
+                        <select
+                            id="countries"
+                            value={country}
+                            onChange={onCountryChange}
+                            className="task5_select"
+                        >
+                            <option value='' className="task5_option">Select your Country</option>
+                            {
+                                countries.map((option, index) => (
+                                    <option key={index} value={option}>
+                                        {option}
+                                    </option>
+                                ))
+                            }
+                        </select>
+                    </div>
 
-                <div className="formSelection">
-                    <label htmlFor="submitDate" className="inputTitle">Form Submission Date: </label>
-                    <input 
-                        type="datetime-local"
-                        id="date" 
-                        value={date}
-                        onChange={onDateChange}
-                        className="date"
-                    />
-                </div>
+                    <div className="formSection_Terms">
+                        <input
+                            type="checkbox"
+                            id="checkbox"
+                            checked={isChecked}
+                            onChange={onCheckChange}
+                            className="task5_checkbox"
+                        />
+                        <label htmlFor="terms" className="task5_label">Agree Terms & Conditions</label>
+                    </div>
 
-                <div className="submitBtn">
-                    <button type="submit">Submit</button>
-                </div>
-            </form>
+                    <div className="formSelection">
+                        <label htmlFor="submitDate" className="task5_label">Form Submission Date: </label>
+                        <input
+                            type="datetime-local"
+                            id="date"
+                            value={date}
+                            onChange={onDateChange}
+                            className="task5_date"
+                        />
+                    </div>
+
+                    <div className="submitBtn">
+                        <button className="task5_btn" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
         </div>
     )
 
-} 
+}
 
 export default Task_5;

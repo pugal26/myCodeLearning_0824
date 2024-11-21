@@ -23,6 +23,7 @@ import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
 import DialogTitle from "@mui/material/DialogTitle";
 import ListSubheader from "@mui/material/ListSubheader";
+import RootLayout from "../Task_13/pages/RootLayout";
 
 
 
@@ -238,8 +239,9 @@ const Task_9 = () => {
     }
 
     return (
-        <Box>
-            <Container>
+        <Box sx={{ display: 'flex' }}>
+            <RootLayout />
+            <Container sx={{ marginTop: 10, marginBottom: 10 }}>
                 {/* Heading */}
                 <Typography variant="h4" gutterBottom>
                     Fill the form and get the alert while submit the form.
@@ -575,7 +577,7 @@ const Task_9 = () => {
                     /> <br />
 
                     {/* btn to submit the form */}
-                    <Button variant="contained" type="submit">Submit</Button>
+                    <Button sx={{ my: 2 }} variant="contained" type="submit">Submit</Button>
                 </form>
             </Container>
         </Box>

@@ -1,5 +1,6 @@
 import { useState } from "react"
 import './task_3.css'
+import RootLayout from "../Task_13/pages/RootLayout";
 
 const Task_3 = () => {
 
@@ -14,7 +15,8 @@ const Task_3 = () => {
     }
 
     return(
-        <div className="container">
+        <div className="container_task3">
+            <RootLayout />
             <p>Enter number in below inputbox, then click the button to get the input value below</p>
             <div className="section">
                 <input 

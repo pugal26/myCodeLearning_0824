@@ -1,5 +1,6 @@
 import { useState } from "react"
 import './task_4.css'
+import RootLayout from "../Task_13/pages/RootLayout";
 
 const Task_4 = () => {
 
@@ -17,33 +18,36 @@ const Task_4 = () => {
     }
 
     return(
-        <div className="container">
-            <p>Enter values in below inputbox, then click the button to get the input value below and if click a delete to remove the value from bottom.</p>
-            <input 
-                type="text" 
-                value={value}
-                onChange={(e) => setValue(e.target.value)}
-            />
+        <div style={{ display: 'flex' }}>
+            <RootLayout />
+            <div className="container">            
+                <p>Enter values in below inputbox, then click the button to get the input value below and if click a delete to remove the value from bottom.</p>
+                <input 
+                    type="text" 
+                    value={value}
+                    onChange={(e) => setValue(e.target.value)}
+                />
 
-            <button className="inputBtn" onClick={handleClick}>
-                Add
-            </button>
+                <button className="inputBtn" onClick={handleClick}>
+                    Add
+                </button>
 
-            <button className="deleteBtn" onClick={handleDelete}>
-                Delete
-            </button>
+                <button className="deleteBtn" onClick={handleDelete}>
+                    Delete
+                </button>
 
-            {
-                valueList.map((element, index) => {
-                    return (
-                        <div key={index}>
-                            <ul className="outputList">
-                                <li>{element}</li>
-                            </ul>
-                        </div>
-                    )
-                })
-            }
+                {
+                    valueList.map((element, index) => {
+                        return (
+                            <div key={index}>
+                                <ul className="outputList">
+                                    <li>{element}</li>
+                                </ul>
+                            </div>
+                        )
+                    })
+                }
+            </div>
         </div>
     )
 }
