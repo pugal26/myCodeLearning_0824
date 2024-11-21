@@ -1,3 +1,4 @@
+import { Outlet } from 'react-router-dom'
 import RootLayout from './RootLayout'
 import Box from '@mui/material/Box'
 
@@ -9,6 +10,7 @@ const Home = () => {
             <Box component='main' sx={{ flexGrow: 1, p: 5 }}>               
                 <h1>Home</h1>
             </Box>
+            <Outlet />
         </Box>
     </div>
   )
