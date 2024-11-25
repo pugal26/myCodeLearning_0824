@@ -1,23 +1,21 @@
-import { Route, Routes } from 'react-router-dom'
-import Home from './Pages/Home'
-import About from './Pages/About'
-import Contact from './Pages/Contact'
-import Login from './Pages/Login'
+import { Outlet } from 'react-router-dom'
+
 import { Box } from '@mui/material'
+
 import RootLayout from '../Task_13/pages/RootLayout'
+import NavBar from './Pages/NavBar'
+// import RootLayout from '../Task_13/pages/RootLayout'
 
 
 const Task_11 = () => {
 
   return (
-    <Box sx={{ display: 'flex' }}>
+    <Box sx={{ display: 'flex', mt:5 }}>
       <RootLayout />
-      <Routes>
-        <Route path='/home' index element={<Home />} />
-        <Route path='/about' element={<About />} />
-        <Route path='/contact' element={<Contact />} />
-        <Route path='/login' element={<Login />} />
-      </Routes>
+      <Box>
+        <NavBar />
+        <Outlet />
+      </Box>
     </Box>
 
   )

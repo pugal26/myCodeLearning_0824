@@ -8,7 +8,7 @@ const Home = () => {
         <Box sx={{ display: 'flex' }}>
             <RootLayout />            
             <Box component='main' sx={{ flexGrow: 1, p: 5 }}>               
-                <h1>Home</h1>
+                <h1>Test</h1>
             </Box>
             <Outlet />
         </Box>

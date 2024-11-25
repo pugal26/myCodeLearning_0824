@@ -7,11 +7,13 @@ const NavBar = () => {
 
   return (
     <div>
-        <Box sx={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center', my: 3 }}>
-            <NavLink to='/home'>Home</NavLink>
-            <NavLink to='/about'>About</NavLink>
-            <NavLink to='/contact'>Contact</NavLink>
-            <Button variant="contained" onClick={() =>navigate('/login')}>Login</Button>
+        <Box sx={{ mt:5, display:'flex', justifyContent:'space-between', alignItems:'center', mx:5 }}>
+          <Box sx={{ display:'flex', gap:25}}>
+            <NavLink to='home'>Home</NavLink>
+            <NavLink to='about'>About</NavLink>
+            <NavLink to='contact'>Contact</NavLink>
+            <Button variant="contained" onClick={() =>navigate('login')}>Login</Button>
+          </Box>
       </Box><hr />
     </div>
   )
