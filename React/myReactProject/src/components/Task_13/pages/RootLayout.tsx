@@ -114,9 +114,7 @@ const pages = [
     { name: 'Task 8', path: '/task_8', icon: <TaskAltIcon /> },
     { name: 'Task 9', path: '/task_9', icon: <TaskAltIcon /> },
     { name: 'Task 10', path: '/task_10', icon: <TaskAltIcon /> },
-    { name: 'Task 11', path: '/task_11', icon: <TaskAltIcon /> },
-    { name: 'Task 12', path: '/task_12', icon: <TaskAltIcon /> },
-
+    { name: 'Task 11', path: '/task_11', icon: <TaskAltIcon /> }
 ]
 
 
