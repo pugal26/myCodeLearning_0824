@@ -18,6 +18,7 @@ import TaskAltIcon from '@mui/icons-material/TaskAlt';
 import Typography from "@mui/material/Typography";
 import MuiAppBar, { AppBarProps as MuiAppBarProps } from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
+import { WrapText } from "@mui/icons-material";
 
 
 const drawerWidth = 240;
@@ -104,17 +105,17 @@ const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' 
 );
 
 const pages = [
-    { name: 'Task 1', path: '/task_1', icon: <TaskAltIcon /> },
-    { name: 'Task 2', path: '/task_2', icon: <TaskAltIcon /> },
-    { name: 'Task 3', path: '/task_3', icon: <TaskAltIcon /> },
-    { name: 'Task 4', path: '/task_4', icon: <TaskAltIcon /> },
-    { name: 'Task 5', path: '/task_5', icon: <TaskAltIcon /> },
-    { name: 'Task 6', path: '/task_6', icon: <TaskAltIcon /> },
-    { name: 'Task 7', path: '/task_7', icon: <TaskAltIcon /> },
-    { name: 'Task 8', path: '/task_8', icon: <TaskAltIcon /> },
-    { name: 'Task 9', path: '/task_9', icon: <TaskAltIcon /> },
-    { name: 'Task 10', path: '/task_10', icon: <TaskAltIcon /> },
-    { name: 'Task 11', path: '/task_11', icon: <TaskAltIcon /> }
+    { name: 'Diplay a Value', path: '/task_1', icon: <TaskAltIcon /> },
+    { name: 'Click to get single value Alert', path: '/task_2', icon: <TaskAltIcon /> },
+    { name: 'Display a list of value', path: '/task_3', icon: <TaskAltIcon /> },
+    { name: 'Add and Delete value list', path: '/task_4', icon: <TaskAltIcon /> },
+    { name: 'HTML Form', path: '/task_5', icon: <TaskAltIcon /> },
+    { name: 'HTML Form with Validation', path: '/task_6', icon: <TaskAltIcon /> },
+    { name: 'Form in Material-UI', path: '/task_7', icon: <TaskAltIcon /> },
+    { name: 'Form Validation in Material-UI', path: '/task_8', icon: <TaskAltIcon /> },
+    { name: 'Material_UI form with multiple drop-downs', path: '/task_9', icon: <TaskAltIcon /> },
+    { name: 'Form Validation in multiple drop-downs', path: '/task_10', icon: <TaskAltIcon /> },
+    { name: 'Nav Routing', path: '/task_11', icon: <TaskAltIcon /> }
 ]
 
 
@@ -176,13 +177,13 @@ const RootLayout = () => {
                                 sx={[{ minWidth: 48, px: 2.5 }, open ? { justifyContent: 'initial' } : { justifyContent: 'center' }]}
                             >
                                 <ListItemIcon
-                                    sx={[{ minWidth: 0, justifyContent: 'center' }, open ? { mr: 3 } : { mr: 'auto' }]}
+                                    sx={[{ minWidth: 0, justifyContent: 'center' }, open ? { mr: 1 } : { mr: 'auto' }]}
                                 >
                                     {page.icon}
                                 </ListItemIcon>
                                 <ListItemText
                                     primary={page.name}
-                                    sx={[open ? { opacity: 1 } : { opacity: 0 }]}
+                                    sx={[{ textWrap: 'wrap' }, open ? { opacity: 1 } : { opacity: 0 }]}
                                 />
                             </ListItemButton>
                         </ListItem>

@@ -84,7 +84,7 @@ const Task_9 = () => {
     ];
 
     const onCodeChange = (
-        event: React.SyntheticEvent,
+        _event: React.SyntheticEvent,
         value: { code: string; label: string; phone: string } | null
     ) => {
         setCode(value);
@@ -149,12 +149,12 @@ const Task_9 = () => {
     }
 
     //dropdown btn close function
-    const handleClose = (event: React.SyntheticEvent) => {
+    const handleClose = (_event: React.SyntheticEvent) => {
         setOpen(false);
     }
 
     //dropdown btn open function
-    const handleOpen = (event: React.SyntheticEvent) => {
+    const handleOpen = (_event: React.SyntheticEvent) => {
         setOpen(true);
     }
 
