@@ -1,5 +1,6 @@
 import './App.css'
-import Task_13 from './components/Task_13/Task_13'
+import Task_14 from './components/Task_14/Task_14'
+// import Task_13 from './components/Task_13/Task_13'
 // import Task_12 from './components/Task_12/Task_12'
 // import RoutePractice from './components/practices/Routing/RoutePractice'
 // import Task_11 from './components/Task_11/Task_11'
@@ -45,8 +46,8 @@ function App() {
       {/* <Task_11 /> */}
       {/* <RoutePractice /> */}
       {/* <Task_12 /> */}
-      <Task_13 />
-
+      {/* <Task_13 /> */}
+      <Task_14 />
     </div>
   )
 }
