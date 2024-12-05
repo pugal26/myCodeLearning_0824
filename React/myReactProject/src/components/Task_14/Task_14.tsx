@@ -25,7 +25,7 @@ const Task_14 = () => {
         });
     }, []);
 
-    if (!user) return null
+    if (!user) return <div>Loading...</div>
 
     return (
         <Box sx={{ width: 'fit-content', marginLeft: 42 }}>
