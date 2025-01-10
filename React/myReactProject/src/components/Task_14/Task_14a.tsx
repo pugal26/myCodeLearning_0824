@@ -1,11 +1,18 @@
-import { Box, Card, CardContent, Divider, Grid2, Typography } from '@mui/material';
+import Box from '@mui/material/Box';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import Divider from '@mui/material/Divider';
+import Grid2 from '@mui/material/Grid2';
+import Typography from '@mui/material/Typography';
 import axios from 'axios';
 import React, { useState } from 'react'
+
 
 type UserData = {
     gender: string;
     name: { title: string; first: string; last: string };
     location: {
+        zip: number;
         street: { number: number; name: string }; city: string;
         state: string; country: string; postcode: number
     };
@@ -15,7 +22,6 @@ type UserData = {
     cell: string;
 }
 
-
 const Task_14a = () => {
 
     const baseUrl = 'https://randomuser.me/api/0.8/?results=10'
@@ -24,7 +30,7 @@ const Task_14a = () => {
 
     React.useEffect(() => {
         axios.get(baseUrl).then((response) => {
-            const result = response.data.results.map((item: any) => item.user);
+            const result = response.data.results.map((item: { user: UserData }) => item.user);
             setUsers(result)
             console.log(result);
         });
@@ -47,11 +53,12 @@ const Task_14a = () => {
 
             <Grid2
                 container
-                spacing={2}
+                spacing={8}
                 justifyContent="center"
+                columns={3}
             >
                 {users.map((user, index) => (
-                    <Grid2 key={index} xs={12} sm={6} md={4} lg={3}>
+                    <Grid2 key={index}>
                         <Card
                             variant="outlined"
                             sx={{
@@ -62,22 +69,22 @@ const Task_14a = () => {
                             }}
                         >
                             <CardContent>
-                                <Typography variant="h6">
+                                <Typography variant="h6" sx={{ textTransform: 'capitalize' }}>
                                     {user.name.title} {user.name.first} {user.name.last}
                                 </Typography>
                                 <Divider sx={{ marginY: 1 }} />
-                                <Typography variant="body1">
+                                <Typography variant="body1" sx={{ textTransform: 'capitalize' }}>
                                     Age: {user.dob.age} / Gender: {user.gender}
                                 </Typography>
                                 <Divider sx={{ marginY: 1 }} />
-                                <Typography variant="body2">
-                                    Address:
+                                <Typography variant="body2" sx={{ textTransform: 'capitalize' }}>
+                                    Location:
                                     <br />
-                                    {`${user.location.street.number}, ${user.location.street.name},`}
+                                    {`${user.location.street}, ${user.location.street},`}
                                     <br />
                                     {`${user.location.city}, ${user.location.state},`}
                                     <br />
-                                    {`${user.location.country} - ${user.location.postcode}`}
+                                    {`ZipCode - ${user.location.zip}`}
                                 </Typography>
                                 <Divider sx={{ marginY: 1 }} />
                                 <Typography variant="body2">
