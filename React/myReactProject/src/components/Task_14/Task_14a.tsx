@@ -8,7 +8,7 @@ import axios from 'axios';
 import React, { useState } from 'react'
 
 
-type UserData = {
+interface UserData {
     gender: string;
     name: { title: string; first: string; last: string };
     location: {
@@ -19,7 +19,7 @@ type UserData = {
     email: string;
     dob: { date: string; age: number };
     phone: string;
-    cell: string;
+
 }
 
 const Task_14a = () => {
@@ -32,7 +32,7 @@ const Task_14a = () => {
         axios.get(baseUrl).then((response) => {
             const result = response.data.results.map((item: { user: UserData }) => item.user);
             setUsers(result)
-            console.log(result);
+            // console.log(result);
         });
     }, []);
 
@@ -82,9 +82,9 @@ const Task_14a = () => {
                                     <br />
                                     {`${user.location.street}, ${user.location.street},`}
                                     <br />
-                                    {`${user.location.city}, ${user.location.state},`}
+                                    {`${user.location.city}, ${user.location.state}.`}
                                     <br />
-                                    {`ZipCode - ${user.location.zip}`}
+                                    {`Zip Code - ${user.location.zip}`}
                                 </Typography>
                                 <Divider sx={{ marginY: 1 }} />
                                 <Typography variant="body2">

@@ -1,5 +1,11 @@
 {
   "dependencies": {
-    "@mui/icons-material": "^6.1.1"
+    "@emotion/react": "^11.0.0",
+    "@emotion/styled": "^11.0.0",
+    "@mui/icons-material": "^6.1.1",
+    "@mui/joy": "^5.0.0-beta.51"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.7"
   }
 }

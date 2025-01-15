@@ -2,7 +2,7 @@ import { Box, Container, Grid2, TextField, Typography } from "@mui/material";
 import axios from "axios"
 import React, { useState } from "react"
 
-type UserData = {
+interface UserData {
     gender: string;
     name: { title: string; first: string; last: string };
     location: { street: { number: number; name: string }; city: string; state: string; country: string; postcode: number };

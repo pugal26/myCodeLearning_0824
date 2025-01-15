@@ -1,6 +1,8 @@
 import './App.css'
 // import Task_14 from './components/Task_14/Task_14'
-import Task_14a from './components/Task_14/Task_14a'
+// import Task_14a from './components/Task_14/Task_14a'
+// import Task_15 from './components/Task_15/Task_15'
+import Task_15Route from './components/Task_15/Task_15Route'
 // import Task_13 from './components/Task_13/Task_13'
 // import Task_12 from './components/Task_12/Task_12'
 // import RoutePractice from './components/practices/Routing/RoutePractice'
@@ -49,7 +51,8 @@ function App() {
       {/* <Task_12 /> */}
       {/* <Task_13 /> */}
       {/* <Task_14 /> */}
-      <Task_14a />
+      {/* <Task_14a /> */}
+      <Task_15Route />
     </div>
   )
 }
