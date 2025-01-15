@@ -4,13 +4,16 @@ import CardContent from '@mui/material/CardContent'
 import Container from '@mui/material/Container'
 import Typography from '@mui/material/Typography'
 import Card from '@mui/material/Card'
-import { useLocation } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 import CardHeader from '@mui/material/CardHeader'
+import { IconButton } from '@mui/material'
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
 
 const MoreDetails = () => {
 
     const location = useLocation();
+    const navigate = useNavigate();
     const user = location.state?.user;
 
     if (!user) return <div>No user data available.</div>;
@@ -18,10 +21,21 @@ const MoreDetails = () => {
     return (
         <Box>
             <Container sx={{ display: 'flex', justifyContent: 'center', mt: 5 }}>
-                <Card sx={{ maxWidth: 475, background:'#f5f5f5' }}>
+                <Card sx={{ maxWidth: 475, background: '#f5f5f5' }}>
                     <CardHeader
                         sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}
-                        title='Additional Information'
+                        title={
+                            <div style={{ display: 'flex', alignItems: 'center' }}>
+                                <IconButton
+                                    edge="start"
+                                    color="primary"
+                                    onClick={() => navigate('/')}
+                                >
+                                    <ArrowBackIcon />
+                                </IconButton>
+                                Additional Information
+                            </div>
+                        }
                         action={
                             <div>
                                 <img
